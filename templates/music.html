@@ -1,0 +1,24 @@
+{% extends "navbar.html" %}
+
+{% block body %}
+	
+	<div class="row">
+		<div class="">
+			<button type="button" class="btn btn-primary">Randomize</button>
+		</div>
+		<div>
+			<button type="button" class="btn btn-success">Play Any One</button>
+		</div>
+	</div>
+	{% for song in songs %}
+		<div class="row">
+		    <div id="music-box" class="col-md-6 col-md-offset-3">
+		    	<div style="text-align:center;">
+		    		<a class="link" id="music-name" href = {{ song.m_link }}>{{ song.m_name }}</a>
+		    	</div>
+		    	<p id="music-text"> {{ song.m_text }}</p>
+		    </div>
+		</div>
+	{% endfor %}
+
+{% endblock %}

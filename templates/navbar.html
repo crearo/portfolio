@@ -4,6 +4,7 @@
   <title>Rishabh Bhardwaj</title>
   <link href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}" rel="stylesheet">
   <link href="{{ url_for('static', filename = 'css/navbar.css') }}" rel = "stylesheet">
+  <link href="{{ url_for('static', filename = 'css/music.css') }}" rel = "stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -67,9 +68,19 @@
     </div>
   </div>
 </section>
-
+<div style="padding:10px;"></div>
 {% block body %}
+
 <!-- BLOCK BODY GOES HERE -->
 {% endblock %}
+<div style="padding:10px;"></div>
+
+<!-- Code for footer goes here! -->
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted">Rishabh Bhardwaj</p>
+  </div>
+</footer>
+
 </body>
 </html>

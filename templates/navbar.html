@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rishabh Bhardwaj</title>
+  <link href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'css/navbar.css') }}" rel = "stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <section>
+    {% if color == 'red' %}
+      <div id="navbar-red" class="container-fluid">
+    {% elif color == 'blue' %}
+      <div id="navbar-blue" class="container-fluid">
+    {% elif color == 'orange' %}
+    <div id="navbar-orange" class="container-fluid">
+    {% elif color == 'green' %}
+    <div id="navbar-green" class="container-fluid">
+    {% elif color == 'yellow' %}
+    <div id="navbar-yellow" class="container-fluid">
+    {% elif color == 'dark' %}
+    <div id="navbar-dark" class="container-fluid">
+    {% else %}
+      <div id="navbar-blue" class="container-fluid">
+    {% endif %}
+
+      <div class="row">
+        <div class="col-md-6">
+          <h1>
+            Rishabh Bhardwaj
+          </h1> 
+        </div>
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-4">
+          <div class="navbar-ul">
+            <ul id="navbar-list" class="list-inline">
+              <li><a class="aref" class="text-center" href="/">Home</a>  </li>
+              <li><a class="aref" class="text-center" href="/code">Code</a></li>
+              <li><a class="aref" class="text-center"  href="/weblog">WebLog</a></li>
+              <li><a class="aref" class="text-center" href="/music">Music</a></li>
+              <li> <a class="aref" class="text-center" href="/contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="content-row" class="row">
+       <div id="container">
+         <div id="center-title-back">
+          <p  class="text-center" id="center-title-back-text">{{ titleback }}</p>
+        </div>
+        <div style="padding-top: 30px;" id="center-title">
+          <p class="text-center" id="center-title-text" >{{ title }}</p>
+        </div>
+        
+        <div class="text-center">
+          <h4 class="row">{{ subtitle }}</h4>
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <h7 style="text-align:center;" class="text-center">{{ subcontent }}</h7>
+            <div class="col-md-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% block body %}
+<!-- BLOCK BODY GOES HERE -->
+{% endblock %}
+</body>
+</html>

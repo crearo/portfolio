@@ -1,0 +1,110 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+#navbar-blue{
+	background-color: #2980b9;
+	height: 400px;
+	padding: 10px;
+	color: white;
+}
+#navbar-red{
+	background-color: #e74c3c;
+	height: 400px;
+	padding: 10px;
+	color: white;
+}
+#navbar-orange{
+	background-color: #e67e22;
+	height: 400px;
+	padding: 10px;
+	color: white;
+}
+#navbar-green{
+	background-color: #2ecc71;
+	height: 400px;
+	padding: 10px;
+	color: white;
+}
+#navbar-yellow{
+	background-color: #f1c40f;
+	height: 400px;
+	padding: 10px;
+	color: white;
+}
+
+#navbar-dark{
+	background-color: #34495e;
+	height: 400px;
+	padding: 10px;
+	color: white;
+}
+
+#navbar-list{
+	margin-top: 20px;
+}
+
+#container{
+	position: relative;
+}
+
+#center-title: {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	color: rgba(255,255,255,1);
+}
+
+#center-title-back{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	color: rgba(255,255,255,0.4);
+}
+
+#center-title-text{
+	font-size: 6em;
+}
+
+#center-title-back-text{
+	font-size: 9em;
+	font-weight: 700;
+}
+
+#linebreak{
+	height: 1px;
+	background-color: #FFF;
+	box-shadow: 5px 5px 2px #888;
+}
+
+#content-row{
+	margin-top: 20px;
+}
+
+a:link{
+	color: rgba(235,235,235,1);
+	font-size: 15px;
+	padding: 5px;
+}
+
+a:hover{
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+	border-bottom: 3px solid rgba(255,255,255,0.8);
+	-webkit-transition: .2s;
+    transition: .2s;
+}
+
+a:visited{
+color: rgba(235,235,235,1);
+}
+
+a:active{
+	color: rgba(255,255,255,0);
+}

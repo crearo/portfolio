@@ -5,17 +5,17 @@
 <div class="row">
 
 	<button type="button" class="btn btn-primary">Randomize List</button>
-	<button type="button" class="btn btn-success">Play Any One</button>
+	<button type="button" class="btn btn-success">Read Random</button>
 	<button type="button" class="btn btn-warning">My Favorites</button>
 
 </div>
-{% for song in songs %}
+{% for weblog in weblogs %}
 <div class="row">
-	<div id="music-box" class="col-md-6 col-md-offset-3">
+	<div id="weblog-box" class="col-md-6 col-md-offset-3">
 		<div style="text-align:center;">
-			<a class="link" id="music-name" href = {{ song.m_link }}>{{ song.m_name }}</a>
+			<a class="link" id="weblog-name" href = {{ weblog.w_link }}>{{ weblog.w_title }}</a>
 		</div>
-		<p id="music-text"> {{ song.m_text|truncate(250) }}</p>
+		<p id="weblog-text"> {{ weblog.w_content|truncate(250) }}</p>
 	</div>
 </div>
 {% endfor %}

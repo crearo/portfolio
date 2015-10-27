@@ -1,0 +1,42 @@
+#weblog-box{
+	border-style: solid;
+	border-color: #AAA;
+	margin-top: 10px;
+	border-bottom-width: 1px;
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+}
+
+#weblog-name{
+	color: #212121;
+	font-size: 30px;
+}
+
+#weblog-text{
+	color: #787878;
+	text-align: center;
+	font-size: 15px;
+}
+
+.link:link{
+	color: rgba(235,235,235,1);
+	font-size: 15px;
+	padding: 2px;
+}
+
+.link:hover{
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+	border-bottom: 3px solid rgba(0,0,0,0.3);
+	-webkit-transition: .2s;
+    transition: .2s;
+}
+
+.link:visited{
+	color: rgba(235,235,235,1);
+}
+
+.link:active{
+	color: rgba(255,255,255,0);
+}

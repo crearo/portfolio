@@ -1,5 +1,75 @@
 {% extends "navbar.html" %}
 
 {% block body %}
-	
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div id='resume' class="tab-pane">
+				<div class="body-content">
+					<div class="row">
+						<div class="col-md-8">
+
+							<!-- START OF WORK HISTORY -->
+							<h3 class="title with-icon"><span class="glyphicon glyphicon-plane icn-title"></span>Work</h3>
+							<div class="box-block">
+								<div class="time-line">
+									{% for i in range(0,jobs|length) %}
+									{% if i == 0 %}
+										<div class="item-event current">
+									{% else %}
+										<div class="item-event">
+									{% endif %}
+										<span class="date">{{ jobs[i].j_startdate }}</span>
+										<div class="event-content">
+											<h4>{{ jobs[i].j_title }}</h4>
+											<h5>{{ jobs[i].j_company }}</h5>
+											<p> {{ jobs[i].j_description }}</p>
+										</div>
+									</div>
+									
+									{% endfor %}
+								</div>
+							</div>
+							<!-- END OF WORK HISTORY -->
+
+							<!-- START OF EDU HISTORY -->
+							<h3 class="title with-icon"><span class="glyphicon glyphicon-plane icn-title"></span>Education</h3>
+							<div class="box-block">
+								<div class="time-line">
+									{% for i in range(0,edus|length) %}
+									{% if i == 0 %}
+										<div class="item-event current">
+									{% else %}
+										<div class="item-event">
+									{% endif %}
+										<span class="date">{{ edus[i].e_startdate }}</span>
+										<div class="event-content">
+											<h4>{{ edus[i].e_name }}</h4>
+											<h5>{{ edus[i].e_degree }} | {{ edus[i].e_major }}</h5>
+											<p> {{ edus[i].e_description }}</p>
+										</div>
+									</div>
+									{% endfor %}
+								</div>
+							</div>
+							<!-- END OF EDU HISTORY -->
+
+
+						</div>
+						<div class="col-md-4">
+							<div class="box-block">
+						       <h3 class="title with-icon"><span class="fa fa-file icn-title"></span> Download Cv</h3>
+						        <div class="box-block">
+						          <p>You can download my CV in pdf format if you like. I love what i do.</p>
+						          <a href="#" class="btn btn-flat btn-block"><i class="fa fa-download"></i> Download</a>
+						        </div>
+						     </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 {% endblock %}

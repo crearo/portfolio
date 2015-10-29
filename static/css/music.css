@@ -1,31 +1,28 @@
 #music-box{
 	border-style: solid;
 	border-color: #AAA;
+	border-radius: 5px;
 	margin-top: 10px;
-	border-bottom-width: 1px;
-	border-top-width: 1px;
-	border-left-width: 1px;
-	border-right-width: 1px;
-}
-
-#music-name{
-	color: #212121;
-	font-size: 30px;
+	border-width: 1px;
+	box-shadow: 1px 1px 1px #CCC;
 }
 
 #music-text{
 	color: #787878;
 	text-align: center;
-	font-size: 15px;
+	font-size: 0.9em;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 1%;
 }
 
-.link:link{
-	color: rgba(235,235,235,1);
-	font-size: 15px;
+#music-name:link{
+	color: #212121;
+	font-size: 1.5em;
 	padding: 2px;
 }
 
-.link:hover{
+#music-name:hover{
 	color: rgba(255,255,255,1);
 	text-decoration: none;
 	border-bottom: 3px solid rgba(0,0,0,0.3);
@@ -33,10 +30,10 @@
     transition: .2s;
 }
 
-.link:visited{
-	color: rgba(235,235,235,1);
+#music-name:visited{
+	/*color: rgba(235,235,235,1);*/
 }
 
-.link:active{
-	color: rgba(255,255,255,0);
+#music-name:active{
+	/*color: rgba(255,255,255,0);*/
 }

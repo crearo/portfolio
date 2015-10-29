@@ -8,7 +8,7 @@ from wtforms import TextField, TextAreaField, SubmitField
 from wtforms.validators import Required
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///me2.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///me3.db'
 app.config['SECRET_KEY'] = 'HALO'
 
 db = SQLAlchemy(app)
@@ -17,6 +17,7 @@ auth = HTTPBasicAuth()
 class Music(db.Model):
 	id = db.Column(db.Integer, primary_key = True, autoincrement = True)
 	m_name = db.Column(db.String)
+	# m_artist = db.Column(db.String)
 	m_link = db.Column(db.String)
 	m_text = db.Column(db.Text)
 	m_date = db.Column(db.String)
@@ -95,8 +96,10 @@ class Project(db.Model):
 	p_image2 = db.Column(db.String)
 	p_image3 = db.Column(db.String)
 	p_weight = db.Column(db.Integer)
+	p_status = db.Column(db.String)
+	p_tech_used = db.Column(db.String)
 
-	def __init__(self, p_name,p_category,p_date,p_short,p_description,p_link,p_image1,p_image2,p_image3,p_weight):
+	def __init__(self, p_name,p_category,p_date,p_short,p_description,p_link,p_image1,p_image2,p_image3,p_weight, p_status, p_tech_used):
 		self.p_name = p_name
 		self.p_category = p_category
 		self.p_date = p_date
@@ -107,6 +110,8 @@ class Project(db.Model):
 		self.p_image2 = p_image2
 		self.p_image3 = p_image3
 		self.p_weight = p_weight
+		self.p_status = p_status
+		self.p_tech_used = p_tech_used
 
 @app.route("/")
 def root():
@@ -125,13 +130,14 @@ def home():
 def portfolio():
 	jobs = Job.query.all()
 	edus = Eduaction.query.all()
+	projects = Project.query.all()
 
 	color = 'blue'
 	title = "Portfolio"
 	titleback = "CV"
 	subtitle = "A log of my perpetually increasing list of projects."
 	subcontent = "I could have made a fancy resume here, listing my work-exs, education history, but that's boring and we've got LinkedIn for that. This is a log of projects I've worked on indepenently, with organizations, and in my university."
-	return render_template('portfolio.html', jobs = jobs, edus = edus, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
+	return render_template('portfolio.html', projects = projects, jobs = jobs, edus = edus, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
 
 
 @app.route('/code')

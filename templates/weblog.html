@@ -2,13 +2,20 @@
 
 {% block body %}
 
-<div class="row">
+<br>
 
-	<button type="button" class="btn btn-primary">Randomize List</button>
-	<button type="button" class="btn btn-success">Read Random</button>
-	<button type="button" class="btn btn-warning">My Favorites</button>
+<div class="container-fluid">
 
-</div>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2 text-center">
+
+			<a class="button primary-blue" href="#">RANDOMIZE LIST</a>
+			<a class="button primary-green" href="#">Read Any One</a>
+			<a class="button primary-yellow" href="#">My Favorites</a>
+
+		</div>
+	</div>
+
 {% for weblog in weblogs %}
 <div class="row">
 	<div id="weblog-box" class="col-md-6 col-md-offset-3">
@@ -17,6 +24,8 @@
 		</div>
 		<p id="weblog-text"> {{ weblog.w_content|truncate(250) }}</p>
 	</div>
+</div>
+
 </div>
 {% endfor %}
 

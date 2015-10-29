@@ -11,7 +11,7 @@
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 </head>
-<body>
+<body> 
   <section>
     {% if color == 'red' %}
       <div id="navbar-red" class="container-fluid">
@@ -25,6 +25,8 @@
     <div id="navbar-yellow" class="container-fluid">
     {% elif color == 'dark' %}
     <div id="navbar-dark" class="container-fluid">
+    {% elif color == 'purple' %}
+    <div id="navbar-purple" class="container-fluid">
     {% else %}
       <div id="navbar-blue" class="container-fluid">
     {% endif %}
@@ -70,7 +72,7 @@
     </div>
   </div>
 </section>
-<div style="padding:10px;"></div>
+<!-- <div style="padding:10px;"></div> -->
 {% block body %}
 
 <!-- BLOCK BODY GOES HERE -->

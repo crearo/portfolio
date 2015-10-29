@@ -100,7 +100,7 @@ def portfolio():
 	jobs = Job.query.all()
 	edus = Eduaction.query.all()
 
-	color = 'dark'
+	color = 'purple'
 	title = "Portfolio"
 	titleback = "CV"
 	subtitle = "The fox crossed the way"

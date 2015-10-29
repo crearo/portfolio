@@ -40,6 +40,13 @@ body {
 	color: white;
 }
 
+#navbar-purple{
+	background-color: #1abc9c;
+	height: 400px;
+	padding: 10px;
+	color: white;
+}
+
 #navbar-list{
 	margin-top: 20px;
 }

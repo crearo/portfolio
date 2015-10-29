@@ -1,4 +1,5 @@
 #work-box-title{
+
 	padding: 10px;
 	margin: 10px;
 }
@@ -48,129 +49,150 @@
 .work-circle{
 
 	border-radius: 50%;
-    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
-    width: 36px;
-    height: 36px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 8px;
-    padding-right: 8px;
+	behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+	width: 36px;
+	height: 36px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 8px;
+	padding-right: 8px;
 
-    background: #fff;
-    border: 2px solid #666;
-    color: #666;
-    text-align: center;
+	background: #fff;
+	border: 2px solid #666;
+	color: #666;
+	text-align: center;
 
-    font: 15px Arial, sans-serif;
+	font: 15px Arial, sans-serif;
 }
 
 .box-block {
-  margin-bottom: 30px;
-  margin-top: 15px;
+	margin-bottom: 30px;
+	margin-top: 15px;
 }
 
 #resume .time-line .item-event {
-  position: relative;
-  padding-left: 15px;
-  border-left: 3px solid #e1e1e1;
-  margin-left: 25px;
-  padding-bottom: 30px;
-  padding-top: 10px;
+	position: relative;
+	padding-left: 15px;
+	border-left: 3px solid #e1e1e1;
+	margin-left: 25px;
+	padding-bottom: 30px;
+	padding-top: 10px;
 }
 #resume .time-line .item-event.current .date {
-  border: 5px solid #4B6F78;
-  background: #4B6F78;
+	border: 5px solid #4B6F78;
+	background: #4B6F78;
 }
 #resume .time-line .item-event.current .event-content {
-  border: 3px solid #4B6F78;
+	border: 3px solid #4B6F78;
 }
 #resume .time-line .item-event .date {
-  position: absolute;
-  left: -32px;
-  top: -10px;
-  border-radius: 50%;
-  background: #63A4B5;
-  display: inline-block;
-  padding: 12px 7px;
-  text-align: center;
-  z-index: 2;
-  font-weight: bold;
-  color: white;
-  font-size: 12px;
-  border: 5px solid #fff;
+	position: absolute;
+	left: -32px;
+	top: -10px;
+	border-radius: 50%;
+	background: #63A4B5;
+	display: inline-block;
+	padding: 12px 7px;
+	text-align: center;
+	z-index: 2;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+	border: 5px solid #fff;
 }
 #resume .time-line .item-event .event-content {
-  position: relative;
-  border: 3px solid #e1e1e1;
-  padding: 10px 20px;
-  border-radius: 0 10px 10px;
+	position: relative;
+	border: 3px solid #e1e1e1;
+	padding: 10px 20px;
+	border-radius: 0 10px 10px;
 }
 #resume .time-line .item-event .event-content h5 {
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #63A4B5;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #63A4B5;
 }
 
 .title {
-  border-bottom: 1px solid #ddd;
-  position: relative;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
-  font-size: 18px;
-  font-weight: 700;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: 700;
 }
 
 .title .icn-title {
-  margin-right: 5px;
-  display: inline-block;
-  padding-bottom: 10px;
-  position: absolute;
-  left: 0;
-  background: #249EBD;
-  padding: 10px;
-  color: white;
-  min-width: 40px;
-  text-align: center;
-  top: -6px;
-  min-height: 40px;
-  padding-bottom: 13px;
-  border-radius: 5px;
+	margin-right: 5px;
+	display: inline-block;
+	padding-bottom: 10px;
+	position: absolute;
+	left: 0;
+	background: #249EBD;
+	padding: 10px;
+	color: white;
+	min-width: 40px;
+	text-align: center;
+	top: -6px;
+	min-height: 40px;
+	padding-bottom: 13px;
+	border-radius: 5px;
 }
 .title .icn-title:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  margin-left: -10px;
-  bottom: -10px;
-  border-top: 10px solid #249EBD;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
+	content: "";
+	position: absolute;
+	left: 50%;
+	margin-left: -10px;
+	bottom: -10px;
+	border-top: 10px solid #249EBD;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
 }
 
 .title.with-icon {
-  padding-left: 50px;
+	padding-left: 50px;
 }
 .btn-flat {
-  background: #ba4e4e;
-  color: white;
-  font-weight: 300;
-  padding-left: 20px;
-  border-radius: 5px;
-  margin-top: 5px;
-  padding-right: 20px;
-  box-shadow: 0 5px 0 #a63838;
-  position: relative;
-  margin-bottom: 5px;
+	background: #ba4e4e;
+	color: white;
+	font-weight: 300;
+	padding-left: 20px;
+	border-radius: 5px;
+	margin-top: 5px;
+	padding-right: 20px;
+	box-shadow: 0 5px 0 #a63838;
+	position: relative;
+	margin-bottom: 5px;
 }
 .btn-flat:hover,
 .btn-flat:focus,
 .btn-flat.active,
 .btn-flat.style2:hover {
-  color: white;
-  bottom: -5px;
-  box-shadow: none;
+	color: white;
+	bottom: -5px;
+	box-shadow: none;
 }
 .btn-flat.style2 {
-  background: #63A4B5;
-  box-shadow: 0 5px 0 #5b94a3;
+	background: #63A4B5;
+	box-shadow: 0 5px 0 #5b94a3;
 }
+
+.section-title { 
+position: relative; margin-bottom: 1em; font-size: 1em; font-weight: 400; 
+}
+.section-title:before { 
+content: ""; position:absolute; top: 50%; left: 0; width: 100%; border-bottom: 4px solid #EAEEEF; 
+}
+.section-title span { 
+position:relative; display: inline-block; padding-right: 1.4em; background: #fff; 
+}
+
+.progress {
+    position: relative;
+}
+
+.progress span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    color: #337AB7;
+ }

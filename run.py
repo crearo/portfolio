@@ -82,6 +82,32 @@ class Eduaction(db.Model):
 		self.e_enddate = e_enddate
 		self.e_link = e_link
 
+
+class Project(db.Model):
+	id = db.Column(db.Integer, primary_key = True, autoincrement = True)
+	p_name = db.Column(db.String)
+	p_category = db.Column(db.String)
+	p_date = db.Column(db.String)
+	p_short = db.Column(db.String)
+	p_description = db.Column(db.String)
+	p_link = db.Column(db.String)
+	p_image1 = db.Column(db.String)
+	p_image2 = db.Column(db.String)
+	p_image3 = db.Column(db.String)
+	p_weight = db.Column(db.Integer)
+
+	def __init__(self, p_name,p_category,p_date,p_short,p_description,p_link,p_image1,p_image2,p_image3,p_weight):
+		self.p_name = p_name
+		self.p_category = p_category
+		self.p_date = p_date
+		self.p_short = p_short
+		self.p_description = p_description
+		self.p_link = p_link
+		self.p_image1 = p_image1
+		self.p_image2 = p_image2
+		self.p_image3 = p_image3
+		self.p_weight = p_weight
+
 @app.route("/")
 def root():
 	return redirect(url_for('home'))
@@ -91,8 +117,8 @@ def home():
 	color = 'blue'
 	title = "Rishabh Bhardwaj"
 	titleback = "RB"
-	subtitle = "Coder | Maker | Enthusiast | Developer"
-	subcontent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+	subtitle = "Coder | Maker | Athlete | Developer"
+	subcontent = "Hi there! Polyglot full-stack developer? That's the aim. Steadily reaching there. I'm pursuing my undergrad degree in CS at DA-IICT, and am in my Junior year. I love keeping myself super busy, making things people will use, running, and playing football. Oh and FIFA too :D"
 	return render_template('home.html',color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
 
 @app.route('/portfolio')
@@ -100,11 +126,11 @@ def portfolio():
 	jobs = Job.query.all()
 	edus = Eduaction.query.all()
 
-	color = 'purple'
+	color = 'blue'
 	title = "Portfolio"
 	titleback = "CV"
-	subtitle = "The fox crossed the way"
-	subcontent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+	subtitle = "A log of my perpetually increasing list of projects."
+	subcontent = "I could have made a fancy resume here, listing my work-exs, education history, but that's boring and we've got LinkedIn for that. This is a log of projects I've worked on indepenently, with organizations, and in my university."
 	return render_template('portfolio.html', jobs = jobs, edus = edus, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
 
 
@@ -113,8 +139,8 @@ def code():
 	color = 'green'
 	title = "Code"
 	titleback = "C"
-	subtitle = "The fox crossed the way"
-	subcontent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+	subtitle = "I love making things. And code allows me to do so in the laziest way possible. Laptop, bed, and some coffee."
+	subcontent = "Coding has become a major part of my life. Majorly because code just makes life so much easier. Whether it's a mobile app, an arduino based room locker, or a simple shell script to boot your laptop faster. Oh, and partly because this is the only way I see myself making money to fund my bucketlist."
 	return render_template('code.html', color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
 
 @app.route('/weblog')
@@ -126,7 +152,7 @@ def weblog():
 	title = "WebLog"
 	titleback = "W"
 	subtitle = "A log of random musings, notes and things I find interesting"
-	subcontent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+	subcontent = "Most of my notes are short paragraphs (and not super long blogs that no one reads) on ideas and thoughts that cross my mind, fun observations about people and my surroundings, songs, travel, and sport."
 	return render_template('weblog.html', weblogs = weblogs, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
 
 @app.route('/music')
@@ -138,7 +164,7 @@ def music():
 	title = "Music"
 	titleback = "M"
 	subtitle = "A Music Log"
-	subcontent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+	subcontent = "Without songs, you simply cannot spend half your day on a laptop writing code. So here's a throwback to the songs I love. - Some I am currently listening to, some I had a phase of, and some that'll remain in my playlist even when Im 70."
 	return render_template('music.html', songs = songs, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
 
 @app.route('/contact')

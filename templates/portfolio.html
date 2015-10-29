@@ -4,165 +4,78 @@
 
 <div class="container-fluid">
 	<div class="row">
-		<div style="background-color:white; box-shadow: 0px 20px 20px #888888;" class="col-md-8 col-md-offset-2">
+		<div class="col-md-10 col-md-offset-1">
 			<div id='resume' class="tab-pane">
 				<div class="body-content">
 					<div class="row">
 						<div class="col-md-8">
+							<!-- PROJECTS TIMELINE -->
 
-							<!-- START OF WORK HISTORY -->
-							<h3 class="title with-icon"><span class="glyphicon glyphicon-plane icn-title"></span>Work</h3>
-							<div class="box-block">
-								<div class="time-line">
-									{% for i in range(0,jobs|length) %}
-									{% if i == 0 %}
-										<div class="item-event current">
-									{% else %}
-										<div class="item-event">
-									{% endif %}
-										<span class="date">{{ jobs[i].j_startdate }}</span>
-										<div class="event-content">
-											<h4>{{ jobs[i].j_title }}</h4>
-											<h5>{{ jobs[i].j_company }}</h5>
-											<p> {{ jobs[i].j_description }}</p>
-										</div>
-									</div>
-									
-									{% endfor %}
-								</div>
-							</div>
-							<!-- END OF WORK HISTORY -->
-
-							<!-- START OF EDU HISTORY -->
-							<h3 class="title with-icon"><span class="glyphicon glyphicon-plane icn-title"></span>Education</h3>
-							<div class="box-block">
-								<div class="time-line">
-									{% for i in range(0,edus|length) %}
-									{% if i == 0 %}
-										<div class="item-event current">
-									{% else %}
-										<div class="item-event">
-									{% endif %}
-										<span class="date">{{ edus[i].e_startdate }}</span>
-										<div class="event-content">
-											<h4>{{ edus[i].e_name }}</h4>
-											<h5>{{ edus[i].e_degree }} | {{ edus[i].e_major }}</h5>
-											<p> {{ edus[i].e_description }}</p>
-										</div>
-									</div>
-									{% endfor %}
-								</div>
-							</div>
-							<!-- END OF EDU HISTORY -->
-
-							<!-- START OF RANKS -->
-							<h3 class="title with-icon"><span class="glyphicon glyphicon-plane icn-title"></span>Scores</h3>
-							<div class="box-block">
-								<div class="time-line">
-									<div class="item-event">
-										<span class="date">2013</span>
-										<div class="event-content">
-											<h4>JEE Mains | 5,402</h4>
-											<h5>All India Exam</h5>
-											<p>All India top 0.5 percentile.</p>
-										</div>
-									</div>
-									<div class="item-event">
-										<span class="date">2013</span>
-										<div class="event-content">
-											<h4>JEE Advance | 9,666</h4>
-											<h5>All India Exam</h5>
-											<p>Top 10,000 of the one of the world's toughest engineering entrance exams.</p>
+							<section id="resume" class="vs-current">
+								<div class="content">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="timeline">
+												<h2><i class="fa fa-flask"></i>Projects</h2>
+												<div class="event current"><span class="date">2012</span>
+													<h4>Front End Web Developer</h4>
+													<h5>PIXELWARS INC.</h5>
+													<p>I currently work for Pixelwars creative studio. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.
+													</p>
+												</div>
+												<div class="event "><span class="date">2010</span>
+													<h4>Web Developer</h4>
+													<h5>GOOGLE INC.</h5>
+													<p>I worked as a Web Developer at Google for 3 years. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.
+													</p>
+												</div>
+												<div class="event "><span class="date">2006</span>
+													<h4>Exclusive Author</h4>
+													<h5>ENVATO INC.</h5>
+													<p>I am an Elite Author at Envato. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.
+														I am an Elite Author at Envato. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.
+													</p>
+												</div>
+												<div class="event "><span class="date">2006</span>
+													<h4>Exclusive Author</h4>
+													<h5>ENVATO INC.</h5>
+													<p>I am an Elite Author at Envato. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.
+														I am an Elite Author at Envato. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.
+														I am an Elite Author at Envato. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.
+													</p>
+												</div>
+												<div class="event "><span class="date">2006</span>
+													<h4>Exclusive Author</h4>
+													<h5>ENVATO INC.</h5>
+													<p>I am an Elite Author at Envato. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.
+														I am an Elite Author at Envato. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.
+														I am an Elite Author at Envato. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.
+														I am an Elite Author at Envato. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.
+													</p>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<!-- END OF RANKS -->
-							
-
-
+							</section>
 						</div>
+
 						<div class="col-md-4">
+							<!-- SIDE DIVISION ON RIGHT  -->
 							<div class="box-block">
-						       <h3 class="title with-icon"><span class="glyphicon glyphicon-plane icn-title"></span> Download CV</h3>
-						        <div class="box-block">
-						          <p>A downloadable pdf of my CV.</p>
-						          <a href="#" class="btn btn-flat btn-block"><i class="fa fa-download"></i> Download</a>
-						        </div>
-						     </div>
-
-
-							<!-- Start Interests -->
-
-							<div class=" col-md-12">
-								<h2 class="section-title"><span><i class="fa icon-cog-1"></i>PROGRAMMING SKILLS</span></h2>
-								<div class="progress">
-								  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" 
-								  style="width:95%">
-								    Android 
-								  </div>
+								<h3 class="title with-icon"><span class="glyphicon glyphicon-plane icn-title"></span>LinkedIn</h3>
+								<div class="box-block">
+									<p>For my work experience, organizations I worked with, and education, head over to my LinkedIn.</p>
+									<a class="button primary-blue" href="#">Linked In</a>
 								</div>
-
-								<div class="progress">
-								  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" 
-								  style="width:80%">
-								    Java
-								  </div>
+							</div>
+							<div class="box-block">
+								<h3 class="title with-icon"><span class="glyphicon glyphicon-plane icn-title"></span> Download CV</h3>
+								<div class="box-block">
+									<p>You can also download my CV as a PDF for reference.</p>
+									<a class="button primary-green" href="#">DOWNLOAD CV</a>
 								</div>
-
-								<div class="progress">
-								  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" 
-								  style="width:75%">
-								    Python
-								  </div>
-								</div>
-
-								<div class="progress">
-								  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" 
-								  style="width:40%">
-								    Shell
-								  </div>
-								</div>
-
-								<div class="progress">
-								  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" 
-								  style="width:69%">
-								    HTML & CSS
-								  </div>
-								</div>
-
-								<h2 class="section-title"><span><i class="fa icon-cog-1"></i>LIFE SKILLS</span></h2>
-
-								<div class="progress">
-								  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" 
-								  style="width:90%">
-								    Language And Speech
-								  </div>
-								</div>
-
-								<div class="progress">
-								  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" 
-								  style="width:75%">
-								    Group Leading
-								  </div>
-								</div>
-
-								<div class="progress">
-								  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" 
-								  style="width:80%">
-								    Creative Thinking
-								  </div>
-								</div>
-
-								<div class="progress">
-								  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" 
-								  style="width:5%">
-								    <span>Singing</span>
-								  </div>
-								</div>
-
-							<!-- End Interests  -->
-
+							</div>
 						</div>
 					</div>
 				</div>
@@ -170,4 +83,75 @@
 		</div>
 	</div>
 </div>
+<!-- Start Interests -->
+
+<!-- 							<div class=" col-md-12">
+<h2 class="section-title"><span><i class="fa icon-cog-1"></i>PROGRAMMING SKILLS</span></h2>
+<div class="progress">
+<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" 
+style="width:95%">
+Android 
+</div>
+</div>
+
+<div class="progress">
+<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" 
+style="width:80%">
+Java
+</div>
+</div>
+
+<div class="progress">
+<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" 
+style="width:75%">
+Python
+</div>
+</div>
+
+<div class="progress">
+<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" 
+style="width:40%">
+Shell
+</div>
+</div>
+
+<div class="progress">
+<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" 
+style="width:69%">
+HTML & CSS
+</div>
+</div>
+
+<h2 class="section-title"><span><i class="fa icon-cog-1"></i>LIFE SKILLS</span></h2>
+
+<div class="progress">
+<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" 
+style="width:90%">
+Language And Speech
+</div>
+</div>
+
+<div class="progress">
+<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" 
+style="width:75%">
+Group Leading
+</div>
+</div>
+
+<div class="progress">
+<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" 
+style="width:80%">
+Creative Thinking
+</div>
+</div>
+
+<div class="progress">
+<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" 
+style="width:5%">
+<span>Singing</span>
+</div>
+</div>
+-->
+<!-- End Interests  -->
+
 {% endblock %}

@@ -5,7 +5,6 @@
 <br>
 
 <div class="container-fluid">
-
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2 text-center">
 
@@ -16,17 +15,24 @@
 		</div>
 	</div>
 
-{% for weblog in weblogs %}
-<div class="row">
-	<div id="weblog-box" class="col-md-6 col-md-offset-3">
-		<div style="text-align:center;">
-			<a class="link" id="weblog-name" href = {{ weblog.w_link }}>{{ weblog.w_title }}</a>
-		</div>
-		<p id="weblog-text"> {{ weblog.w_content|truncate(250) }}</p>
-	</div>
-</div>
 
-</div>
+	<div class="row">
+		<span id="weblog-title-text">WebLog</span>	
+	</div>
+
+{% for weblog in weblogs %}
+	<div class="row">
+		<div id="weblob-box" class="col-md-8 col-md-offset-2">
+			<div class="row">
+				<span id="weblog-date">{{ weblog.w_dateposted }}</span>
+			</div>
+			<div class="row">
+				<a class="link" id="weblog-name" href = {{ weblog.w_link }}>{{ weblog.w_title }}</a>
+			</div>
+		<hr>
+		</div>
+	</div>
 {% endfor %}
+</div>
 
 {% endblock %}

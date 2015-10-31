@@ -161,6 +161,18 @@ def weblog():
 	subcontent = "Most of my notes are short paragraphs (and not super long blogs that no one reads) on ideas and thoughts that cross my mind, fun observations about people and my surroundings, songs, travel, and sport."
 	return render_template('weblog.html', weblogs = weblogs, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
 
+@app.route('/weblog/<weblogno>')
+def weblog_ind(weblogno):
+	color = 'green'
+	title = "WebLog"
+	titleback = "W"
+	subtitle = "A log of random musings, notes and things I find interesting"
+	subcontent = "Most of my notes are short paragraphs (and not super long blogs that no one reads) on ideas and thoughts that cross my mind, fun observations about people and my surroundings, songs, travel, and sport."
+	weblog = Weblog.query.filter_by(id = weblogno).first()
+	if weblog != None:
+		return render_template('weblog_ind.html', weblog = weblog, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
+	else :
+		return '404'
 @app.route('/music')
 def music():
 

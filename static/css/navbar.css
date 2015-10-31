@@ -1,3 +1,8 @@
+@font-face{
+font-family: handwriting;
+src: url('../fonts/Handwritingfont.ttf');
+font-size: 10em;}
+
 body {
 	font-family: 'Montserrat', sans-serif;
 }

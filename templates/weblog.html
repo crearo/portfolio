@@ -27,12 +27,12 @@
 				<span id="weblog-date">{{ weblog.w_dateposted }}</span>
 			</div>
 			<div class="row">
-				<a class="link" id="weblog-name" href = {{ weblog.w_link }}>{{ weblog.w_title }}</a>
+				{% set nextlink = "weblog/" + weblog.id|string %}	
+				<a class="link" id="weblog-name" href = {{ nextlink }} >{{ weblog.w_title }}</a>
 			</div>
 		<hr>
 		</div>
 	</div>
 {% endfor %}
 </div>
-
 {% endblock %}

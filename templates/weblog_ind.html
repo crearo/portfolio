@@ -1,0 +1,32 @@
+{% extends "navbar.html" %}
+
+{% block body %}
+
+<br>
+
+<div class="container-fluid">
+	<div class="row">
+			<div class="text-center">
+				<a class="button primary-blue" href="#">NEXT</a>
+				<a class="button primary-yellow" href="#">PREVIOUS</a>
+
+			</div>
+		<div class="col-md-6 col-md-offset-2">
+			
+			<div class="row">
+				<span id="weblog-title">{{ weblog.w_title }}</span>	
+			</div>
+
+			<div class="row">
+					{{ weblog.w_content }}
+			</div>
+		</div>
+
+		<div class="col-md-2 col-md-offset-2">
+			<div class="box-block">
+				<p id="handwriting-span">I'm going to write some interesting things here.</p>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

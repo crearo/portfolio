@@ -5,6 +5,12 @@
 	margin-left: 4.3em;
 }
 
+#weblog-title{
+	color: #696969;
+	font-weight: 700;
+	font-size: 4em;
+}
+
 #weblog-name:link{
 	color: #8d8d8d;
 	margin-left: 0.5em;

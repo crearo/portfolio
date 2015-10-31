@@ -68,6 +68,7 @@
 .box-block {
 	margin-bottom: 30px;
 	margin-top: 15px;
+	font-family: handwriting;
 }
 
 .title {
@@ -150,12 +151,13 @@
 	box-shadow: 0 5px 0 #5b94a3;
 }
 
-
 .button {
 	display: inline-block;
 	position: relative;
-	padding: 1em 2em 1em;
-	font-size: 1em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	font-size: 2em;
+	font-family: handwriting;
 	text-transform: uppercase;
 	line-height: 1.2;
 	border: 0;
@@ -172,7 +174,10 @@
 	display: inline-block;
 	vertical-align: middle;
 	zoom: 1;
+}
 
+#handwriting-span{
+	font-size: 1.7em;
 }
 
 .button.primary-green:hover{
@@ -258,4 +263,17 @@ font-size: 22px; margin-right: 16px; line-height: 39px; text-align: center; colo
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-size: 2em;
+}
+
+#side-title{
+	font-size: 22px; 
+	margin-right: 16px;
+	line-height: 39px;
+	text-align: center; 
+	color: #B7C6C9;
+	background: #fff; 
+	border-radius: 50%; 
+	border: 4px solid #dde4e6; 
+	display: inline-block; 
+	width: 47px;	
 }

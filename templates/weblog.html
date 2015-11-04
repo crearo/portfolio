@@ -7,10 +7,10 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2 text-center">
-
-			<a class="button primary-blue" href="#">RANDOMIZE LIST</a>
-			<a class="button primary-green" href="#">Read Any One</a>
-			<a class="button primary-yellow" href="#">My Favorites</a>
+			<a class="button primary-blue" href="/weblog/random-list">RANDOMIZE LIST</a>
+			{% set randomlogid = '/weblog/'+ (weblogs|random).id|string %}
+			<a class="button primary-green" href={{randomlogid}}>Read Any One</a>
+			<a class="button primary-yellow" href="/weblog/favorites">My Favorites</a>
 
 		</div>
 	</div>

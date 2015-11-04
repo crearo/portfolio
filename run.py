@@ -2,6 +2,7 @@ from flask import Flask, jsonify, request, make_response
 from flask.ext.httpauth import HTTPBasicAuth
 from flask_sqlalchemy import SQLAlchemy
 from flask import render_template, redirect, url_for
+import random
 from socket import gethostname
 from flask.ext.wtf import Form 
 from wtforms import TextField, TextAreaField, SubmitField
@@ -149,41 +150,64 @@ def code():
 	subcontent = "Coding has become a major part of my life. Majorly because code just makes life so much easier. Whether it's a mobile app, an arduino based room locker, or a simple shell script to boot your laptop faster. Oh, and partly because this is the only way I see myself making money to fund my bucketlist."
 	return render_template('code.html', color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
 
-@app.route('/weblog')
-def weblog():
 
-	weblogs = Weblog.query.all()
-
-	color = 'dark'
-	title = "WebLog"
-	titleback = "W"
-	subtitle = "A log of random musings, notes and things I find interesting"
-	subcontent = "Most of my notes are short paragraphs (and not super long blogs that no one reads) on ideas and thoughts that cross my mind, fun observations about people and my surroundings, songs, travel, and sport."
-	return render_template('weblog.html', weblogs = weblogs, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
-
+@app.route('/weblog', defaults={'weblogno':None})
 @app.route('/weblog/<weblogno>')
 def weblog_ind(weblogno):
-	color = 'green'
-	title = "WebLog"
-	titleback = "W"
-	subtitle = "A log of random musings, notes and things I find interesting"
-	subcontent = "Most of my notes are short paragraphs (and not super long blogs that no one reads) on ideas and thoughts that cross my mind, fun observations about people and my surroundings, songs, travel, and sport."
-	weblog = Weblog.query.filter_by(id = weblogno).first()
-	if weblog != None:
-		return render_template('weblog_ind.html', weblog = weblog, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
-	else :
-		return '404'
-@app.route('/music')
-def music():
 
-	songs = Music.query.all()
+	weblogs = None
 
-	color = 'red'
-	title = "Music"
-	titleback = "M"
-	subtitle = "A Music Log"
-	subcontent = "Without songs, you simply cannot spend half your day on a laptop writing code. So here's a throwback to the songs I love. - Some I am currently listening to, some I had a phase of, and some that'll remain in my playlist even when Im 70."
-	return render_template('music.html', songs = songs, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
+	if weblogno == None:
+		weblogs = Weblog.query.all()
+
+	elif weblogno == 'random-list':
+		weblogs = Weblog.query.all()
+		random.shuffle(weblogs, random.random)
+
+	elif weblogno == 'favorites':
+		weblogs = Weblog.query.filter_by(w_weight = 1).all()
+	
+	if weblogs is not None:
+		# DISPLAY WEBLOG PAGE WITH SELECTED FILTERS
+		color = 'dark'
+		title = "WebLog"
+		titleback = "W"
+		subtitle = "A log of random musings, notes and things I find interesting"
+		subcontent = "Most of my notes are short paragraphs (and not super long blogs that no one reads) on ideas and thoughts that cross my mind, fun observations about people and my surroundings, songs, travel, and sport."
+		return render_template('weblog.html', weblogs = weblogs, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)		
+
+	else:
+		# DISPLAY INDIVIDUAL WEBLOG
+		color = 'green'
+		title = "WebLog"
+		titleback = "W"
+		subtitle = "A log of random musings, notes and things I find interesting"
+		subcontent = "Most of my notes are short paragraphs (and not super long blogs that no one reads) on ideas and thoughts that cross my mind, fun observations about people and my surroundings, songs, travel, and sport."
+		weblog = Weblog.query.filter_by(id = weblogno).first()
+		if weblog != None:
+			return render_template('weblog_ind.html', weblog = weblog, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
+		else :
+			return '404'
+
+@app.route('/music', defaults={'link':None})
+@app.route('/music/<link>')
+def music(link):
+	songs = None
+	if link == None:
+		songs = Music.query.all()
+	elif link == 'random-list':
+		songs = Music.query.all()
+		random.shuffle(songs, random.random)
+	elif link == 'favorites':
+		songs = Music.query.filter_by(m_weight = 1).all()
+	
+	if songs is not None:
+		color = 'red'
+		title = "Music"
+		titleback = "M"
+		subtitle = "A Music Log"
+		subcontent = "Without songs, you simply cannot spend half your day on a laptop writing code. So here's a throwback to the songs I love. - Some I am currently listening to, some I had a phase of, and some that'll remain in my playlist even when Im 70."
+		return render_template('music.html', 	songs = songs, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
 
 @app.route('/contact')
 def contact():

@@ -8,13 +8,15 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2 text-center">
 
-			<a class="button primary-blue" href="#">RANDOMIZE LIST</a>
-			<a class="button primary-green" href="#">Play Any One</a>
-			<a class="button primary-yellow" href="#">My Favorites</a>
+			<a class="button primary-blue" href="/music/random-list">RANDOMIZE LIST</a>
+			{% set randomSong = (songs|random).m_link %}
+			<a class="button primary-green" href={{randomSong}}>Play Any One</a>
+			<a class="button primary-yellow" href="/music/favorites">My Favorites</a>
 
 		</div>
 	</div>
 	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
 		{% for s in range(0, songs|length) %}
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
@@ -22,12 +24,30 @@
 					<div style="text-align:center;">
 						<a id="music-name" href = {{ songs[s].m_link }}>{{ songs[s].m_name }}</a>
 					</div>
-					<p id="music-text"> {{ songs[s].m_text|truncate(200) }}</p>
-					<a class="pull-right" onclick="displayMore(this)" id="read-more">Read More</a>
+					<p id="music-text"> {{ songs[s].m_text}}</p>
 				</div>	
 			</div>
 		</div>
 		{% endfor %}
+		</div>
+		<div class="col-md-2">
+			<div class="box-block">
+				<p id="handwriting-span">
+					You know what? I still can't figure out why there isnt a social connect for music.
+				</p>
+				<hr>
+				<p id="handwriting-span">
+					Like LinkedIn connects professionals, and Facebook connects friends, there should be a SongStory connecting people with similar tastes in Music.
+				</p>
+				<hr>
+				<p id="handwriting-span">
+					I can almost imagine where the startup would be placed in Silicon Valley's theme song.
+					<a href="{{ url_for('static', filename = 'images/sv.png') }}" height="100" width="260">[Silicon Valley reference!]</a>
+				</p>
+				<hr>
+			</div>
+
+		</div>
 	</div>
 </div>
 

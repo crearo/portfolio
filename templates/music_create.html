@@ -1,0 +1,32 @@
+{% extends "navbar.html" %}
+{% block body %}
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<h1>Add New Song</h1>
+				<form action="/music/create" method="post" name="login">
+				{{ form.hidden_tag() }}
+				<p>
+					Name of Song :<br>
+					{{ form.mf_name() }}<br>
+				</p>
+				<p>
+					Link to Song :<br>
+					{{ form.mf_link() }}<br>
+				</p>
+				<p>
+					Message :<br>
+					{{ form.mf_text() }}<br>
+				</p>
+				<p>
+					Weight :<br>
+					{{ form.mf_weight() }}<br>
+				</p>
+				<p><input type="submit" value="Submit"></p>
+				</form>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

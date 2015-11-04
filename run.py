@@ -2,11 +2,11 @@ from flask import Flask, jsonify, request, make_response
 from flask.ext.httpauth import HTTPBasicAuth
 from flask_sqlalchemy import SQLAlchemy
 from flask import render_template, redirect, url_for
-import random
+import random, time
 from socket import gethostname
 from flask.ext.wtf import Form 
-from wtforms import TextField, TextAreaField, SubmitField
-from wtforms.validators import Required
+from wtforms import StringField, TextField, TextAreaField, SubmitField, IntegerField
+from wtforms import validators
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///me3.db'
@@ -14,6 +14,8 @@ app.config['SECRET_KEY'] = 'HALO'
 
 db = SQLAlchemy(app)
 auth = HTTPBasicAuth()
+
+current_time_in_millis = lambda: int(round(time.time() * 1000))
 
 class Music(db.Model):
 	id = db.Column(db.Integer, primary_key = True, autoincrement = True)
@@ -114,6 +116,14 @@ class Project(db.Model):
 		self.p_status = p_status
 		self.p_tech_used = p_tech_used
 
+class MusicForm(Form):
+	mf_name = StringField('mf_name', validators=[validators.required()])
+	mf_link = StringField('mf_link', validators=[validators.required()])
+	mf_text = TextAreaField('mf_text', validators=[validators.required(),validators.optional()])
+	mf_weight = IntegerField('mf_weight', validators=[validators.required()])
+
+
+
 @app.route("/")
 def root():
 	return redirect(url_for('home'))
@@ -189,9 +199,10 @@ def weblog_ind(weblogno):
 		else :
 			return '404'
 
-@app.route('/music', defaults={'link':None})
-@app.route('/music/<link>')
+@app.route('/music', defaults={'link':None}, methods = ['GET', 'POST'])
+@app.route('/music/<link>', methods = ['GET', 'POST'])
 def music(link):
+	
 	songs = None
 	if link == None:
 		songs = Music.query.all()
@@ -201,6 +212,17 @@ def music(link):
 	elif link == 'favorites':
 		songs = Music.query.filter_by(m_weight = 1).all()
 	
+	elif link == 'create':
+		form = MusicForm()
+		if request.method == 'POST':
+			if form.validate_on_submit():
+				music = Music(form.mf_name.data,form.mf_link.data,form.mf_text.data, current_time_in_millis())
+				db.session.add(music)
+				db.session.commit()
+				return redirect(url_for('music', link = None))
+		else:
+			return render_template("music_create.html", form = form)
+
 	if songs is not None:
 		color = 'red'
 		title = "Music"

@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request, make_response, Response
+from flask import Flask, jsonify, request, make_response, Response, flash
 from flask.ext.httpauth import HTTPBasicAuth
 from flask_sqlalchemy import SQLAlchemy
 from flask import render_template, redirect, url_for
@@ -9,14 +9,22 @@ from wtforms import StringField, TextField, TextAreaField, SubmitField, IntegerF
 from wtforms import validators
 from functools import wraps
 import re, json
+from flask.ext.mail import Message, Mail
 
-
+mail = Mail()
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///me5.db'
 app.config['SECRET_KEY'] = 'HALO'
 
+app.config["MAIL_SERVER"] = "smtp.gmail.com"
+app.config["MAIL_PORT"] = 465
+app.config["MAIL_USE_SSL"] = True
+app.config["MAIL_USERNAME"] = 'androrish@gmail.com'
+app.config["MAIL_PASSWORD"] = '!ntOthEwilD'
+
 db = SQLAlchemy(app)
 auth = HTTPBasicAuth()
+mail.init_app(app)
 
 current_time_in_millis = lambda: int(round(time.time() * 1000))
 
@@ -57,6 +65,11 @@ class MusicForm(Form):
 	mf_link = StringField('mf_link', validators=[validators.required()])
 	mf_text = TextAreaField('mf_text', validators=[validators.required(),validators.optional()])
 	mf_weight = IntegerField('mf_weight', validators=[validators.required()])
+
+class ContactForm(Form):
+	c_name = StringField('c_name', validators=[validators.required()])
+	c_email = StringField('c_email', validators=[validators.required()])
+	c_msg = TextAreaField('c_msg', validators=[validators.required()])
 
 @app.route("/")
 def root():
@@ -178,14 +191,27 @@ def music(link):
 		subcontent = "Without songs, you simply cannot spend half your day on a laptop writing code. So here's a throwback to the songs I love. - Some I am currently listening to, some I had a phase of, and some that'll remain in my playlist even when Im 70."
 		return render_template('music.html', 	songs = songs, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
 
-@app.route('/contact')
+@app.route('/contact', methods = ['POST', 'GET'])
 def contact():
+	form = ContactForm()
 	color = 'orange'
 	title = "Contact"
 	titleback = "C"
 	subtitle = "Let's get in touch"
 	subcontent = "I love meeting new people and working on amazing things. If you'd like to work on a project with me, or get to know more about the work I do, do drop me a message. "
-	return render_template('contact.html', color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
+
+	if request.method == 'POST':
+		if form.validate() == False:
+			flash('All fields are required.')
+			return render_template('contact.html', form = form, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
+		else:
+			msg = Message("Great Website Man!", sender='androrish@gmail.com', recipients=['bhardwaj.rish@gmail.com'])
+			msg.body = """ From: %s <%s> %s """ % (form.c_name.data, form.c_email.data, form.c_msg.data)
+			mail.send(msg)
+			form = ContactForm()
+			return render_template('contact.html', success=True, form = form, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
+	
+	return render_template('contact.html', form = form, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
 
 if __name__ == '__main__':
 	db.create_all()

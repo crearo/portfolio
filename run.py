@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request, make_response
+from flask import Flask, jsonify, request, make_response, Response
 from flask.ext.httpauth import HTTPBasicAuth
 from flask_sqlalchemy import SQLAlchemy
 from flask import render_template, redirect, url_for
@@ -7,6 +7,8 @@ from socket import gethostname
 from flask.ext.wtf import Form 
 from wtforms import StringField, TextField, TextAreaField, SubmitField, IntegerField
 from wtforms import validators
+from functools import wraps
+
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///me3.db'
@@ -16,6 +18,23 @@ db = SQLAlchemy(app)
 auth = HTTPBasicAuth()
 
 current_time_in_millis = lambda: int(round(time.time() * 1000))
+
+def check_auth(username, password):
+	return username == 'rish' and password == 'kidinjp2'
+
+def authenticate():
+	return Response('Could not verify your access level for that URL.\n'
+    'You have to login with proper credentials', 401,
+    {'WWW-Authenticate': 'Basic realm="Login Required"'})
+
+def requires_auth(f):
+	@wraps(f)
+	def decorated(*args, **kwargs):
+		auth = request.authorization
+		if not auth or not check_auth(auth.username, auth.password):
+			return authenticate()
+		return f(*args, **kwargs)
+	return decorated
 
 class Music(db.Model):
 	id = db.Column(db.Integer, primary_key = True, autoincrement = True)
@@ -122,7 +141,12 @@ class MusicForm(Form):
 	mf_text = TextAreaField('mf_text', validators=[validators.required(),validators.optional()])
 	mf_weight = IntegerField('mf_weight', validators=[validators.required()])
 
-
+class WeblogForm(Form):
+	wf_title = StringField('wf_name', validators=[validators.required()])
+	wf_link = StringField('wf_link', validators=[validators.required()])
+	wf_content = TextAreaField('wf_content', validators=[validators.required(),validators.optional()])
+	wf_category = StringField('wf_category', validators=[validators.required()])
+	wf_weight =  IntegerField('wf_weight', validators=[validators.required()])
 
 @app.route("/")
 def root():
@@ -199,10 +223,40 @@ def weblog_ind(weblogno):
 		else :
 			return '404'
 
+
+@app.route('/add/<addwhat>', methods = ['POST', 'GET'])
+@requires_auth
+def addContent(addwhat):
+	if addwhat == 'song' or addwhat == 'music':
+		form = MusicForm()
+		if request.method == 'POST':
+			if form.validate_on_submit():
+				music = Music(form.mf_name.data,form.mf_link.data,form.mf_text.data, current_time_in_millis())
+				db.session.add(music)
+				db.session.commit()
+				return redirect(url_for('music', link = None))
+			else :
+				return 'invalid details entered'
+		else:
+			return render_template("music_create.html", form = form)
+
+	if addwhat == 'weblog':
+		form = WeblogForm()
+		if request.method == 'POST':
+			if form.validate_on_submit():
+				
+				weblog = Weblog(form.wf_title.data, form.wf_link.data, form.wf_content.data, current_time_in_millis(), form.wf_category.data, form.wf_weight.data)
+				db.session.add(weblog)
+				db.session.commit()
+				return redirect(url_for('weblog_ind', weblogno = None))
+			else :
+				return 'invalid details entered'
+		else:
+			return render_template('weblog_create.html', form = form)	 	
+	
 @app.route('/music', defaults={'link':None}, methods = ['GET', 'POST'])
 @app.route('/music/<link>', methods = ['GET', 'POST'])
 def music(link):
-	
 	songs = None
 	if link == None:
 		songs = Music.query.all()
@@ -212,17 +266,6 @@ def music(link):
 	elif link == 'favorites':
 		songs = Music.query.filter_by(m_weight = 1).all()
 	
-	elif link == 'create':
-		form = MusicForm()
-		if request.method == 'POST':
-			if form.validate_on_submit():
-				music = Music(form.mf_name.data,form.mf_link.data,form.mf_text.data, current_time_in_millis())
-				db.session.add(music)
-				db.session.commit()
-				return redirect(url_for('music', link = None))
-		else:
-			return render_template("music_create.html", form = form)
-
 	if songs is not None:
 		color = 'red'
 		title = "Music"

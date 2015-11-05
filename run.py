@@ -52,63 +52,11 @@ class Music(db.Model):
 		self.m_date = m_date
 		self.m_weight = m_weight
 
-class Weblog(db.Model):
-	id = db.Column(db.Integer, primary_key = True, autoincrement = True)
-	w_title = db.Column(db.String)
-	w_content = db.Column(db.String)
-	w_dateposted = db.Column(db.String)
-	w_category = db.Column(db.String)
-	w_weight = db.Column(db.Integer)
-	w_visible = db.Column(db.String)
-
-	def __init__(self, w_title, w_content, w_dateposted, w_category,w_weight, w_visible):
-		self.w_title = w_title
-		self.w_content = w_content
-		self.w_dateposted = w_dateposted
-		self.w_category = w_category
-		self.w_weight = w_weight
-		self.w_visible = w_visible
-
-class Project(db.Model):
-	id = db.Column(db.Integer, primary_key = True, autoincrement = True)
-	p_name = db.Column(db.String)
-	p_category = db.Column(db.String)
-	p_date = db.Column(db.String)
-	p_short = db.Column(db.String)
-	p_description = db.Column(db.String)
-	p_link = db.Column(db.String)
-	p_image1 = db.Column(db.String)
-	p_image2 = db.Column(db.String)
-	p_image3 = db.Column(db.String)
-	p_weight = db.Column(db.Integer)
-	p_status = db.Column(db.String)
-	p_tech_used = db.Column(db.String)
-
-	def __init__(self, p_name,p_category,p_date,p_short,p_description,p_link,p_image1,p_image2,p_image3,p_weight, p_status, p_tech_used):
-		self.p_name = p_name
-		self.p_category = p_category
-		self.p_date = p_date
-		self.p_short = p_short
-		self.p_description = p_description
-		self.p_link = p_link
-		self.p_image1 = p_image1
-		self.p_image2 = p_image2
-		self.p_image3 = p_image3
-		self.p_weight = p_weight
-		self.p_status = p_status
-		self.p_tech_used = p_tech_used
-
 class MusicForm(Form):
 	mf_name = StringField('mf_name', validators=[validators.required()])
 	mf_link = StringField('mf_link', validators=[validators.required()])
 	mf_text = TextAreaField('mf_text', validators=[validators.required(),validators.optional()])
 	mf_weight = IntegerField('mf_weight', validators=[validators.required()])
-
-class WeblogForm(Form):
-	wf_title = StringField('wf_name', validators=[validators.required()])
-	wf_content = StringField('wf_content', validators=[validators.required()])
-	wf_category = StringField('wf_category', validators=[validators.required()])
-	wf_weight =  IntegerField('wf_weight', validators=[validators.required()])
 
 @app.route("/")
 def root():
@@ -210,23 +158,6 @@ def addContent(addwhat):
 		else:
 			return render_template("music_create.html", form = form)
 
-	if addwhat == 'weblog':
-		form = WeblogForm()
-		if request.method == 'POST':
-			if form.validate_on_submit():
-				
-				if len(Weblog.query.filter_by(w_title = form.wf_title.data).all()) is not 0:
-					return 'post with same name already exists'
-
-				weblog = Weblog(form.wf_title.data, form.wf_content.data, current_time_in_millis(), form.wf_category.data, form.wf_weight.data, '1')
-				db.session.add(weblog)
-				db.session.commit()
-				return redirect(url_for('weblog_ind', weblogno = None))
-			else :
-				return 'invalid details entered'
-		else:
-			return render_template('weblog_create.html', form = form)	 	
-	
 @app.route('/music', defaults={'link':None}, methods = ['GET', 'POST'])
 @app.route('/music/<link>', methods = ['GET', 'POST'])
 def music(link):
@@ -255,16 +186,6 @@ def contact():
 	subtitle = "Let's get in touch"
 	subcontent = "I love meeting new people and working on amazing things. If you'd like to work on a project with me, or get to know more about the work I do, do drop me a message. "
 	return render_template('contact.html', color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
-
-@app.route('/edit/<edittype>/<number>')
-@requires_auth
-def editContent(edittype, number):
-	form = WeblogForm()
-	if edittype == 'weblog':
-		weblog = Weblog.query.filter_by(id = number).first()
-		print weblog.w_title, weblog.w_content, weblog.w_category, weblog.w_weight
-		return render_template('weblog_create.html', form = form, wf_title_value = weblog.w_title, wf_content_value = weblog.w_content, wf_category_value = weblog.w_category ,wf_weight_value = weblog.w_weight)
-	return 'okay'
 
 if __name__ == '__main__':
 	db.create_all()

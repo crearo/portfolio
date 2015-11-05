@@ -8,11 +8,11 @@ from flask.ext.wtf import Form
 from wtforms import StringField, TextField, TextAreaField, SubmitField, IntegerField
 from wtforms import validators
 from functools import wraps
-import re
+import re, json
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///me3.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///me5.db'
 app.config['SECRET_KEY'] = 'HALO'
 
 db = SQLAlchemy(app)
@@ -40,16 +40,17 @@ def requires_auth(f):
 class Music(db.Model):
 	id = db.Column(db.Integer, primary_key = True, autoincrement = True)
 	m_name = db.Column(db.String)
-	# m_artist = db.Column(db.String)
 	m_link = db.Column(db.String)
 	m_text = db.Column(db.Text)
 	m_date = db.Column(db.String)
+	m_weight = db.Column(db.Integer)
 
-	def __init__(self, m_name, m_link, m_text, m_date):
+	def __init__(self, m_name, m_link, m_text, m_date, m_weight):
 		self.m_name = m_name
 		self.m_link = m_link
 		self.m_text = m_text
 		self.m_date = m_date
+		self.m_weight = m_weight
 
 class Weblog(db.Model):
 	id = db.Column(db.Integer, primary_key = True, autoincrement = True)
@@ -58,13 +59,15 @@ class Weblog(db.Model):
 	w_dateposted = db.Column(db.String)
 	w_category = db.Column(db.String)
 	w_weight = db.Column(db.Integer)
+	w_visible = db.Column(db.String)
 
-	def __init__(self, w_title, w_content, w_dateposted, w_category,w_weight):
+	def __init__(self, w_title, w_content, w_dateposted, w_category,w_weight, w_visible):
 		self.w_title = w_title
 		self.w_content = w_content
 		self.w_dateposted = w_dateposted
 		self.w_category = w_category
 		self.w_weight = w_weight
+		self.w_visible = w_visible
 
 class Project(db.Model):
 	id = db.Column(db.Integer, primary_key = True, autoincrement = True)
@@ -122,15 +125,16 @@ def home():
 
 @app.route('/portfolio')
 def portfolio():
-	projects = Project.query.all()
 
+	projectsFile = app.open_resource('static/projects.json')
+	projects = json.loads(projectsFile.read())['projects']
+	
 	color = 'blue'
 	title = "Portfolio"
 	titleback = "CV"
 	subtitle = "A log of my perpetually increasing list of projects."
 	subcontent = "I could have made a fancy resume here, listing my work-exs, education history, but that's boring and we've got LinkedIn for that. This is a log of projects I've worked on indepenently, with organizations, and in my university."
 	return render_template('portfolio.html', projects = projects, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
-
 
 @app.route('/code')
 def code():
@@ -148,15 +152,23 @@ def weblog_ind(weblogno):
 	weblogs = None
 
 	if weblogno == None:
-		weblogs = Weblog.query.all()
+		#weblogs = Weblog.query.all()
+		weblogsFile = app.open_resource('static/weblogs.json')
+		weblogs = json.loads(weblogsFile.read())['weblogs']
 
 	elif weblogno == 'random-list':
-		weblogs = Weblog.query.all()
+		weblogsFile = app.open_resource('static/weblogs.json')
+		weblogs = json.loads(weblogsFile.read())['weblogs']
 		random.shuffle(weblogs, random.random)
 
 	elif weblogno == 'favorites':
-		weblogs = Weblog.query.filter_by(w_weight = 1).all()
-	
+		weblogs = []
+		weblogsFile = app.open_resource('static/weblogs.json')
+		weblogs_temp = json.loads(weblogsFile.read())['weblogs']
+		for w in weblogs_temp :
+			if w['w_weight'] is 1 :
+				weblogs.append(w)
+
 	if weblogs is not None:
 		# DISPLAY WEBLOG PAGE WITH SELECTED FILTERS
 		color = 'dark'
@@ -173,11 +185,13 @@ def weblog_ind(weblogno):
 		titleback = "W"
 		subtitle = "A log of random musings, notes and things I find interesting"
 		subcontent = "Most of my notes are short paragraphs (and not super long blogs that no one reads) on ideas and thoughts that cross my mind, fun observations about people and my surroundings, songs, travel, and sport."
-		weblog = Weblog.query.filter_by(id = weblogno).first()
-		if weblog != None:
-			return render_template('weblog_ind.html', weblog = weblog, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
-		else :
-			return '404'
+		#weblog = Weblog.query.filter_by(id = weblogno).first()
+		weblogsFile = app.open_resource('static/weblogs.json')
+		weblogs = json.loads(weblogsFile.read())['weblogs']
+		for w in weblogs:
+			if w['id'] is int(weblogno):
+				return render_template('weblog_ind.html', weblog = w, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)	
+		return '404'
 
 
 @app.route('/add/<addwhat>', methods = ['POST', 'GET'])
@@ -187,7 +201,7 @@ def addContent(addwhat):
 		form = MusicForm()
 		if request.method == 'POST':
 			if form.validate_on_submit():
-				music = Music(form.mf_name.data,form.mf_link.data,form.mf_text.data, current_time_in_millis())
+				music = Music(form.mf_name.data,form.mf_link.data,form.mf_text.data, current_time_in_millis(), form.mf_weight.data)
 				db.session.add(music)
 				db.session.commit()
 				return redirect(url_for('music', link = None))
@@ -204,7 +218,7 @@ def addContent(addwhat):
 				if len(Weblog.query.filter_by(w_title = form.wf_title.data).all()) is not 0:
 					return 'post with same name already exists'
 
-				weblog = Weblog(form.wf_title.data, form.wf_content.data, current_time_in_millis(), form.wf_category.data, form.wf_weight.data)
+				weblog = Weblog(form.wf_title.data, form.wf_content.data, current_time_in_millis(), form.wf_category.data, form.wf_weight.data, '1')
 				db.session.add(weblog)
 				db.session.commit()
 				return redirect(url_for('weblog_ind', weblogno = None))

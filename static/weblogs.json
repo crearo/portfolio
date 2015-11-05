@@ -1,0 +1,30 @@
+{"weblogs" : [
+{
+	"id" : 1,
+	"w_title" : "First weblog",
+	"w_content" : "This is the content of the first weblog",
+	"w_dateposted" : "1446712301133",
+	"w_category" : "Random",
+	"w_weight" : 1,
+	"w_visible" : 1
+}, 
+{
+	"id" : 2,
+	"w_title" : "Second Weblog",
+	"w_content" : "This is what I say B|",
+	"w_dateposted" : "1446712301133",
+	"w_category" : "Joy",
+	"w_weight" : 2,
+	"w_visible" : 1
+}, 
+{
+	"id" : 3,
+	"w_title" : "Sexy",
+	"w_content" : "Manammamamammamamamammamamammamn",
+	"w_dateposted" : "1446712301133",
+	"w_category" : "Happy",
+	"w_weight" : 3,
+	"w_visible" : 1
+}
+]
+}

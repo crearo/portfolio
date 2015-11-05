@@ -1,0 +1,59 @@
+{"projects" : [
+{
+	"p_name":"DAWebmail",
+	"p_category":"Android",
+	"p_date":"Dec '14 - May '15",
+	"p_short":"A",
+	"p_description":"Conceptualized, designed, programmed, and published on Google PlayStore a GMail like e-mail application based on android that is now used to view my university’s emails and receive notifications on android mobile devices. - It can be extended as an application for all organizations that use Zimbra Web Client. - Prior to this application all university users had to log into their laptops / desktops to view their emails. - Lead a team of four developers to develop this application.",
+	"p_link":"/weblog/dawebmail",
+	"p_weight":"1",
+	"p_status":"complete",
+	"p_tech_used":"Android Studio, SugarORM, Jaunt-API"
+},
+{
+	"p_name":"RequestForChange",
+	"p_category":"Website",
+	"p_date":"May '15",
+	"p_short":"W",
+	"p_description":"A website similar to change.org but made with specific requirements of my university, DA-IICT in mind. RFC lets students login with their university login credentials and post ‘petitions’, or requests for change which on sufficient upvotes are reviewed by administrative authorities and dealt with.",
+	"p_link":"/weblog/request-for-change",
+	"p_weight":"2",
+	"p_status":"complete",
+	"p_tech_used":"Python, Flask, SQLAlchemy, PythonAnywhere"
+},
+{
+	"p_name":"Alarm For Lazy People",
+	"p_category":"Android",
+	"p_date":"Oct '15",
+	"p_short":"A",
+	"p_description":"An Android based application that sets consecutive alarms from a start time to an end time with a given interval, to make sure you wake up tomorrow morning. It uses the stock android clock as the base clock. Really is for the laziest of people!",
+	"p_link":"/weblog/alarm-for-lazy-people",
+	"p_weight":"1",
+	"p_status":"complete",
+	"p_tech_used":"Android Studio"
+},
+{
+	"p_name":"Money Keep",
+	"p_category":"Android",
+	"p_date":"Oct '15",
+	"p_short":"A",
+	"p_description":"An Android Application to manage money transactions (borrowing and lending). I built this because I was using Google Keep to keep a track of how much I owe people, and how much people owe me. An easy to use application where you enter transaction details as a sentence and the app interprets it automatically.",
+	"p_link":"/weblog/money-keep",
+	"p_weight":"2",
+	"p_status":"complete",
+	"p_tech_used":"Android Studio"
+},
+{
+	"p_name":"",
+	"p_category":"",
+	"p_date":"",
+	"p_short":"",
+	"p_description":"",
+	"p_link":"",
+	"p_weight":"",
+	"p_status":"",
+	"p_tech_used":""
+}
+]}
+
+

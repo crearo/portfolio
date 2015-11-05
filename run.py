@@ -14,7 +14,7 @@ from flask.ext.mail import Message, Mail
 mail = Mail()
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///me5.db'
-app.config['SECRET_KEY'] = 'HALO'
+app.config['SECRET_KEY'] = '!ntOthEwilD'
 
 app.config["MAIL_SERVER"] = "smtp.gmail.com"
 app.config["MAIL_PORT"] = 465
@@ -212,6 +212,10 @@ def contact():
 			return render_template('contact.html', success=True, form = form, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
 	
 	return render_template('contact.html', form = form, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html', color = 'yellow', title = "Hold On!", titleback = "404", subtitle = "This page does not exist."), 404
 
 if __name__ == '__main__':
 	db.create_all()

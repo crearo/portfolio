@@ -8,6 +8,7 @@ from flask.ext.wtf import Form
 from wtforms import StringField, TextField, TextAreaField, SubmitField, IntegerField
 from wtforms import validators
 from functools import wraps
+import re
 
 
 app = Flask(__name__)
@@ -53,58 +54,17 @@ class Music(db.Model):
 class Weblog(db.Model):
 	id = db.Column(db.Integer, primary_key = True, autoincrement = True)
 	w_title = db.Column(db.String)
-	w_link =  db.Column(db.String)
 	w_content = db.Column(db.String)
 	w_dateposted = db.Column(db.String)
 	w_category = db.Column(db.String)
 	w_weight = db.Column(db.Integer)
 
-	def __init__(self, w_title, w_link, w_content, w_dateposted, w_category,w_weight):
+	def __init__(self, w_title, w_content, w_dateposted, w_category,w_weight):
 		self.w_title = w_title
-		self.w_link = w_link
 		self.w_content = w_content
 		self.w_dateposted = w_dateposted
 		self.w_category = w_category
 		self.w_weight = w_weight
-
-class Job(db.Model):
-	id = db.Column(db.Integer, primary_key = True, autoincrement = True)
-	j_company =  db.Column(db.String)
-	j_title =  db.Column(db.String)
-	j_startdate =  db.Column(db.String)
-	j_enddate =  db.Column(db.String)
-	j_duration =  db.Column(db.String)
-	j_description =  db.Column(db.String)
-	j_link =  db.Column(db.String)
-
-	def __init__(self, j_company,j_title,j_startdate,j_enddate,j_duration,j_description,j_link):
-		self.j_company = j_company
-		self.j_title = j_title
-		self.j_startdate = j_startdate
-		self.j_enddate = j_enddate
-		self.j_duration = j_duration
-		self.j_description = j_description
-		self.j_link = j_link
-
-class Eduaction(db.Model):
-	id = db.Column(db.Integer, primary_key = True, autoincrement = True)
-	e_name =  db.Column(db.String)
-	e_degree =  db.Column(db.String)
-	e_major =  db.Column(db.String)
-	e_description =  db.Column(db.String)
-	e_startdate =  db.Column(db.String)
-	e_enddate =  db.Column(db.String)
-	e_link =  db.Column(db.String)
-
-	def __init__(self,e_name, e_degree,e_major,e_description,e_startdate,e_enddate,	e_link):
-		self.e_name = e_name
-		self.e_degree = e_degree
-		self.e_major = e_major
-		self.e_description = e_description
-		self.e_startdate = e_startdate
-		self.e_enddate = e_enddate
-		self.e_link = e_link
-
 
 class Project(db.Model):
 	id = db.Column(db.Integer, primary_key = True, autoincrement = True)
@@ -143,8 +103,7 @@ class MusicForm(Form):
 
 class WeblogForm(Form):
 	wf_title = StringField('wf_name', validators=[validators.required()])
-	wf_link = StringField('wf_link', validators=[validators.required()])
-	wf_content = TextAreaField('wf_content', validators=[validators.required(),validators.optional()])
+	wf_content = StringField('wf_content', validators=[validators.required()])
 	wf_category = StringField('wf_category', validators=[validators.required()])
 	wf_weight =  IntegerField('wf_weight', validators=[validators.required()])
 
@@ -163,8 +122,6 @@ def home():
 
 @app.route('/portfolio')
 def portfolio():
-	jobs = Job.query.all()
-	edus = Eduaction.query.all()
 	projects = Project.query.all()
 
 	color = 'blue'
@@ -172,7 +129,7 @@ def portfolio():
 	titleback = "CV"
 	subtitle = "A log of my perpetually increasing list of projects."
 	subcontent = "I could have made a fancy resume here, listing my work-exs, education history, but that's boring and we've got LinkedIn for that. This is a log of projects I've worked on indepenently, with organizations, and in my university."
-	return render_template('portfolio.html', projects = projects, jobs = jobs, edus = edus, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
+	return render_template('portfolio.html', projects = projects, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
 
 
 @app.route('/code')
@@ -183,7 +140,6 @@ def code():
 	subtitle = "I love making things. And code allows me to do so in the laziest way possible. Laptop, bed, and some coffee."
 	subcontent = "Coding has become a major part of my life. Majorly because code just makes life so much easier. Whether it's a mobile app, an arduino based room locker, or a simple shell script to boot your laptop faster. Oh, and partly because this is the only way I see myself making money to fund my bucketlist."
 	return render_template('code.html', color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
-
 
 @app.route('/weblog', defaults={'weblogno':None})
 @app.route('/weblog/<weblogno>')
@@ -245,7 +201,10 @@ def addContent(addwhat):
 		if request.method == 'POST':
 			if form.validate_on_submit():
 				
-				weblog = Weblog(form.wf_title.data, form.wf_link.data, form.wf_content.data, current_time_in_millis(), form.wf_category.data, form.wf_weight.data)
+				if len(Weblog.query.filter_by(w_title = form.wf_title.data).all()) is not 0:
+					return 'post with same name already exists'
+
+				weblog = Weblog(form.wf_title.data, form.wf_content.data, current_time_in_millis(), form.wf_category.data, form.wf_weight.data)
 				db.session.add(weblog)
 				db.session.commit()
 				return redirect(url_for('weblog_ind', weblogno = None))
@@ -282,6 +241,16 @@ def contact():
 	subtitle = "Let's get in touch"
 	subcontent = "I love meeting new people and working on amazing things. If you'd like to work on a project with me, or get to know more about the work I do, do drop me a message. "
 	return render_template('contact.html', color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
+
+@app.route('/edit/<edittype>/<number>')
+@requires_auth
+def editContent(edittype, number):
+	form = WeblogForm()
+	if edittype == 'weblog':
+		weblog = Weblog.query.filter_by(id = number).first()
+		print weblog.w_title, weblog.w_content, weblog.w_category, weblog.w_weight
+		return render_template('weblog_create.html', form = form, wf_title_value = weblog.w_title, wf_content_value = weblog.w_content, wf_category_value = weblog.w_category ,wf_weight_value = weblog.w_weight)
+	return 'okay'
 
 if __name__ == '__main__':
 	db.create_all()

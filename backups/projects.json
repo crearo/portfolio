@@ -103,7 +103,7 @@
 	"p_category":"Python, Web",
 	"p_date":"Aug '15",
 	"p_short":"P",
-	"p_description":"Another one of superb ideas that I havent had time to work on. This is the idea. Every topic on this planet has a wikipeadia page. Scrape the data, remove all stop words and analyze the top 5 most used words. Associate that topic with those 5 words, hence creating a database of key search words for every listed topic. This way you can also see topics similar to other topics, on the basis of the tags. For example, take the wiki page of Bastille Pompeii. The top 5 words are the artist's name, the band name, the city name, the genre of music (pop), and the year it released. (Yes Ive actually tried this, and these were the results). This way you can figure out other songs from Bastille, other events that took place in the year the song was released, and songs of similar genre. I should really work on this!",
+	"p_description":"Another one of superb ideas that I havent had time to work on. This is the idea. Every ",
 	"p_link":"/code/tag-search",
 	"p_weight":"1",
 	"p_status":"incomplete",
@@ -209,6 +209,17 @@
 	"p_tech_used":"Linux"
 },
 {
+	"p_name":"Analyzing conversations",
+	"p_category":"Text Analysis",
+	"p_date":"Jul '15",
+	"p_short":"T",
+	"p_description":"",
+	"p_link":"/code/convo-analysis",
+	"p_weight":"2",
+	"p_status":"incomplete",
+	"p_tech_used":""
+},
+{
 	"p_name":"Indoor Navigation System",
 	"p_category":"Hardware",
 	"p_date":"Jun '15, Nov '15",
@@ -218,6 +229,17 @@
 	"p_weight":"1",
 	"p_status":"complete",
 	"p_tech_used":"Arduino, Xbee, Beagle Bone Black, WiFi Triangulation, WiFi Trilateration, Fingerprinting"
+},
+{
+	"p_name":"",
+	"p_category":"",
+	"p_date":"",
+	"p_short":"",
+	"p_description":"",
+	"p_link":"",
+	"p_weight":"",
+	"p_status":"",
+	"p_tech_used":""
 },
 {
 	"p_name":"",

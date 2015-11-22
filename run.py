@@ -152,8 +152,7 @@ def weblog_ind(weblogno):
 		for w in weblogs:
 			if w['id'] is int(weblogno):
 				return render_template('weblog_ind.html', weblog = w, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)	
-		return '404'
-
+		return redirect(url_for('page_not_found'))
 
 @app.route('/add/<addwhat>', methods = ['POST', 'GET'])
 @requires_auth

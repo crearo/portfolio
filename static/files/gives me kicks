@@ -1,0 +1,20 @@
+Making something gives me kicks.
+I try hard to study and try to research and delve deeper into fields, but software creation at the core is what motivates me.
+
+Samarth and I spent the entire day figuring out a way to notify ourselves which days ticket prices are the lowest on various websites. We started with MakeMyTrip cuz thats the website we use most often to book air tickets. 
+We spent the entire day using Selenium, a webdriver to scrape the data. After almost 3 hours, we were successful, and were able to send an email to notify ourselves of a cheaper ticket on a particular day. Now that we had that done, we thought wed do the same for the rest of the websites. 
+The problem? 
+Slemium is very slow, plus the websites most ticket booking companies have are outright heavy.
+
+Samarth left in the evening and we were both happy with the fact that we made good use of the day. 6 hours later, just before I was about to sleep, I couldnt help but check if there was a better way to solve the problem. Turns out, there is. And its easier than you can imagine.
+
+Since the content is loaded dynamically, the ticket websites are fetching their content off their backend every time you refresh your page. There has to be a GET request for that right? I opened Devtools once again, and opened the most probable list of URLs containing the data I wanted, in the XHR Network tab. I took some time in figuring it out the treasure URL on the MakeMyTrip website. But 10 minutes into it, and tadaa! I found the URL with valid JSON, which is super easy to parse. Great. Now that thats in place, the other websites have to have a similar structure right? 
+
+I did the exact same thing for ClearTrip, Yatra, and GoIbibo. They all have similar GET requests, something that look like :
+
+http://xyz.com/api?origin="startPlace"?destination="landingPlace"?startDate="20151125"
+
+And were done! :D Now the cool thing is, all links not only display the requested day's flights, but also contain the previous x days, and next x days flight details. Wohoo! Makes our URL call even cooler. 
+
+So, Im planning to make an app and a website and go big with this :D
+Plus, there are a couple websites who have tried, none have succeeded!

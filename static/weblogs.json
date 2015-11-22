@@ -2,7 +2,7 @@
 {
 	"id" : 1,
 	"w_title" : "First weblog",
-	"w_content" : "This is the content of the first weblog",
+	"w_content" : "This is the content of the first weblog <a href='#'>Hello</a>",
 	"w_dateposted" : "1446712301133",
 	"w_category" : "Random",
 	"w_weight" : 1,

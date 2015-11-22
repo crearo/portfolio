@@ -7,9 +7,12 @@
 <div class="container-fluid">
 	<div class="row">
 			<div class="text-center">
-				<a class="button primary-blue" href="#">NEXT</a>
-				<a class="button primary-yellow" href="#">PREVIOUS</a>
-
+				{% set next = weblog.id|int + 1 %}
+				{% set prev = weblog.id|int - 1 %}
+				{% if prev >= 1%}
+					<a class="button primary-yellow" href={{prev}}>PREVIOUS</a>
+				{% endif %}
+				<a class="button primary-blue" href={{next}}>NEXT</a>
 			</div>
 		<div class="col-md-6 col-md-offset-2">
 			
@@ -18,7 +21,7 @@
 			</div>
 
 			<div class="row">
-					{{ weblog.w_content }}
+					{{ weblog.w_content|safe }}
 			</div>
 		</div>
 

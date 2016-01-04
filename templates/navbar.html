@@ -10,15 +10,12 @@
   <link href="{{ url_for('static', filename = 'css/weblog.css') }}" rel = "stylesheet">
   <link href="{{ url_for('static', filename = 'css/portfolio.css') }}" rel = "stylesheet">
   <link href="{{ url_for('static', filename = 'css/code.css') }}" rel = "stylesheet">
+  <link href="{{ url_for('static', filename = 'css/home.css') }}" rel = "stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   
   <!-- JS -->
   <script type="text/javascript" src="{{ url_for('static', filename = 'js/jquery.min.js') }}"></script>
   <script type="text/javascript" src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
-  <script type="text/javascript" src="{{ url_for('static', filename = 'js/music.js') }}"></script>
-
-  <!-- FONTS -->
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 </head>
 <body> 
@@ -52,7 +49,6 @@
                           <ul id="navbar-list" class="list-inline">
                             <li><a class="aref" class="text-center" href="/home">Home</a></li>
                             <li><a class="aref" class="text-center" href="/portfolio">Portfolio</a></li>
-                            <!-- <li><a class="aref" class="text-center" href="/code">Code</a></li> -->
                             <li><a class="aref" class="text-center"  href="/weblog">WebLog</a></li>
                             <li><a class="aref" class="text-center" href="/music">Music</a></li>
                             <li> <a class="aref" class="text-center" href="/contact">Contact</a></li>
@@ -64,28 +60,22 @@
                     <div id="content-row" class="row">
                      <div id="container">
                        <div id="center-title-back">
-                        <p  class="text-center" id="center-title-back-text">{{ titleback }}</p>
+                        <p class="text-center" id="center-title-back-text">{{ titleback }}</p>
                       </div>
                       <div style="padding-top: 30px;" id="center-title">
                         <p class="text-center" id="center-title-text" >{{ title }}</p>
                       </div>
 
                       <div class="row">
-                          <div class="col-md-6 col-md-offset-3">
-                            <h4 style="text-align: center;">{{ subtitle }}</h4>
-                          </div>
+                        <div class="col-md-6 col-md-offset-3">
+                        <h4 style="text-align: center; margin-top:-2em;">{{ subtitle }}</h4>
+                        </div>
                       </div>
                       <div class="row">
-                          <div class="col-md-6 col-md-offset-3">
-                              <h6 style="text-align: center;" class="text-center">{{ subcontent }}</h6>
-                           </div>
-                       </div>
-                      
-                      
-                      
-                      
-                      
-                      
+                        <div class="col-md-6 col-md-offset-3">
+                          <h6 style="text-align: center;" class="text-center">{{ subcontent|safe }}</h6>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -101,8 +91,8 @@
               <footer class="footer">
                 <div class="container">
                   <p class="text-muted">Rishabh Bhardwaj</p>
+                  
                 </div>
               </footer>
-
             </body>
             </html>

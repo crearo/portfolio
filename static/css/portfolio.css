@@ -1,5 +1,4 @@
 #work-box-title{
-
 	padding: 10px;
 	margin: 10px;
 }
@@ -178,6 +177,12 @@
 
 #handwriting-span{
 	font-size: 1.7em;
+	font-family: handwriting;
+}
+
+#handwriting-span-sub{
+	font-size: 1.5em;
+	font-family: handwriting;
 }
 
 .button.primary-green:hover{

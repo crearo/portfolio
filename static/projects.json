@@ -8,7 +8,8 @@
 	"p_link":"/code/dawebmail",
 	"p_weight":"1",
 	"p_status":"complete",
-	"p_tech_used":"Android Studio, SugarORM, Jaunt-API"
+	"p_tags" : ["Android", "Scraping", "Email"],
+	"p_tech_used": ["Android Studio", "SugarORM", "Jaunt-API"]
 },
 {
 	"p_name":"RequestForChange",
@@ -19,7 +20,8 @@
 	"p_link":"/code/request-for-change",
 	"p_weight":"2",
 	"p_status":"complete",
-	"p_tech_used":"Python, Flask, SQLAlchemy, PythonAnywhere"
+	"p_tags" : ["Python", "WebDev", "Flask"],
+	"p_tech_used":["Python", "Flask", "SQLAlchemy", "PythonAnywhere"]
 },
 {
 	"p_name":"Broadcasts",
@@ -30,7 +32,8 @@
 	"p_link":"/code/broadcasts",
 	"p_weight":"1",
 	"p_status":"incomplete",
-	"p_tech_used":"Android Studio, GCM, Python Flask, SugarORM, Sqlite"
+	"p_tags" : ["Android", "GCM", "Slack"],
+	"p_tech_used":["Android Studio", "GCM", "Python", "Flask", "SugarORM", "Sqlite"]
 },
 {
 	"p_name":"Alarm For Lazy People",
@@ -41,7 +44,8 @@
 	"p_link":"/code/alarm-for-lazy-people",
 	"p_weight":"1",
 	"p_status":"complete",
-	"p_tech_used":"Android Studio"
+	"p_tags" : ["Android", "Alarm"],
+	"p_tech_used":["Android Studio"]
 },
 {
 	"p_name":"Money Keep",
@@ -52,7 +56,8 @@
 	"p_link":"/code/money-keep",
 	"p_weight":"2",
 	"p_status":"complete",
-	"p_tech_used":"Android Studio"
+	"p_tags" : ["Android"],
+	"p_tech_used":["Android Studio"]
 },
 {
 	"p_name":"MediTracker",
@@ -63,7 +68,8 @@
 	"p_link":"/code/kumbhthon",
 	"p_weight":"2",
 	"p_status":"complete",
-	"p_tech_used":"Python Flask, Google Maps, Android Studio"
+	"p_tags" : ["Android", "HealthCare", "Volunteering"],
+	"p_tech_used":["Python", "Flask", "Google Maps", "Android Studio"]
 },
 {
 	"p_name":"Cyberroam Logout Hack",
@@ -74,7 +80,8 @@
 	"p_link":"/code/cyberroam-hack-logging-out",
 	"p_weight":"1",
 	"p_status":"complete",
-	"p_tech_used":"Python, Shell, Awk, (And a little bit of what we learnt from out Networks course)"
+	"p_tags" : ["Hack", "Python", "Cyberroam"],
+	"p_tech_used": ["Python", "Shell", "Awk", "(And a little bit of what we learnt from out Networks course)"]
 },
 {
 	"p_name":"Atlas Earth",
@@ -85,7 +92,8 @@
 	"p_link":"/code/atlas-earth",
 	"p_weight":"2",
 	"p_status":"complete",
-	"p_tech_used":"Android Studio, Python-Mechanize, BS4, Sqlite"
+	"p_tags" : ["Android", "Scraping", "Quiz"],
+	"p_tech_used":["Android Studio", "Python","Mechanize", "BS4", "Sqlite"]
 },
 {
 	"p_name":"Drunk Much",
@@ -96,7 +104,116 @@
 	"p_link":"/code/drunk-much",
 	"p_weight":"2",
 	"p_status":"complete",
-	"p_tech_used":"Android Studio, SugarORM"
+	"p_tags" : ["Android"],
+	"p_tech_used":["Android Studio", "SugarORM"]
+},
+{
+	"p_name":"Analytics with Flask",
+	"p_category":"Analytics",
+	"p_date":"Jun '15",
+	"p_short":"P",
+	"p_description":"I reinvented the wheel with this one. But Im glad I did. Basically made Google Analytics for apps using Python Flask and a local database which pushes new information every time it receives a net connection. What Pradeet and I created is a tool to save data on the app locally as JSON until it can be pushed to the online database. We used this to track users using DAWebmail, keeping a tab of how often the app is used, viewing user actions- how many webmails are read on the app, how often webmails are deleted from the app, and so on. I later used this at MIT Kumbathon to track how often people call the ambulance/hospital during the Kumbhmela.",
+	"p_link":"/code/flask-analytics",
+	"p_weight":"1",
+	"p_status":"complete",
+	"p_tags" : ["Android", "Python", "Flask", "RestAPI", "JSON"],
+	"p_tech_used":["Python", "Flask", "SQLAlchemy", "SugarORM", "Android Studio"]
+},
+{
+	"p_name":"Keep Up - Questionnaire",
+	"p_category":"Tool",
+	"p_date":"Jul '15",
+	"p_short":"T",
+	"p_description":"This idea initiated as a request on Fiverr. When I first started KeepUp, I though this would be the next big thing in my life. I was sure I could almost startup with this idea. Ah good days. The idea was to create a platform for shopkeepers/event organizers to be able to create and take feedback forms with ease. Having lived in Switzerland for 10 years convinced me that for every owner there, customer feedback is of utmost importance. So Pradeet worked on the app while I worked on the backend (Python Flask again!) and made a demo video of the same. I even decided how much I'd charge, and everything seemed perfect. Until I just couldnt get anyone to buy it, other than the client on Fiverr. I did not complete project entirely.",
+	"p_link":"/code/keep-up-questionnaire",
+	"p_weight":"2",
+	"p_status":"incomplete",
+	"p_tags" : ["Android", "Python", "Flask", "RestAPI", "JSON"],
+	"p_tech_used":["Android Studio", "Python", "Flask", "SQLAlchemy", "Sqlite"]
+},
+{
+	"p_name":"Noun Analysis",
+	"p_category":"Text Analysis / Web Scraping",
+	"p_date":"Aug '15",
+	"p_short":"T",
+	"p_description":"In our DBMS course, we were asked to first create an SRS of our project, and later analyze it manually by listing all nouns, verbs and adjectives to help us model our database. We were asked to list down at least 500 nouns and I was not going to do so manually. And so, I wrote a short 50 line Java code that takes a paragraph as input, and returns all nouns, verbs and adjectives present. I did this by taking each word, appending 'definition' to it, and scraping it's Google result. Clever huh? (I did not have the time to look up a dictionary API, and I wasnt aware of any NLP libraries at that time.)",
+	"p_link":"/code/noun-analysis",
+	"p_weight":"1",
+	"p_status":"complete",
+	"p_tags" : ["Java", "Text-Analysis", "scraping"],
+	"p_tech_used":["Java"]
+},
+{
+	"p_name":"Hangman",
+	"p_category":"Java",
+	"p_date":"Jan '14",
+	"p_short":"J",
+	"p_description":"This was my very Java code ever. I spent a long 2 months developing it at that time. I worked on it with Sanchit Agrawal, for our IT class in grade 12. The game gived you a words of varying difficulty, and scores you on the basis of the number of lives lost, word difficulty and hints used. You can buy hints from the store using points that you earn. Very simple, but hey, it was my first game ever. I was particularly happy after completing it, as thats when I realized you can actually make whatever you want using code.",
+	"p_link":"/code/hangman",
+	"p_weight":"2",
+	"p_status":"complete",
+	"p_tags" : ["Java"],
+	"p_tech_used":["Java", "Swing"]
+},
+{
+	"p_name":"F-1 Simulation",
+	"p_category":"Java",
+	"p_date":"Oct '15",
+	"p_short":"J",
+	"p_description":"A project to simulate the F1 experience by setting your own parameters. I found this interesting question on GeekForGeeks. (Yes, okay I've become one of them :p) It really did catch my eye. Firstly, because it was Java oriented, and not extremely algorithmic in nature. The question asks you to solve it keeping Java coding practises intact. Secondly, its just fun to make simulations, isnt it? :D I spent almost an hour after coding this, messing around with the values and looking at the outcome. And just for the record, I spent 2 hours on coding it.",
+	"p_link":"/code/f1-simulation",
+	"p_weight":"1",
+	"p_status":"complete",
+	"p_tags" : ["Java"],
+	"p_tech_used":["Java"]
+},
+{
+	"p_name":"Knight's Tour",
+	"p_category":"Android",
+	"p_date":"May '15",
+	"p_short":"A",
+	"p_description":"This was an early project I developed when I was super enthusiastic about making an app for everything I learn. We solved the Knight's tour problem in our data structure's class and I thought coming up with an app for the same would be really fun. The aim is to cover an entire chess board using just your knight. The code is general enough to allow grids of varying sizes.",
+	"p_link":"/code/knights-tour",
+	"p_weight":"2",
+	"p_status":"complete",
+	"p_tags" : ["Android", "Algorithms"],
+	"p_tech_used":["Android Studio"]
+},
+{
+	"p_name":"Virtual Trackpad",
+	"p_category":"Networks",
+	"p_date":"Nov '15",
+	"p_short":"N",
+	"p_description":"As a part of our Computer Networks course, I and two batchmates developed a virtual-trackpad in lure of extra credit. We developed an application to track a laptops pointer and type on the laptop remotely through a hand held device (Android phone). The laptop acts as a server, and the phone, the client, connected via WiFi.",
+	"p_link":"/code/virtual-trackpad",
+	"p_weight":"1",
+	"p_status":"complete",
+	"p_tags" : ["Android", "Networks", "virtual-trackpad", "Sockets"],
+	"p_tech_used":["Sockets", "Java", "Android"]
+},
+{
+	"p_name":"Indoor Navigation System",
+	"p_category":"Hardware",
+	"p_date":"Jun '15, Nov '15",
+	"p_short":"H",
+	"p_description":"A global challenge whose solution is still not general enough to work for any indoor mapping. I and a group of 4 other people created a working model that could point out roughly where you are in our university’s lab building. We also created an app that could help you navifate to a certain room on the same floor.",
+	"p_link":"/code/indoor-navigation",
+	"p_weight":"1",
+	"p_status":"complete",
+	"p_tags" : ["Java", "Hardware", "WiFi", "Raspberry Pi", "Xbee", "BBB"],
+	"p_tech_used":["Arduino", "Xbee", "Beagle Bone Black", "WiFi Triangulation", "WiFi Trilateration", "Fingerprinting"]
+},
+{
+	"p_name":"The Power of SSH",
+	"p_category":"Linux",
+	"p_date":"May '15",
+	"p_short":"L",
+	"p_description":"Cheat in lab exams without ever getting caught! I learnt about SSH at Tesseract when I had to get into the BananaPro and edit a python script. Later on, I used SSH in a lab exam to communicate with a friend, and copying his answer folder into mine, without even having to whisper! When I look back, it was probably my stepping stone into learning the power of linux. This was just a very simple use case of ssh. I went on and read up a little more on the topic and here's what Ive written more about it here.",
+	"p_link":"/code/ssh",
+	"p_weight":"3",
+	"p_status":"complete",
+	"p_tags" : ["Linux"],
+	"p_tech_used":"Linux"
 },
 {
 	"p_name":"Tag Search",
@@ -107,6 +224,7 @@
 	"p_link":"/code/tag-search",
 	"p_weight":"1",
 	"p_status":"incomplete",
+	"p_tags" : [""],
 	"p_tech_used":""
 },
 {
@@ -118,106 +236,8 @@
 	"p_link":"/code/are-you-cheating",
 	"p_weight":"1",
 	"p_status":"incomplete",
+	"p_tags" : [""],
 	"p_tech_used":""
-},
-{
-	"p_name":"Analytics with Flask",
-	"p_category":"Analytics",
-	"p_date":"Jun '15",
-	"p_short":"P",
-	"p_description":"I reinvented the wheel with this one. But Im glad I did. Basically made Google Analytics for apps using Python Flask and a local database which pushes new information every time it receives a net connection. What Pradeet and I created is a tool to save data on the app locally as JSON until it can be pushed to the online database. We used this to track users using DAWebmail, keeping a tab of how often the app is used, viewing user actions- how many webmails are read on the app, how often webmails are deleted from the app, and so on. I later used this at MIT Kumbathon to track how often people call the ambulance/hospital during the Kumbhmela.",
-	"p_link":"/code/flask-analytics",
-	"p_weight":"1",
-	"p_status":"complete",
-	"p_tech_used":"Python, Flask, SQLAlchemy, SugarORM, Android Studio"
-},
-{
-	"p_name":"Keep Up - Questionnaire",
-	"p_category":"Tool",
-	"p_date":"Jul '15",
-	"p_short":"T",
-	"p_description":"This idea initiated as a request on Fiverr. When I first started KeepUp, I though this would be the next big thing in my life. I was sure I could almost startup with this idea. Ah good days. The idea was to create a platform for shopkeepers/event organizers to be able to create and take feedback forms with ease. Having lived in Switzerland for 10 years convinced me that for every owner there, customer feedback is of utmost importance. So Pradeet worked on the app while I worked on the backend (Python Flask again!) and made a demo video of the same. I even decided how much I'd charge, and everything seemed perfect. Until I just couldnt get anyone to buy it, other than the client on Fiverr. I did not complete project entirely.",
-	"p_link":"/code/keep-up-questionnaire",
-	"p_weight":"2",
-	"p_status":"incomplete",
-	"p_tech_used":"Android Studio, Python, Flask, SQLAlchemy, Sqlite"
-},
-{
-	"p_name":"Noun Analysis",
-	"p_category":"Text Analysis / Web Scraping",
-	"p_date":"Aug '15",
-	"p_short":"T",
-	"p_description":"In our DBMS course, we were asked to first create an SRS of our project, and later analyze it manually by listing all nouns, verbs and adjectives to help us model our database. We were asked to list down at least 500 nouns and I was not going to do so manually. And so, I wrote a short 50 line Java code that takes a paragraph as input, and returns all nouns, verbs and adjectives present. I did this by taking each word, appending 'definition' to it, and scraping it's Google result. Clever huh? (I did not have the time to look up a dictionary API, and I wasnt aware of any NLP libraries at that time.)",
-	"p_link":"/code/noun-analysis",
-	"p_weight":"1",
-	"p_status":"complete",
-	"p_tech_used":"Python, Python-Mechanize, BS4, Web Scraping"
-},
-{
-	"p_name":"Hangman",
-	"p_category":"Java",
-	"p_date":"Jan '14",
-	"p_short":"J",
-	"p_description":"This was my very Java code ever. I spent a long 2 months developing it at that time. I worked on it with Sanchit Agrawal, for our IT class in grade 12. The game gived you a words of varying difficulty, and scores you on the basis of the number of lives lost, word difficulty and hints used. You can buy hints from the store using points that you earn. Very simple, but hey, it was my first game ever. I was particularly happy after completing it, as thats when I realized you can actually make whatever you want using code.",
-	"p_link":"/code/hangman",
-	"p_weight":"2",
-	"p_status":"complete",
-	"p_tech_used":"Java, Swing"
-},
-{
-	"p_name":"F-1 Simulation",
-	"p_category":"Java",
-	"p_date":"Oct '15",
-	"p_short":"J",
-	"p_description":"A project to simulate the F1 experience by setting your own parameters. I found this interesting question on GeekForGeeks. (Yes, okay I've become one of them :p) It really did catch my eye. Firstly, because it was Java oriented, and not extremely algorithmic in nature. The question asks you to solve it keeping Java coding practises intact. Secondly, its just fun to make simulations, isnt it? :D I spent almost an hour after coding this, messing around with the values and looking at the outcome. And just for the record, I spent 2 hours on coding it.",
-	"p_link":"/code/f1-simulation",
-	"p_weight":"1",
-	"p_status":"complete",
-	"p_tech_used":"Java"
-},
-{
-	"p_name":"Knight's Tour",
-	"p_category":"Android",
-	"p_date":"May '15",
-	"p_short":"A",
-	"p_description":"This was an early project I developed when I was super enthusiastic about making an app for everything I learn. We solved the Knight's tour problem in our data structure's class and I thought coming up with an app for the same would be really fun. The aim is to cover an entire chess board using just your knight. The code is general enough to allow grids of varying sizes.",
-	"p_link":"/code/knights-tour",
-	"p_weight":"2",
-	"p_status":"complete",
-	"p_tech_used":"Android Studio"
-},
-{
-	"p_name":"Virtual Trackpad",
-	"p_category":"Networks",
-	"p_date":"Nov '15",
-	"p_short":"N",
-	"p_description":"As a part of our Computer Networks course, I and two batchmates developed a virtual-trackpad in lure of extra credit. We developed an application to track a laptops pointer and type on the laptop remotely through a hand held device (Android phone). The laptop acts as a server, and the phone, the client, connected via WiFi.",
-	"p_link":"/code/virtual-trackpad",
-	"p_weight":"1",
-	"p_status":"complete",
-	"p_tech_used":"Sockets, Java, Android"
-},
-{
-	"p_name":"The Power of SSH",
-	"p_category":"Linux",
-	"p_date":"May '15",
-	"p_short":"L",
-	"p_description":"Cheat in lab exams without ever getting caught! I learnt about SSH at Tesseract when I had to get into the BananaPro and edit a python script. Later on, I used SSH in a lab exam to communicate with a friend, and copying his answer folder into mine, without even having to whisper! When I look back, it was probably my stepping stone into learning the power of linux. This was just a very simple use case of ssh. I went on and read up a little more on the topic and here's what Ive written more about it here.",
-	"p_link":"/code/ssh",
-	"p_weight":"3",
-	"p_status":"complete",
-	"p_tech_used":"Linux"
-},
-{
-	"p_name":"Indoor Navigation System",
-	"p_category":"Hardware",
-	"p_date":"Jun '15, Nov '15",
-	"p_short":"H",
-	"p_description":"A global challenge whose solution is still not general enough to work for any indoor mapping. I and a group of 4 other people created a working model that could point out roughly where you are in our university’s lab building. We also created an app that could help you navifate to a certain room on the same floor.",
-	"p_link":"/code/indoor-navigation",
-	"p_weight":"1",
-	"p_status":"complete",
-	"p_tech_used":"Arduino, Xbee, Beagle Bone Black, WiFi Triangulation, WiFi Trilateration, Fingerprinting"
 },
 {
 	"p_name":"",

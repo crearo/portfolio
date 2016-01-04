@@ -1,0 +1,73 @@
+@font-face{
+	font-family: handwriting;
+	src: url('../fonts/Handwritingfont.ttf');
+	font-size: 10em;
+}
+
+@font-face{
+	font-family: proBold;
+	/*src: url('//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400');*/
+	src: url('../fonts/Roboto-Medium.ttf');
+	font-size: 10em;
+}
+
+@font-face{
+	font-family: proNormal;
+	/*src: url('//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400');*/
+	src: url('../fonts/Roboto-Light.ttf');
+	
+}
+
+
+h1{
+	font-family: proBold;
+	font-weight: 700;
+}
+
+p{
+	font-family: proNormal;
+	font-size: 1.2em;
+	margin-bottom: 0.2em;
+}
+
+ul{
+	font-family: proNormal;
+	font-size: 1.2em;
+	margin: 0.2em;
+}
+
+li{
+	margin: 1em;
+}
+
+.button.primary-blue:hover{
+	background: #337AB7;
+	color: white;
+	border-color: #337AB7 ;
+	text-decoration: none;
+}
+
+.button {
+	display: inline-block;
+	position: relative;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	font-size: 2em;
+	font-family: handwriting;
+	text-transform: uppercase;
+	line-height: 1.2;
+	border: 0;
+	outline: 0;
+	background: #fff;
+	border: 2px solid #DDE4E6;
+	color: #6A7686;
+	text-shadow: none;
+	color: #626262;
+	font-weight: 700;
+	border-radius: 4px;
+	-webkit-transition: color 0.1s, background-color .2s, border-color .2s;
+	transition: color 0.1s, background-color .2s, border-color .2s;
+	display: inline-block;
+	vertical-align: middle;
+	zoom: 1;
+}

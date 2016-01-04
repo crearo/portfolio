@@ -1,0 +1,31 @@
+@font-face{
+	font-family: handwriting;
+	src: url('../fonts/Handwritingfont.ttf');
+	font-size: 10em;
+}
+
+@font-face{
+	font-family: proBold;
+	/*src: url('//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400');*/
+	src: url('../fonts/Roboto-Medium.ttf');
+	font-size: 10em;
+}
+
+@font-face{
+	font-family: proNormal;
+	/*src: url('//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400');*/
+	src: url('../fonts/Roboto-Light.ttf');
+	
+}
+
+h1{
+	font-family: proBold;
+	font-weight: 700;
+	font-size: 1.4em;
+}
+
+p{
+	font-family: proNormal;
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}

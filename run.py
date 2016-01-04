@@ -80,8 +80,10 @@ def home():
 	color = 'blue'
 	title = "Rishabh Bhardwaj"
 	titleback = "RB"
-	subtitle = "Coder | Maker | Athlete | Developer"
-	subcontent = "Hi there! Polyglot full-stack developer? That's the aim. Steadily reaching there. I'm pursuing my undergrad degree in CS at DA-IICT, and am in my Junior year. I love keeping myself super busy, making things people will use, running, and playing football. Oh and FIFA too :D"
+	subtitle = "Coder | Traveler | Athlete | Developer"
+	#subcontent = "Hi there! Polyglot full-stack developer? That's the aim. Steadily reaching there. I'm pursuing my undergrad degree in CS at DA-IICT, and am in my Junior year. I love keeping myself super busy, making things people will use, running, and playing football. Oh and FIFA too :D"
+	#subcontent = "Me? 5+ apps on Google Plays, developer, creative thinker, problem solver. Undergrad in CS at DA-IICT- Junior year. I love keeping myself super busy, making things people will use, running, and playing football. FIFA 14, labradors, traveling, meeting new people :D"
+	subcontent = 'Read More<a href = "/aboutme" class="aref">About Me</a> Here'
 	return render_template('home.html',color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
 
 @app.route('/portfolio')
@@ -212,10 +214,19 @@ def contact():
 	
 	return render_template('contact.html', form = form, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
 
+@app.route('/aboutme')
+def aboutme():
+	return render_template('aboutme.html')	
+
+@app.route('/places')
+def places():
+	return render_template('places.html')
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html', color = 'yellow', title = "Hold On!", titleback = "404", subtitle = "This page does not exist."), 404
 
 if __name__ == '__main__':
 	db.create_all()
+	#app.run(host="192.168.150.1",port=8080, debug=True)
 	app.run(debug=True)

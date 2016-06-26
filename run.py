@@ -14,13 +14,13 @@ from flask.ext.mail import Message, Mail
 mail = Mail()
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///me5.db'
-app.config['SECRET_KEY'] = '!ntOthEwilD'
+app.config['SECRET_KEY'] = 'thisishowyouremindme'
 
 app.config["MAIL_SERVER"] = "smtp.gmail.com"
 app.config["MAIL_PORT"] = 465
 app.config["MAIL_USE_SSL"] = True
-app.config["MAIL_USERNAME"] = 'androrish@gmail.com'
-app.config["MAIL_PASSWORD"] = '!ntOthEwilD'
+app.config["MAIL_USERNAME"] = 'pythonwalter@gmail.com'
+app.config["MAIL_PASSWORD"] = 'thisishowyouremindme'
 
 db = SQLAlchemy(app)
 auth = HTTPBasicAuth()
@@ -208,7 +208,7 @@ def contact():
 			flash('All fields are required.')
 			return render_template('contact.html', form = form, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
 		else:
-			msg = Message("Great Website Man!", sender='androrish@gmail.com', recipients=['bhardwaj.rish@gmail.com'])
+			msg = Message("Great Website Man!", sender='pythonwalter@gmail.com', recipients=['bhardwaj.rish@gmail.com'])
 			msg.body = """ From: %s <%s> %s """ % (form.c_name.data, form.c_email.data, form.c_msg.data)
 			mail.send(msg)
 			form = ContactForm()

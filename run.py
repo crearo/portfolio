@@ -112,6 +112,8 @@ def code():
 @app.route('/weblog/<weblogno>')
 def weblog_ind(weblogno):
 
+	return redirect("http://bhardwajrish.blogspot.in/");
+
 	weblogs = None
 
 	if weblogno == None:

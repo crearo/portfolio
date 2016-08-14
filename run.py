@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask import render_template, redirect, url_for
 import random, time
 from socket import gethostname
-from flask.ext.wtf import Form 
+from flask.ext.wtf import Form
 from wtforms import StringField, TextField, TextAreaField, SubmitField, IntegerField
 from wtforms import validators
 from functools import wraps
@@ -27,6 +27,8 @@ auth = HTTPBasicAuth()
 mail.init_app(app)
 
 current_time_in_millis = lambda: int(round(time.time() * 1000))
+
+resume_pdf_link = 'https://drive.google.com/open?id=0B2BrrDjIiyvmcWp5T194cy00UmM'
 
 def check_auth(username, password):
 	return username == 'rish' and password == 'kidinjp2'
@@ -91,13 +93,13 @@ def portfolio():
 
 	projectsFile = app.open_resource('static/projects.json')
 	projects = json.loads(projectsFile.read())['projects']
-	
+
 	color = 'blue'
 	title = "Portfolio"
 	titleback = "CV"
 	subtitle = "A log of my perpetually increasing list of projects."
 	subcontent = "I could have made a fancy resume here, listing my work-exs, education history, but that's boring and we've got LinkedIn for that. This is a log of projects I've worked on indepenently, with organizations, and in my university."
-	return render_template('portfolio.html', projects = projects, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
+	return render_template('portfolio.html', projects = projects, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent, resume_pdf_link=resume_pdf_link)
 
 @app.route('/code')
 def code():
@@ -141,7 +143,7 @@ def weblog_ind(weblogno):
 		titleback = "W"
 		subtitle = "A log of random musings, notes and things I find interesting"
 		subcontent = "Most of my notes are short paragraphs (and not super long blogs that no one reads) on ideas and thoughts that cross my mind, fun observations about people and my surroundings, songs, travel, and sport."
-		return render_template('weblog.html', weblogs = weblogs, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)		
+		return render_template('weblog.html', weblogs = weblogs, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
 
 	else:
 		# DISPLAY INDIVIDUAL WEBLOG
@@ -155,7 +157,7 @@ def weblog_ind(weblogno):
 		weblogs = json.loads(weblogsFile.read())['weblogs']
 		for w in weblogs:
 			if w['id'] is int(weblogno):
-				return render_template('weblog_ind.html', weblog = w, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)	
+				return render_template('weblog_ind.html', weblog = w, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
 		return redirect(url_for('page_not_found'))
 
 @app.route('/add/<addwhat>', methods = ['POST', 'GET'])
@@ -185,7 +187,7 @@ def music(link):
 		random.shuffle(songs, random.random)
 	elif link == 'favorites':
 		songs = Music.query.filter_by(m_weight = 1).all()
-	
+
 	if songs is not None:
 		color = 'red'
 		title = "Music"
@@ -213,12 +215,13 @@ def contact():
 			mail.send(msg)
 			form = ContactForm()
 			return render_template('contact.html', success=True, form = form, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
-	
+
 	return render_template('contact.html', form = form, color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
 
 @app.route('/aboutme')
 def aboutme():
-	return render_template('aboutme.html')	
+	print resume_pdf_link
+	return render_template('aboutme.html', resume_pdf_link=resume_pdf_link)
 
 @app.route('/places')
 def places():

@@ -220,7 +220,6 @@ def contact():
 
 @app.route('/aboutme')
 def aboutme():
-	print resume_pdf_link
 	return render_template('aboutme.html', resume_pdf_link=resume_pdf_link)
 
 @app.route('/places')

@@ -85,7 +85,7 @@ def home():
 	subtitle = "Coder | Traveler | Athlete | Developer"
 	#subcontent = "Hi there! Polyglot full-stack developer? That's the aim. Steadily reaching there. I'm pursuing my undergrad degree in CS at DA-IICT, and am in my Junior year. I love keeping myself super busy, making things people will use, running, and playing football. Oh and FIFA too :D"
 	#subcontent = "Me? 5+ apps on Google Plays, developer, creative thinker, problem solver. Undergrad in CS at DA-IICT- Junior year. I love keeping myself super busy, making things people will use, running, and playing football. FIFA 14, labradors, traveling, meeting new people :D"
-	subcontent = 'Read More<a href = "/aboutme" class="aref">About Me</a> Here'
+	subcontent = '<a href = "/aboutme" class="aref">Here\'s what I\'ve done in the past 2 years.</a>'
 	return render_template('home.html',color = color, title = title, titleback = titleback, subtitle = subtitle, subcontent = subcontent)
 
 @app.route('/portfolio')

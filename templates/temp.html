@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>About Rish</title>
-  <link href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}" rel="stylesheet">
-  <link href="{{ url_for('static', filename = 'css/aboutme.css') }}" rel = "stylesheet">
+  <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/css/aboutme.css" rel = "stylesheet">
 
 </head>
 <body>
@@ -25,7 +26,7 @@
         <div class="row">
           <div class="col-md-3"><img src="/static/images/me_small.jpg" alt="Rishabh Bhardwaj"></div>
           <div class="col-md-9">
-            <p>I'm a computer science engineer with a keen interest in solving real world problems. Currently interning at Tonbo Imaging, working on real time computer vision of thermal video and delving deep into the Android camera stack. I studied my B.Tech at <a href="http://daiict.ac.in/">DA-IICT</a>, where I had taken Computer Science and IoT as my electives. I have worked with various MIT Media Lab personnel in the past, developed an Android application with over 250K installs, heavily contributed to an Android launcher with over 1 million installs, and contribute to open source actively.</p>
+            <p>I'm a yet-to-be engineer with a keen interest in solving real world problems. Currently pursuing ICT at <a href="http://daiict.ac.in/">DA-IICT</a>, where I've taken up Computer Science and IoT as my electives. I have worked with various MIT Media Lab personnel in the past, and love developing Android apps and playing around and visualizing data.</p>
             <p>You can find me on <a href="http://in.linkedin.com/in/bhardwajrish/">LinkedIn</a>, or email me <a href="mailto:bhardwaj.rish@gmail.com?Subject=Hello%20Rish%20-from-website" target="_top">here</a>.
             </p>
           </div>
@@ -33,7 +34,7 @@
 
         <div class="row" style="margin-top:20px">
             <div class="col-md-4"><a class="button primary-blue" href="http://in.linkedin.com/in/bhardwajrish"> LinkedIn</a></div>
-            <div class="col-md-4"><a class="button primary-blue" href="https://drive.google.com/open?id=0B2BrrDjIiyvmcWp5T194cy00UmM"> Resume</a></div>
+            <div class="col-md-4"><a class="button primary-blue" href= https://drive.google.com/open?id=0B2BrrDjIiyvmcWp5T194cy00UmM> Resume</a></div>
             <div class="col-md-4"><a class="button primary-blue" href="https://github.com/crearo"> &lt;Github&gt;</a></div>
         </div>
 
@@ -43,14 +44,12 @@
         <div class="row">
           <div class="col-md-12">
             <ul>
-            <li><b>[Internship, Tonbo Imaging]</b> I am working on various components of the Android camera stack and delving into computer vision. I worked on streaming thermal videos over RTP protocol between server and client Qualcomm Snapdragon boards running Android OS. <br>I also created a computer vision algorithm to detect+track bodies and faces in thermal videos. I used HOG (Histogram of Oriented Gradients) features fed into an SVM classifier. The tracking was done using an optical flow (KLT algorithm). 
-            <br>The entire codebase is a mixture of C++, C and Java, all functioning together. This is being done using Java Native Interface, that allows running C/C++ code within Java. This was done to maintain a high fps of the streamed video. </li>
-            <li><b>[Android, LifeHacks]</b> Developed an Android application that now has over <b>250K+</b> downloads on the playstore <b>(4.7 stars with >3K ratings, over 60% active users, as of December '16).</b> It is the top app in its category on the Play Store, and is growing at ~1-5K downloads per day. The application uses content from the website 1000lifehacks.com, but am now shifting to a crowdsourced mode - allowing users to submit, rate and report lifehacks. Note : I have temporarily removed the app from the playstore due to the extreme growth of the app, but it will be up again around March '17.</li>
+            <li><b>[Android, LifeHacks]</b> Developed an Android application that now has over <b>100K+</b> downloads on the playstore <b>(4.6 stars with >3K ratings, over 60% active users, as of October '16).</b> It is the top app in its category on the Play Store, and is growing at ~1K downloads per day. The application uses content from the website 1000lifehacks.com, but am now shifting to a crowdsourced mode - allowing users to submit, rate and report lifehacks.</li>
             <!--I am also working on translating the lifehacks to different languages by crowdsourcing the same.-->
             <li><b>[Android, Lens Launcher]</b> Contributed heavily to an open source Android launcher with over 400K (as of Sept '16) downloads. The application can be found <a href="https://play.google.com/store/apps/details?id=nickrout.lenslauncher">here</a>. The application is based on a graphical fish eye lens algorithm, allowing you to browse through all your apps on a single page. The source code and graphical fisheye lens academic resources are on <a href="https://github.com/nicholasrout/lens-launcher/">Github</a>.</li>
             <li><b>[Hill Hacks, Dharamshala]</b> Spent two weeks (May '16) at a hacker space in Dharamshala, Himachal Pradesh - <a href="https://hillhacks.in/">HillHacks</a>. I learnt a lot about hacker spaces, the concept, and scene in India and in Germany. I also met and interacted with a lot of people from diverse fields - architecture, space tech, design, animals enthusiasts, hacker space owner, and several others.</li>
-            <li><b>[Internship, Health-Kiosk, IoT]</b> Working with <a href="http://anirudh.me/">Anirudh Sharma</a> and <a href="http://www.niteshkadyan.in/">Nitesh Kadyan</a> at developing a portable health kiosk that measures the 5 vitals signs of a human being. Also worked on an interface to democratize sensors to all platforms - reading data from sensors on an Android device using the audio jack.</li>
-            <li><b>[Internship, 360° camera, IoT]</b> Working at <a href="http://360vr.tesseract.in/">Tesseract</a>, an MIT Media Lab spinoff working closely with <a href="http://www.kshitijmarwah.com/ ">Kshitij Marwah</a>, where I co-developed an Android application to capture and view 360 degree image+video with the hardware built there.</li>
+            <li><b>[Health-Kiosk, IoT]</b> Working with <a href="http://anirudh.me/">Anirudh Sharma</a> and <a href="http://www.niteshkadyan.in/">Nitesh Kadyan</a> at developing a portable health kiosk that measures the 5 vitals signs of a human being. Also worked on an interface to democratize sensors to all platforms - reading data from sensors on an Android device using the audio jack.</li>
+            <li><b>[360° camera, IoT]</b> Working at <a href="http://360vr.tesseract.in/">Tesseract</a>, an MIT Media Lab spinoff working closely with <a href="http://www.kshitijmarwah.com/ ">Kshitij Marwah</a>, where I co-developed an Android application to capture and view 360 degree image+video with the hardware built there.</li>
             <li><b>[Smart Kumbhmela, Nasik]</b> At <a href="http://www.kumbha.org/">Kumbathon</a> for 10 days as a participant, where I worked with <a href="https://www.media.mit.edu/people/raskar">Ramesh Raskar</a> towards bringing technology to the Kumbhmela. We visualized changes in population movement on heatmaps, using telecom data.</li>
             <!-- <li><b>[Machine Learning, NLP, OCR]</b> Worked with the famous <a href="http://facebook.com/terriblytinytales">Terribly Tiny Tales</a> page - several 100 character stories, where I aimed at understanding which tales receive most likes/type of comments, applying sentiment analysis to each tale. This was by far my most interesting project in terms of ML. You can read more about it <a href="">here</a></li> -->
             <li><b>[Android, Udacity Nanodegree]</b> Amongst the top thousand in the nation to obtain a one year scholarship from Google and Tata Trusts for Udacity's Nanodegree course in Android Development.</li>

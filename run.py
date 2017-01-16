@@ -233,4 +233,4 @@ def page_not_found(e):
 if __name__ == '__main__':
 	db.create_all()
 	#app.run(host="192.168.150.1",port=8080, debug=True)
-	app.run(debug=True)
+	app.run(host="127.0.0.1", port=8080, debug=True)

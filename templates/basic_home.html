@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Rishabh Bhardwaj</title>
+
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/basic_home.css') }}">
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Code+Pro:400,500,600,700' type='text/css' media='screen'/>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+    
+    <script type="text/javascript" src="{{ url_for('static', filename = 'js/basic_home.js') }}"></script>
+</head>
+<body>
+	<section id="four-oh-four">
+		<img class="bg" alt="404" />
+		<div id="error-container">
+			<div class="overlay"></div>
+			<div class="terminal">
+				<div class="window-title">
+					<div class="win-buttons">
+						<a id="close" class="button" href="#"></a>
+						<a id="min" class="button" href="#"></a>
+						<a id="max" class="button" href="#"></a>
+					</div>
+					<span class="title">404</span></div>
+				<div class="message">
+					<span class='prompt'><span class='user'>root</span><span class="at">@</span><span class="path">~/404</span>><span class="caret">$</span></span>
+					<span class="typed"></span>
+					<form>><span class="caret">$</span>&nbsp;
+						<input type="text" name="response"></input>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

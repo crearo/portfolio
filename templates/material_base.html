@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#607D8B">
+    <title>Rishabh Bhardwaj</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-orange.min.css">
+    <link href="{{ url_for('static', filename = 'css/material_base.css') }}" rel="stylesheet">
+
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">bhardwaj rish</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation. We hide it in small screens. -->
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link" href="">About</a>
+                <a class="mdl-navigation__link" href="">Projects</a>
+                <a class="mdl-navigation__link" href="">Write</a>
+                <a class="mdl-navigation__link" href="">Read</a>
+                <a class="mdl-navigation__link" href="">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">bhardwaj rish</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">About</a>
+            <a class="mdl-navigation__link" href="">Projects</a>
+            <a class="mdl-navigation__link" href="">Write</a>
+            <a class="mdl-navigation__link" href="">Read</a>
+            <a class="mdl-navigation__link" href="">Contact</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content">
+            {% block body %}
+            <!-- BLOCK BODY GOES HERE -->
+            {% endblock %}
+        </div>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer--left-section">
+                <button class="mdl-mini-footer--social-btn social-btn social-btn__github"
+                        onclick="window.open('https://github.com/crearo')">
+                    <span class="visuallyhidden">Github</span>
+                </button>
+                <button class="mdl-mini-footer--social-btn social-btn social-btn__gplus"
+                        onclick="window.open('https://plus.google.com/105602510250727593187')">
+                    <span class="visuallyhidden">Google Plus</span>
+                </button>
+                <button class="mdl-mini-footer--social-btn social-btn social-btn__instagram"
+                        onclick="window.open('https://www.instagram.com/rishbhardwaj')">
+                    <span class="visuallyhidden">Instagram</span>
+                </button>
+            </div>
+            <div class="mdl-mini-footer--right-section">
+                <button class="mdl-mini-footer--social-btn social-btn social-btn__email"
+                        onclick="window.open('mailto:androrish@gmail.com')">
+                    <span class="visuallyhidden">Email</span>
+                </button>
+            </div>
+        </footer>
+    </main>
+</div>
+</body>
+</html>

@@ -1,7 +1,13 @@
-from flask import Flask
+from flask import Flask, render_template
+
 app = Flask(__name__)
+
+
 @app.route('/')
 def index():
-	return "Yo, it's working! Here's a minor mod to see the diff to upload to heroku!"
+    return render_template('basic_home.html')
+
+
 if __name__ == "__main__":
-	app.run()
+    print("running py app")
+    app.run(host="127.0.0.1", port=5000, debug=True)

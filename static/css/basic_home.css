@@ -1,3 +1,66 @@
+body {
+  height:100vh;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.top-text{
+min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+  height: 100%;
+  max-width: none;
+  margin:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.wrapper{
+  width: 50%;
+}
+
+.scroll-wrapper::-webkit-scrollbar { 
+    display: none; 
+    margin-right: 5%;
+}
+
+.scroll-wrapper {
+  overflow-y: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-text p {
+  font-size: 80px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-ul {
+      background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.list-inline {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-around;
+  margin:20px 0;
+  width: 50%;
+}
+
+p {
+  margin:0;
+}
+
 #terminal #terminal-container .overlay {
   position: absolute;
   background-color: #FFF;

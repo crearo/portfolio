@@ -57,8 +57,16 @@ min-height: 380px;
   width: 50%;
 }
 
-p {
-  margin:0;
+ul li a {
+  color: #808080;
+}
+
+.text-title {
+  margin:0px;
+}
+
+.text-content {
+  margin:20px 0px 20px 0px;
 }
 
 #terminal #terminal-container .overlay {

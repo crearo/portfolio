@@ -1,16 +1,19 @@
 $(function() {
   $(".typed").typed({
     strings: [
-      "Oops! <br/>" + 
-      "><span class='caret'>$</span> You might have mis-typed the URL, <br/> ^1" +
-      "><span class='caret'>$</span> or maybe the page has been moved. <br/> ^500" +
-      "><span class='caret'>$</span> Anyways, there is nothing to see here... <br/> ^1000" +
-      "><span class='caret'>$</span> Would you like to go back to the <a href='#'>homepage</a>?"
+      "stat rish.human<br/>" + 
+      "><span class='caret'>$</span> general: 22/04/1995, Indian. 1.78m.<br/> ^1" +
+      "><span class='caret'>$</span> work: android, python, graphics, computer vision.<br/> ^100" +
+      "><span class='caret'>$</span> hobbies: football, solo travel, blogging<br/> ^300" +
+      "><span class='caret'>$</span> alias: crearo <br/>" +
+      "><span class='caret'>$</span> highlight: <a href='https://play.google.com/store/apps/details?id=rish.crearo.lifehacks'>app with >500K installs</a> <br/>" +
+      "><span class='caret'>$</span> job: <a href='www.tonboimaging.com'>Tonbo Imaging</a><br/> ^100" +
+      "><span class='caret'>$</span> <a href='/timeline'>timeline</a> <a href='www.github.com/crearo'>github</a> <a href='http://in.linkedin.com/in/bhardwajrish/''>linkedin</a><br/>"
     ],
     showCursor: true,
     cursorChar: '_',
     autoInsertCss: true,
-    typeSpeed: 30,
+    typeSpeed: 1,
     startDelay: 200,
     loop: false,
     showCursor: false,

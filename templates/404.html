@@ -1,28 +1,35 @@
-{% extends "navbar.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Rishabh Bhardwaj</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% block body %}
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/basic_home.css') }}">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:900" rel="stylesheet">
+</head>
+<body>
+	<div class="navbar-ul">
+	<ul id="navbar-list" class="list-inline">
+		<li><a class="aref" href="/">Home</a></li>
+		<li><a class="aref" href="/timeline">Timeline</a></li>
+		<li><a class="aref" href="http://bhardwajrish.blogspot.com/">Writing</a></li>
+		<li><a class="aref" href="/reading">Reading</a></li>
+		<li><a class="aref" href="/cv">CV</a></li>
+	</ul>
+    </div>
 
-	<div class="container-fluid">
-		<div class="row">
-		<div class="col-md-4 col-md-offset-4" >
-			<div class="box-block">
-				<p id="handwriting-span">
-					Now that you've searched for this page, I might as well make it. But. I'm probably attending one of my undergrad lectures right now. 
-				</p>
-				<hr>
-				<p id="handwriting-span">
-					Who am I kidding. *grins* I'm probably FIFA right now. Will work on making this page as soon as I can!
-				</p>
-			</div>
-		</div>
-
-		</div>
-
-		<div class="row">
-			<div class="col-md-6 col-md-offset-3" >
-				<img src="/static/images/work_evolution.jpg">
-			</div>
-		</div>
+	<div class="container">
+		<p>404.</p>
 	</div>
-
-{% endblock %}
+</body>
+</html>

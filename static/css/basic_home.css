@@ -231,7 +231,7 @@ ul li a {
     min-height: fit-content;
   }
   .wrapper.fixed-wrapper {
-    min-height: calc(100vh - 150px);
+    min-height: calc(100vh - 190px);
     display: flex;
     justify-content: center;
     align-items: center;

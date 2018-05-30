@@ -5,10 +5,14 @@ body {
 
 
 .top-text{
-min-height: 380px;
+      min-height: calc(100vh - 128px);
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.middle-text{
+  margin-top: 44px;
 }
 
 .container {
@@ -16,9 +20,8 @@ min-height: 380px;
   max-width: none;
   margin:0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  overflow: hidden;
 }
 
 .wrapper{
@@ -31,7 +34,6 @@ min-height: 380px;
 }
 
 .scroll-wrapper {
-  overflow-y: auto;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -43,7 +45,7 @@ min-height: 380px;
 }
 
 .navbar-ul {
-      background-color: white;
+    background-color: white;
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -55,6 +57,12 @@ min-height: 380px;
   justify-content: space-around;
   margin:20px 0;
   width: 50%;
+}
+
+.fixed-wrapper {
+    position: fixed;
+    right: 50%;
+    top: calc(50% - 135px);
 }
 
 ul li a {
@@ -84,7 +92,7 @@ ul li a {
   height: 40vh;
   border-radius: 8px;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
-  margin: 20vh auto;
+  margin: auto;
 }
 #terminal .terminal .window-title {
   background: linear-gradient(top, #dedede, #c0c0c0);

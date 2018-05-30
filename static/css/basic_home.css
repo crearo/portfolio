@@ -3,9 +3,8 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-
 .top-text{
-      min-height: calc(100vh - 128px);
+    min-height: calc(100vh - 128px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,6 +72,14 @@ ul li a {
   margin:0px;
 }
 
+.mobile-view {
+  display: none;
+}
+
+.desktop-view {
+    display: block;
+}
+
 .text-content {
   margin:20px 0px 20px 0px;
 }
@@ -89,7 +96,7 @@ ul li a {
   position: relative;
   background: rgba(38, 38, 38, 0.8);
   width: 80%;
-  height: 40vh;
+  height: 250px;
   border-radius: 8px;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
   margin: auto;
@@ -202,4 +209,57 @@ ul li a {
 #terminal a:hover {
   color: rgba(255, 255, 255, 0.9);
   border-bottom: 1px dotted rgba(255, 255, 255, 0.9);
+}
+
+@media only screen and (max-width: 1094px) {
+  .fixed-wrapper {
+    position: static;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .mobile-view {
+    display: block;
+  }
+  .desktop-view {
+    display: none;
+  }
+  .top-text {
+    min-height: fit-content;
+  }
+  .wrapper.fixed-wrapper {
+    min-height: calc(100vh - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #terminal {
+    width: 100%;
+  }
+  .scroll-wrapper {
+    align-items: center;
+  }
+  .top-text p {
+    font-size: 70px;
+  }
+  .list-inline {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  
+  #terminal .terminal .window-title .win-buttons{
+    width: 60px;
+  }
+  .top-text p {
+    font-size: 40px;
+  }
+
+  #terminal .terminal {
+    height: 400px;
+  }
 }

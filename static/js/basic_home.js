@@ -22,7 +22,7 @@ $(function() {
     onTypingResumed: $('.message form').hide(),
     onTypingPaused: $('.message form').show(),
     onComplete: $('.message form').show(),
-    onStringTyped: $('.message form').show()
+    onStringTyped: function(pos, self) { console.log('asf');$('.message form').show()},
   });
   $('.message form').hide()
 });

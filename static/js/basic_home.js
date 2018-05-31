@@ -2,7 +2,6 @@ $(function() {
   $(".typed").typed({
     strings: [
       "stat rish.human<br/>" + 
-      "><span class='caret'>$</span> general: 04-22-1995, Indian. 1.78m.<br/> ^1" +
       "><span class='caret'>$</span> work: android, python, graphics, computer vision.<br/> ^100" +
       "><span class='caret'>$</span> hobbies: football, solo travel, blogging<br/> ^300" +
       "><span class='caret'>$</span> alias: crearo <br/>" +

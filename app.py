@@ -8,7 +8,7 @@ resume_pdf_link = 'https://drive.google.com/open?id=0B2BrrDjIiyvmcWp5T194cy00UmM
 
 @app.route('/')
 def index():
-    age = (datetime.date.today() - datetime.date(1995, 4, 22)).days / 365
+    age = int((datetime.date.today() - datetime.date(1995, 4, 22)).days / 365)
     return render_template('home.html', age=age)
 
 

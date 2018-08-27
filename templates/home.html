@@ -1,90 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Rishabh Bhardwaj</title>
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Rishabh Bhardwaj</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-	<!-- Popper JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <link type="text/css" rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/basic_home.css') }}">
-	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Code+Pro:400,500,600,700' type='text/css' media='screen'/>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:900" rel="stylesheet">
+    <link rel='stylesheet'
+          href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Code+Pro:400,500,600,700'
+          type='text/css' media='screen'/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:900" rel="stylesheet">
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
-    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+
     <script type="text/javascript" src="{{ url_for('static', filename = 'js/basic_home.js') }}"></script>
 
 </head>
 <body>
-	<div class="navbar-ul">
-	<ul id="navbar-list" class="list-inline">
-		<li><a class="aref" href="/">Home</a></li>
-		<li><a class="aref" href="/timeline">Timeline</a></li>
-		<li><a class="aref" href="http://bhardwajrish.blogspot.com/">Writing</a></li>
-		<li><a class="aref" href="/reading">Reading</a></li>
-		<li><a class="aref" href="/cv">CV</a></li>
-	</ul>
+<div class="navbar-ul">
+    <ul id="navbar-list" class="list-inline">
+        <li><a class="aref" href="/">Home</a></li>
+        <li><a class="aref" href="/timeline">Timeline</a></li>
+        <li><a class="aref" href="http://bhardwajrish.blogspot.com/">Writing</a></li>
+        <li><a class="aref" href="/reading">Reading</a></li>
+        <li><a class="aref" href="/cv">CV</a></li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="wrapper fixed-wrapper">
+        <section id="terminal">
+            <div id="terminal-container">
+                <div class="terminal">
+                    <div class="window-title">
+                        <div class="win-buttons">
+                            <a id="close" class="button" href="#"></a>
+                            <a id="min" class="button" href="#"></a>
+                            <a id="max" class="button" href="#"></a>
+                        </div>
+                        <span class="title">oh-my-zsh</span>
+                    </div>
+                    <div class="message">
+                        <span class='prompt'><span class='user'>crearo</span><span class="at">@</span><span
+                                class="path">/home/rish/</span>><span class="caret">$</span></span>
+                        <span class="typed"></span>
+                        <form>><span class="caret">$</span>&nbsp;<input type="text" name="response"></input></form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+    <div class="wrapper scroll-wrapper">
+        <div class="top-text">
+            <p class="text-title desktop-view">Rishabh</p>
+            <p class="text-title desktop-view">Bhardwaj</p>
+            <p class="text-title mobile-view">Rishabh Bhardwaj</p>
+        </div>
+        <div class="middle-text">
+            <p class="text-content">My name is Rishabh Bhardwaj, I am {{age}} years old and I live in Bangalore,
+                India.</p>
 
-	<div class="container">
-		<div class="wrapper fixed-wrapper">
-		<section id="terminal">
-			<div id="terminal-container">
-				<div class="terminal">
-					<div class="window-title">
-						<div class="win-buttons">
-							<a id="close" class="button" href="#"></a>
-							<a id="min" class="button" href="#"></a>
-							<a id="max" class="button" href="#"></a>
-						</div>
-						<span class="title">oh-my-zsh</span>
-					</div>
-					<div class="message">
-						<span class='prompt'><span class='user'>crearo</span><span class="at">@</span><span class="path">/home/rish/</span>><span class="caret">$</span></span>
-						<span class="typed"></span>
-						<form>><span class="caret">$</span>&nbsp;<input type="text" name="response"></input></form>
-					</div>
-				</div>
-			</div>
-		</section>
-		</div>
-		<div class="wrapper scroll-wrapper">
-			<div class="top-text">
-				<p class="text-title desktop-view">Rishabh</p>
-				<p class="text-title desktop-view">Bhardwaj</p>
-				<p class="text-title mobile-view">Rishabh Bhardwaj</p>
-			</div>
-			<div class="middle-text">
-			<p class="text-content">My name is Rishabh Bhardwaj, I am 23 years old and I live in Bangalore, India.</p>
+            <p class="text-content">I studied computer science at <a href="http://www.daiict.ac.in/daiict/index.html">DA-IICT</a>,
+                and took up electives in IoT and Software Architecture. At heart, I am a maker; from developing
+                challenging large-scale software to small weekend hacks and proof of concept ideas to tinkering around
+                with my 3 Lego Mindstorms sets. For my day job, I develop camera software on the Android platform. I
+                have a deep understanding of the Android graphics and camera stack. I have worked on hard problems such
+                as real time stabilization on Android, and have created a graphics library for custom
+                rendering to multiple surfaces, applying filters, and streaming.</p>
 
-			<p class="text-content">I enjoy developing software, especially when it interacts with hardware/embedded systems. I have developed an Android application from scratch which now has over 500K installs, going from designing the logo to collating content to structuring the database and REST api. I contribute to open source occasionally - I contributed heavily to Lens Launcher, an Android launcher with over 1 million installs, and have open sourced a personal project I developed during my university days for viewing <a href="http://github.com/crearo/webmail">Zimbra Webmails on Android</a>.</p>
+            <p class="text-content">One of my biggest side-projects is <a
+                    href="https://play.google.com/store/apps/details?id=rish.crearo.lifehacks&hl=en_IN">Lifehacks</a>,
+                an Android application I developed from scratch which now has over 750K installs. I designed the logo,
+                collated the content, structured the database and designed the REST API. I contribute to open source
+                occasionally - I've contributed heavily to
+                <a href="https://play.google.com/store/apps/details?id=nickrout.lenslauncher&hl=en_IN">Lens Launcher</a>,
+                an Android launcher with over 1 million installs, and have also open sourced a
+                personal project I developed during my university days for viewing
+                <a href="http://github.com/crearo/webmail">Zimbra Webmails on Android</a>.</p>
 
-			<p class="text-content">I have also co-authored a paper in the Conference of Data Sciences (CODS '17) studying the role of temporal diversity in inferring social ties based on spatio-temporal data. (<a href="https://arxiv.org/abs/1611.03298">view paper here</a>).</p>
+            <p class="text-content">I have also co-authored a paper in the Conference of Data Sciences (CODS '17)
+                studying the role of temporal diversity in inferring social ties based on spatio-temporal data. (<a
+                        href="https://arxiv.org/abs/1611.03298">view paper here</a>).</p>
 
-			<p class="text-content">I am currently working at <a href="http://tonboimaging.com">Tonbo Imaging</a>, a company developing defense, where I am engaged in the Android camera stack, and fast real time computer vision algorithms on thermal video streams. I studied computer science at DA-IICT, and took up electives in IoT.</p>
+            <p class="text-content">I've been learning to play the drums since Mar 2018, enjoy solo traveling and
+                <a href="http://bhardwajrish.blogspot.com">am an active blogger</a>, where I write about my work, travel
+                and side projects. I'm extremely enthusiastic
+                about life, am in love with my job and am always on the hunt for learning something new.</p>
 
-			<p class="text-content">I enjoy solo traveling - read about my travels on my blog. I am an active blogger (<a href="http://bhardwajrish.blogspot.com">view blog here</a>), where I write my mind. I love listening to the stories every new person I meet brings with them, discussing ideas and developing things that people will use. I'm extremely enthusiastic about life, am in love with my job and am always on the hunt for learning something new.</p>
+            <p class="text-content">You can find me on <a href="http://in.linkedin.com/in/bhardwajrish/">LinkedIn</a>,
+                or email me <a href="mailto:bhardwaj.rish@gmail.com?Subject=Hello%20Rish%20-from-website" target="_top">here</a>.
+            </p>
 
-			<p class="text-content">You can find me on <a href="http://in.linkedin.com/in/bhardwajrish/">LinkedIn</a>, or email me <a href="mailto:bhardwaj.rish@gmail.com?Subject=Hello%20Rish%20-from-website" target="_top">here</a>.
-			</p>
+            <p class="text-content">Let's get in touch!</p>
 
-			<p class="text-content">Let's get in touch!</p>
+            <p class="text-content">Rishabh Bhardwaj</p>
 
-			<p class="text-content">Rishabh Bhardwaj</p>
-
-			<p class="text-content"><a href="aboutme">For more about me, my timeline, read on here.</a></p>
-			</div>
-		</div>
-	</div>
+            <p class="text-content"><a href="aboutme">For more about me, my timeline, read on here.</a></p>
+        </div>
+    </div>
+</div>
 </body>
 </html>

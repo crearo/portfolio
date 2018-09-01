@@ -1,0 +1,3 @@
+Knight's Tour
+
+This was an early project I developed when I was super enthusiastic about making an app for everything I learn. We solved the Knight's tour problem in our data structure's class and I thought making a game out of it would be really fun. The aim is to cover an entire chess board using just your knight. The code is general enough to allow grids of varying sizes.

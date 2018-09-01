@@ -1,0 +1,5 @@
+Alarm For The Lazy
+6:30, 6:40, 6:50 ... 7:30. Alright all set! *snores*. *snooze*, awake! but 5 more minutes, *snooze*, *snooze*, finaaally awake.
+
+An Android application with a simple interface to set consecutive alarms from a start time to an end time with a given interval, to make sure you wake up tomorrow morning. It uses the stock android clock as the base clock. Really is for the snooze lovers!
+I tried using the alarms that gave you a difficult maths puzzle, but they really didn't work for me. I found myself setting a series of 5 alarms every night to make sure I wake up. This app simply automates the process.

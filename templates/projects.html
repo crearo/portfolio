@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+
+<div>Projects</div>
+
+{% for project in projects %}
+<div>{{ project['name'] }}</div>
+{% endfor %}
+
+{% endblock %}

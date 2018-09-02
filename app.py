@@ -1,4 +1,6 @@
 import datetime
+import json
+import os
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -17,9 +19,20 @@ def aboutme():
     return render_template('timeline.html', resume_pdf_link=resume_pdf_link)
 
 
+@app.route('/projects')
+def projects():
+    return render_template('projects.html', projects=get_static_json("static/projects/projects.json")['projects'])
+
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
+
+
+def get_static_json(path):
+    SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
+    json_url = os.path.join(SITE_ROOT, path)
+    return json.load(open(json_url))
 
 
 if __name__ == "__main__":

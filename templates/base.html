@@ -24,11 +24,9 @@
           type='text/css' media='screen'/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:900" rel="stylesheet">
 
-    <!--jquery fixme duplicated-->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
-
     <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
 
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/base.css') }}">
     {% block head %}
     {% endblock %}
 </head>
@@ -41,7 +39,7 @@
         <li><a class="aref" href="/cv">CV</a></li>
     </ul>
 </div>
-    {% block body %}
-    {% endblock %}
+{% block body %}
+{% endblock %}
 </body>
 </html>

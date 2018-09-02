@@ -43,21 +43,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.navbar-ul {
-    background-color: white;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-}
-
-.list-inline {
-  display: flex;
-  text-decoration: none;
-  justify-content: space-around;
-  margin:20px 0;
-  width: 50%;
-}
-
 .fixed-wrapper {
     position: fixed;
     right: 50%;
@@ -244,9 +229,6 @@ ul li a {
   }
   .top-text p {
     font-size: 70px;
-  }
-  .list-inline {
-    width: 100%;
   }
 }
 

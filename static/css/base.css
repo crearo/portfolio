@@ -1,0 +1,29 @@
+body {
+  height:100vh;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul li a {
+  color: #808080;
+}
+
+.navbar-ul {
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.list-inline {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-around;
+  margin:20px 0;
+  width: 50%;
+}
+
+@media only screen and (max-width: 1094px) {
+  .list-inline {
+    width: 100%;
+  }
+}

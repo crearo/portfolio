@@ -8,7 +8,9 @@
 <div>Projects</div>
 
 {% for project in projects %}
-<div>{{ project['name'] }}</div>
+<div><a href="/projects/{{project['link']}}">{{ project['name'] }}</a></div>
+<div>{{ project['date'] }}</div>
+<div>{{ project['short'] }}</div>
 {% endfor %}
 
 {% endblock %}

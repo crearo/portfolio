@@ -1,6 +1,7 @@
-import datetime
 import json
 import os
+
+import datetime
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -22,6 +23,16 @@ def aboutme():
 @app.route('/projects')
 def projects():
     return render_template('projects.html', projects=get_static_json("static/projects/projects.json")['projects'])
+
+
+@app.route('/projects/<title>')
+def project(title):
+    # selected = {}
+    # for p in get_static_json("static/projects/projects.json")['projects']:
+    #     if p['name'] == title:
+    #         selected = p
+    selected = get_static_json("static/projects/projects.json")['projects'][0]
+    return render_template('project.html', project=selected)
 
 
 @app.errorhandler(404)

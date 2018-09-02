@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/project.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="wrapper fixed-wrapper">
+        {{project['videos'][0] | safe}}
+    </div>
+
+    <div class="wrapper scroll-wrapper">
+        <div class="title">{{ project['name'] }}</div>
+
+        <div class="date">{{ project['date'] }}</div>
+
+        <div class="md-chips">
+            {% for tag in project['tags'] %}
+            <div class="md-chip md-chip-clickable"><a class="md-chip-link" href="/projects?tag={{tag}}">{{tag}}</a></div>
+            {% endfor %}
+        </div>
+
+        <div class="content">{{ project['description'] }}</div>
+    </div>
+</div>
+{% endblock %}

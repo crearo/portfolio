@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e84dfa81-b387-4169-933d-19bfc4810409" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/project.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/project.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -48,8 +47,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="354" />
-          <entry key="html" value="2995" />
+          <entry key="css" value="355" />
+          <entry key="html" value="3113" />
           <entry key="js" value="74" />
           <entry key="json" value="741" />
           <entry key="py" value="799" />
@@ -57,8 +56,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="354" />
-          <entry key="HTML" value="2995" />
+          <entry key="CSS" value="355" />
+          <entry key="HTML" value="3113" />
           <entry key="JSON" value="741" />
           <entry key="JavaScript" value="74" />
           <entry key="Python" value="799" />
@@ -68,23 +67,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/project.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="38" />
+            <state relative-caret-position="246">
+              <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
               <folding>
-                <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/project.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+            <state relative-caret-position="210">
+              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -92,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/projects/projects.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="26" column="119" lean-forward="true" selection-start-line="26" selection-start-column="119" selection-end-line="27" selection-end-column="119" />
+            <state relative-caret-position="420">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -109,7 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>link</find>
       <find>/code/</find>
       <find>p_</find>
       <find>dru</find>
@@ -139,6 +137,7 @@
       <find>480</find>
       <find>270</find>
       <find>color</find>
+      <find>and</find>
     </findStrings>
     <replaceStrings>
       <replace>\&quot;</replace>
@@ -174,9 +173,9 @@
         <option value="$PROJECT_DIR$/static/projects.json" />
         <option value="$PROJECT_DIR$/templates/projects.html" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/templates/project.html" />
         <option value="$PROJECT_DIR$/static/projects/projects.json" />
         <option value="$PROJECT_DIR$/static/css/project.css" />
+        <option value="$PROJECT_DIR$/templates/project.html" />
       </list>
     </option>
   </component>
@@ -511,7 +510,7 @@
     <frame x="0" y="-37" width="1366" height="805" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24925373" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24925373" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -707,25 +706,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/projects/projects.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="26" column="119" lean-forward="true" selection-start-line="26" selection-start-column="119" selection-end-line="27" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/project.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="420">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/project.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+        <state relative-caret-position="210">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

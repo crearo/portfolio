@@ -29,7 +29,15 @@
     top: calc(50% - 275px);
     display:flex;
     justify-content:center;
+    height: calc(100vh - 60px);
+    align-items: center;
 }
+
+.carousel-inner .item {
+    max-height: 500px;
+    max-width: 500px;
+}
+
 
 .title {
   font-size: 60px;

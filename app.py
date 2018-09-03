@@ -1,5 +1,6 @@
 import json
 import os
+import io
 
 import datetime
 from flask import Flask, render_template
@@ -31,6 +32,10 @@ def project(title):
                     None)
     if selected is None:
         return render_template('404.html'), 404
+    # load html if the json file doesn't contain a description
+    if 'description' not in selected:
+        selected['description'] = io.open(get_static_file(
+            'static/projects/%s/%s.html' % (selected['link'], selected['link'])), "r", encoding="utf-8").read()
     return render_template('project.html', project=selected)
 
 
@@ -39,10 +44,13 @@ def page_not_found(e):
     return render_template('404.html'), 404
 
 
+def get_static_file(path):
+    site_root = os.path.realpath(os.path.dirname(__file__))
+    return os.path.join(site_root, path)
+
+
 def get_static_json(path):
-    SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
-    json_url = os.path.join(SITE_ROOT, path)
-    return json.load(open(json_url))
+    return json.load(open(get_static_file(path)))
 
 
 if __name__ == "__main__":

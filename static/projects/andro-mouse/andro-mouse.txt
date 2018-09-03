@@ -1,3 +1,0 @@
-A gesture controllable mouse pointer - I later worked on dusing accelerometer and gyroscope data and fusing the two to control the pointer. That worked quite well too, but I can't find the source to make the video of it now.
-
-Fun fact, I created this as a part of my Computer Networks course in college in lure of extra credit. The mobile communicates to the laptop over sockets. The laptop acts as a server, and the phone, the client, connected via WiFi. I've attached the project report we made of it; this was a weekend hack really, and it took us a great deal longer to cook up that word doc!

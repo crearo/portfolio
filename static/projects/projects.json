@@ -5,7 +5,6 @@
       "link": "dawebmail",
       "date": "Dec 2014 - May 2015",
       "short": "An open source Android app to view Zimbra webmails. I spent a good year or so on this project.",
-      "description": "Conceptualized, designed, programmed, and published on Google PlayStore a GMail like e-mail application based on android that is now used to view my university’s emails and receive notifications on android mobile devices. - It can be extended as an application for all organizations that use Zimbra Web Client. - Prior to this application all university users had to log into their laptops / desktops to view their emails. - Lead a team of four developers to develop this application.",
       "status": "complete",
       "tags": [
         "Android",
@@ -28,7 +27,6 @@
       "link": "alarm-for-snoozers",
       "date": "Oct 2015",
       "short": "An Android app for lazy people; uses default alarm clock to set consecutive alarms in an interval.",
-      "description": "An Android based application that sets consecutive alarms from a start time to an end time with a given interval, to make sure you wake up tomorrow morning. It uses the stock android clock as the base clock. Really is for the laziest of people!",
       "status": "complete",
       "tags": [
         "Android",
@@ -46,13 +44,16 @@
       "link": "money-keep",
       "date": "Oct 2015",
       "short": "xyz",
-      "description": "An Android Application to manage money transactions (borrowing and lending). I built this because I was using Google Keep to keep a track of how much I owe people, and how much people owe me. An easy to use application where you enter transaction details as a sentence and the app interprets it automatically.",
       "status": "complete",
       "tags": [
-        "Android"
+        "Android",
+        "NLP"
       ],
       "tech_used": [
-        "Android Studio"
+        "Android Studio",
+        "Python",
+        "NLTK",
+        "regex"
       ],
       "videos": [
         "<iframe width=\"300\" height=\"530\" src=\"https://www.youtube.com/embed/hFiyEGZZGYU\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
@@ -63,7 +64,6 @@
       "link": "atlas-earth",
       "date": "Apr 2014",
       "short": "xyz",
-      "description": "I've been very weak at geography from the very start. My father used to quiz me on capitals and places all the time but I'd always struggle to remember our map. At the time I created the app, there was no application on the playstore that would ",
       "status": "complete",
       "tags": [
         "Android",
@@ -86,7 +86,6 @@
       "link": "drunk-much",
       "date": "Dec 2014",
       "short": "xyz",
-      "description": "I started off this application for a client who wanted to block her young daughter from calling people while she played around with her phone. I later changed the app to make it more interesting by blocking you from call and receiving calls when you're not sober. After watching The Internship (a must watch!) a group of 4 software developers working at Google created this application after a week long of frustration because they couldnt come up with a good idea.",
       "status": "complete",
       "tags": [
         "Android"
@@ -104,7 +103,6 @@
       "link": "knights-tour",
       "date": "May 2015",
       "short": "xyz",
-      "description": "This was an early project I developed when I was super enthusiastic about making an app for everything I learn. We solved the Knight's tour problem in our data structure's class and I thought coming up with an app for the same would be really fun. The aim is to cover an entire chess board using just your knight. The code is general enough to allow grids of varying sizes.",
       "status": "complete",
       "tags": [
         "Android",
@@ -122,7 +120,6 @@
       "link": "andro-mouse",
       "date": "Nov 2015",
       "short": "xyz",
-      "description": "As a part of our Computer Networks course, I and two batchmates developed a virtual-trackpad in lure of extra credit. We developed an application to track a laptops pointer and type on the laptop remotely through a hand held device (Android phone). The laptop acts as a server, and the phone, the client, connected via WiFi.",
       "status": "complete",
       "tags": [
         "Android",
@@ -144,7 +141,6 @@
       "link": "sum-race",
       "date": "Nov 2014",
       "short": "xyz",
-      "description": "As a part of our Computer Networks course, I and two batchmates developed a virtual-trackpad in lure of extra credit. We developed an application to track a laptops pointer and type on the laptop remotely through a hand held device (Android phone). The laptop acts as a server, and the phone, the client, connected via WiFi.",
       "status": "complete",
       "tags": [
         "Android",

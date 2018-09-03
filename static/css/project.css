@@ -48,6 +48,16 @@
   margin:20px 100px 20px 0px;
 }
 
+span {
+  display:inline-block;
+  margin: 10px 0 10px 0px;
+}
+
+.lb {
+  display:inline-block;
+  margin-top:20px 0 20px 0px;
+}
+
 .date {
   margin:0px 100px 20px 0px;
   color: #555;

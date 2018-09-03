@@ -1,3 +1,0 @@
-SumRace
-
-This was one of the first apps I made when learning Android, and I'm quite proud of it! Made sure apps look great from the start :D And this was much before the Wordament craze - a similar app to compete against your friends to find words in 5x5 grid.

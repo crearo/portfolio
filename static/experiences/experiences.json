@@ -13,7 +13,7 @@
     },
     {
       "name": "Hill Hacks '16",
-      "link": "android-nanodegree",
+      "link": "hillhacks-16",
       "location": "Dharamshala, Himachal Pradesh",
       "start": "Jan 2016",
       "end": "Nov 2016",
@@ -27,11 +27,22 @@
     },
     {
       "name": "Kumbhathon",
-      "link": "android-nanodegree",
-      "location": "Dharamshala, Himachal Pradesh",
+      "link": "kumbhathon",
+      "location": "Kumbhmela, Maharashtra",
       "start": "Aug 2015",
       "end": "Aug 2015",
       "short": "A 10 day volunteer to bring technology to the Kumbhmela. We visualized changes in population movement on heatmaps, using telecom data.",
+      "photos": [
+        "/static/experiences/kumbhathon/kumbhathon.jpg"
+      ]
+    },
+    {
+      "name": "Graviky Labs",
+      "link": "graviky-labs",
+      "location": "Bangalore",
+      "start": "Dec 2015",
+      "end": "Dec 2015",
+      "short": "Spent 3 weeks with Anirudh Sharma tinkering around in his lab working on several different things.",
       "photos": [
         "/static/experiences/kumbhathon/kumbhathon.jpg"
       ]

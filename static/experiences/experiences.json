@@ -3,7 +3,7 @@
     {
       "name": "Android Nanodegree",
       "link": "android-nanodegree",
-      "location": "remote",
+      "location": "Remote",
       "start": "Jan 2016",
       "end": "Nov 2016",
       "short": "Udacity's Nanodegree in Android.",
@@ -14,7 +14,7 @@
     {
       "name": "Hill Hacks '16",
       "link": "hillhacks-16",
-      "location": "Dharamshala, Himachal Pradesh",
+      "location": "Dharamshala, India",
       "start": "Jan 2016",
       "end": "Nov 2016",
       "short": "Udacity's Nanodegree in Android.",
@@ -28,7 +28,7 @@
     {
       "name": "Kumbhathon",
       "link": "kumbhathon",
-      "location": "Kumbhmela, Maharashtra",
+      "location": "Kumbhmela, Maharashtra, India",
       "start": "Aug 2015",
       "end": "Aug 2015",
       "short": "A 10 day volunteer to bring technology to the Kumbhmela. We visualized changes in population movement on heatmaps, using telecom data.",
@@ -39,12 +39,22 @@
     {
       "name": "Graviky Labs",
       "link": "graviky-labs",
-      "location": "Bangalore",
+      "location": "Bangalore, India",
       "start": "Dec 2015",
       "end": "Dec 2015",
       "short": "Spent 3 weeks with Anirudh Sharma tinkering around in his lab working on several different things.",
       "photos": [
-        "/static/experiences/kumbhathon/kumbhathon.jpg"
+      ]
+    },
+    {
+      "name": "Tesseract Imaging",
+      "link": "tesseract-imaging",
+      "location": "Mumbai, India",
+      "start": "May 2015",
+      "end": "July 2015",
+      "short": "Worked at Tesseract, an MIT Media Lab spinoff where I co-developed an Android application to capture and view 360 degree image+video with the hardware built there.",
+      "videos": [
+        "<iframe width=\"1351\" height=\"533\" src=\"https://www.youtube.com/embed/OmDS-FdotNU\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
       ]
     }
   ]

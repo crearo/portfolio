@@ -153,6 +153,60 @@
       "videos": [
         "<iframe width=\"300\" height=\"530\" src=\"https://www.youtube.com/embed/mrcquzcyDsk\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
       ]
+    },
+    {
+      "name": "Lifehacks",
+      "link": "lifehacks",
+      "date": "Dec 2015 - Forever",
+      "short": "An endless list of  >750K installs, my most successful app on the playstore.",
+      "status": "complete",
+      "tags": [
+        "Android",
+        "Interface",
+        "Python"
+      ],
+      "tech_used": [
+        "Java",
+        "Android",
+        "Python Flask"
+      ],
+      "videos": [
+      ]
+    },
+    {
+      "name": "Perplexy",
+      "link": "perplexy",
+      "date": "May - Jun 2016",
+      "short": "A general quiz platform I made for the Google Admob challenge in a team of 4. Our core focus was on the interface and design. It has >50K installs.",
+      "status": "complete",
+      "tags": [
+        "Android",
+        "Interface"
+      ],
+      "tech_used": [
+        "Java",
+        "Android"
+      ],
+      "videos": [
+      ]
+    },
+    {
+      "name": "Lens Launcher",
+      "link": "lens-launcher",
+      "date": "Apr 2016",
+      "short": "A unique and efficient way to browse your apps. It is based on a graphical fish eye lens algorithm, allowing you to browse through all your apps on a single page.",
+      "status": "complete",
+      "tags": [
+        "Android",
+        "Interface"
+      ],
+      "tech_used": [
+        "Java",
+        "Android"
+      ],
+      "videos": [
+        "<iframe width=\"853\" height=\"480\" src=\"https://www.youtube.com/embed/VqZFmvOE7HU\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ]
     }
   ]
 }

@@ -26,7 +26,7 @@
       "name": "Alarm For Snoozers",
       "link": "alarm-for-snoozers",
       "date": "Oct 2015",
-      "short": "An Android app for lazy people; uses default alarm clock to set consecutive alarms in an interval.",
+      "short": "I caught myself setting multiple alarms every night to ensure I wake up in the morning every night. This is for lazy snoozers; uses default alarm clock to set consecutive alarms in an interval.",
       "status": "complete",
       "tags": [
         "Android",
@@ -43,7 +43,7 @@
       "name": "Money Keep",
       "link": "money-keep",
       "date": "Oct 2015",
-      "short": "xyz",
+      "short": "An NLP based transaction keeper.",
       "status": "complete",
       "tags": [
         "Android",
@@ -63,7 +63,7 @@
       "name": "Atlas Earth",
       "link": "atlas-earth",
       "date": "Apr 2014",
-      "short": "xyz",
+      "short": "This was the first project I learnt the value of source control in. Developed when I was first learning Android - a geography quizzer.",
       "status": "complete",
       "tags": [
         "Android",
@@ -85,7 +85,7 @@
       "name": "Drunk Much",
       "link": "drunk-much",
       "date": "Dec 2014",
-      "short": "xyz",
+      "short": "Do you drunk call your ex? This is for you!",
       "status": "complete",
       "tags": [
         "Android"
@@ -102,7 +102,7 @@
       "name": "Knight's Tour",
       "link": "knights-tour",
       "date": "May 2015",
-      "short": "xyz",
+      "short": "Traverse the entire chess board using a Knight. Was great fun doing the algorithm in CS class, and thought it'd be equally fun to game-ify it.",
       "status": "complete",
       "tags": [
         "Android",
@@ -119,7 +119,7 @@
       "name": "Andro Mouse",
       "link": "andro-mouse",
       "date": "Nov 2015",
-      "short": "xyz",
+      "short": "A gesture controlled mouse and keyboard; use your mobile phone to move your laptop's mouse. I made this during our computer networks course, and our prof later used this throughout the semester as a pointing tool!",
       "status": "complete",
       "tags": [
         "Android",
@@ -133,14 +133,14 @@
         "Android"
       ],
       "videos": [
-        "<iframe width=\"300\" height=\"530\" src=\"https://www.youtube.com/embed/-Y7GbYjm340\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+        "<iframe width=\"530\" height=\"530\" src=\"https://www.youtube.com/embed/-Y7GbYjm340\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
       ]
     },
     {
       "name": "Sum Race",
       "link": "sum-race",
       "date": "Nov 2014",
-      "short": "xyz",
+      "short": "A fun math quiz; similar to what I used to solve in the newspapers as a kid.",
       "status": "complete",
       "tags": [
         "Android",

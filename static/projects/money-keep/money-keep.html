@@ -1,0 +1,19 @@
+<div>
+    <span>I started this off as an exercise to practise my newly learnt NLP and ML skills in my 2nd year at college. This is
+    an Android Application to manage money transactions (borrowing and lending). I built this because I was using Google
+    Keep to keep a track of how much I owe people, and how much people owe me. We didn't use Splitwise then, and so this
+    was an easy to use application where you enter transaction details as a sentence and the app interprets it automatically.</span>
+
+    <span class="lb">The extraction bit was fairly simple really; but I made slightly difficult by not using NLTK. I took about a bunch of sentences that conveyed transactional information; for ex:</span>
+    <ul>
+        <li>give 100 to rish; (I lose money here (-100))</li>
+        <li>take 50 from andrew (I get back money here (+50))</li>
+        <li>I owe 40 to mike (-40)</li>
+        <li>Monica owes me 60 (+60)</li>
+    </ul>
+    <span>I then created several hundred more sentences by replacing the value with random numbers and different names that I picked up from a github database.</span>
+    <span>Then, I ran a simple SVM to classify whether I gained or lost money in the transaction.
+        This then had to broken down into [person1] [person2] [value].</span>
+    <span>I was happy with the gained/lost classifier, and so I started building a UI on Android before completing the
+    project; but then sadly I never got to porting the tiny bit of learning in the app; instead I just used regex to get the number in the sentence, and kind of hardcoded if-this-structure-then-do-that.</span>
+</div>

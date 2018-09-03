@@ -1,0 +1,128 @@
+{
+  "projects": [
+    {
+      "p_name": "Broadcasts",
+      "p_category": "Android",
+      "p_date": "Sep '15",
+      "p_short": "A",
+      "p_description": "An app to send out broadcasts to everyone within an organization/university. Think twitter of emails. It's different from emails because its less formal, it different from Facebook because its less casual and you have the entire university is just one broadcast away. A pubsub model at university level where users can subscribe to groups, receive notifications, event updates of those groups and keep their calendar updated, reminding them of upcoming events. Certain authenticated people have the rights to send out broadcasts to everyone within the org, and the others can create groups of their own.",
+      "p_link": "/code/broadcasts",
+      "p_weight": "1",
+      "p_status": "incomplete",
+      "p_tags": [
+        "Android",
+        "GCM",
+        "Slack"
+      ],
+      "p_tech_used": [
+        "Android Studio",
+        "GCM",
+        "Python",
+        "Flask",
+        "SugarORM",
+        "Sqlite"
+      ]
+    },
+    {
+      "p_name": "MediTracker",
+      "p_category": "Health Care",
+      "p_date": "Aug '15",
+      "p_short": "H",
+      "p_description": "An amazing experience, working with Professors and scientists at MIT, MIT Redx Mumbai, and government officials towards bringing technology into the Kumbhmela. Built a web dashboard to analyze app usage of a health care application that provided details of hospitals and medical stores in and around Nasik. Link to playstore : https://play.google.com/store/apps/details?id=com.kumbhthon.meditracker",
+      "p_link": "/code/kumbhthon",
+      "p_weight": "2",
+      "p_status": "complete",
+      "p_tags": [
+        "Android",
+        "HealthCare",
+        "Volunteering"
+      ],
+      "p_tech_used": [
+        "Python",
+        "Flask",
+        "Google Maps",
+        "Android Studio"
+      ]
+    },
+    {
+      "p_name": "Cyberroam Logout Hack",
+      "p_category": "Hacking",
+      "p_date": "Nov '15",
+      "p_short": "H",
+      "p_description": "Parth and I spent three hours of a very boring workshop on GoLang(though I really wanted to start learning Go) trying to figure out loopholes in Cyberroam's Captive Portal. We have to login to Cyberroam before we can surf the net, allowing the university to keep a track of the websites we visit. We were playing around, looking at the network requests made whil logging in and logging out, when we realised cyberroam logs you out based on your IP, and not your ID (funny to think they missed this). And we made use of this fact to log out everyone connected to the WiFi in the workshop from their cyberroam :)",
+      "p_link": "/code/cyberroam-hack-logging-out",
+      "p_weight": "1",
+      "p_status": "complete",
+      "p_tags": [
+        "Hack",
+        "Python",
+        "Cyberroam"
+      ],
+      "p_tech_used": [
+        "Python",
+        "Shell",
+        "Awk",
+        "(And a little bit of what we learnt from out Networks course)"
+      ]
+    },
+    {
+      "p_name": "Hangman",
+      "p_category": "Java",
+      "p_date": "Jan '14",
+      "p_short": "J",
+      "p_description": "This was my very Java code ever. I spent a long 2 months developing it at that time. I worked on it with Sanchit Agrawal, for our IT class in grade 12. The game gived you a words of varying difficulty, and scores you on the basis of the number of lives lost, word difficulty and hints used. You can buy hints from the store using points that you earn. Very simple, but hey, it was my first game ever. I was particularly happy after completing it, as thats when I realized you can actually make whatever you want using code.",
+      "p_link": "/code/hangman",
+      "p_weight": "2",
+      "p_status": "complete",
+      "p_tags": [
+        "Java"
+      ],
+      "p_tech_used": [
+        "Java",
+        "Swing"
+      ]
+    },
+    {
+      "p_name": "F-1 Simulation",
+      "p_category": "Java",
+      "p_date": "Oct '15",
+      "p_short": "J",
+      "p_description": "A project to simulate the F1 experience by setting your own parameters. I found this interesting question on GeekForGeeks. (Yes, okay I've become one of them :p) It really did catch my eye. Firstly, because it was Java oriented, and not extremely algorithmic in nature. The question asks you to solve it keeping Java coding practises intact. Secondly, its just fun to make simulations, isnt it? :D I spent almost an hour after coding this, messing around with the values and looking at the outcome. And just for the record, I spent 2 hours on coding it.",
+      "p_link": "/code/f1-simulation",
+      "p_weight": "1",
+      "p_status": "complete",
+      "p_tags": [
+        "Java"
+      ],
+      "p_tech_used": [
+        "Java"
+      ]
+    },
+    {
+      "p_name": "Indoor Navigation System",
+      "p_category": "Hardware",
+      "p_date": "Jun '15, Nov '15",
+      "p_short": "H",
+      "p_description": "A global challenge whose solution is still not general enough to work for any indoor mapping. I and a group of 4 other people created a working model that could point out roughly where you are in our university’s lab building. We also created an app that could help you navifate to a certain room on the same floor.",
+      "p_link": "/code/indoor-navigation",
+      "p_weight": "1",
+      "p_status": "complete",
+      "p_tags": [
+        "Java",
+        "Hardware",
+        "WiFi",
+        "Raspberry Pi",
+        "Xbee",
+        "BBB"
+      ],
+      "p_tech_used": [
+        "Arduino",
+        "Xbee",
+        "Beagle Bone Black",
+        "WiFi Triangulation",
+        "WiFi Trilateration",
+        "Fingerprinting"
+      ]
+    }
+  ]
+}

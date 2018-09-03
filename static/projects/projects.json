@@ -207,6 +207,50 @@
       "videos": [
         "<iframe width=\"853\" height=\"480\" src=\"https://www.youtube.com/embed/VqZFmvOE7HU\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
       ]
+    },
+    {
+      "name": "Request For Change",
+      "link": "request-for-change",
+      "date": "May '15",
+      "short": "change.org but with my university's requirements in mind hosted internally.",
+      "status": "complete",
+      "tags": [
+        "Python",
+        "Web",
+        "Flask"
+      ],
+      "tech_used": [
+        "Python",
+        "Flask",
+        "SQLAlchemy",
+        "PythonAnywhere"
+      ],
+      "photos": [
+        "/static/projects/request-for-change/request-for-change.png"
+      ]
+    },
+    {
+      "name": "Analytics with Flask",
+      "date": "Jun 2015",
+      "short": "An analytics tool for my personal Android projects. I re-invented the wheel with this one.",
+      "description": "I re-invented the wheel with this one. But I'm glad I did as I learnt a whole lot. Basically made Google Analytics for apps using Python Flask and a local database which pushes new information every time it receives a net connection. What my roomate and I created is a tool to save data on the app locally as JSON until it can be pushed to the online database. We used this to track users using DAWebmail, keeping a tab of how often the app is used, viewing user actions- how many webmails are read on the app, how often webmails are deleted from the app, and so on. I later used this at MIT Kumbathon to track how often people call the ambulance/hospital during the Kumbhmela.",
+      "link": "flask-analytics",
+      "weight": "1",
+      "status": "complete",
+      "tags": [
+        "Android",
+        "Python",
+        "Flask",
+        "RestAPI",
+        "JSON"
+      ],
+      "tech_used": [
+        "Python",
+        "Flask",
+        "SQLAlchemy",
+        "SugarORM",
+        "Android Studio"
+      ]
     }
   ]
 }

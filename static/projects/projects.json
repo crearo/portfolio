@@ -251,6 +251,27 @@
         "SugarORM",
         "Android Studio"
       ]
+    },
+    {
+      "name": "Social ties from Spatio-Temporal Dataset",
+      "date": "Jun 2015",
+      "short": "An analytics tool for my personal Android projects. I re-invented the wheel with this one.",
+      "link": "paper-spatio-temporal",
+      "status": "complete",
+      "tags": [
+        "Android",
+        "Python",
+        "Flask",
+        "RestAPI",
+        "GPS"
+      ],
+      "tech_used": [
+        "Python",
+        "Flask",
+        "SQLAlchemy",
+        "SugarORM",
+        "Android Studio"
+      ]
     }
   ]
 }

@@ -1,0 +1,40 @@
+{
+  "experiences": [
+    {
+      "name": "Android Nanodegree",
+      "link": "android-nanodegree",
+      "location": "remote",
+      "start": "Jan 2016",
+      "end": "Nov 2016",
+      "short": "Udacity's Nanodegree in Android.",
+      "photos": [
+        "/static/experiences/android-nanodegree/android-nanodegree.jpg"
+      ]
+    },
+    {
+      "name": "Hill Hacks '16",
+      "link": "android-nanodegree",
+      "location": "Dharamshala, Himachal Pradesh",
+      "start": "Jan 2016",
+      "end": "Nov 2016",
+      "short": "Udacity's Nanodegree in Android.",
+      "photos": [
+        "/static/experiences/hillhacks-16/hillhacks-16-1.jpg",
+        "/static/experiences/hillhacks-16/hillhacks-16-2.jpg",
+        "/static/experiences/hillhacks-16/hillhacks-16-3.jpg",
+        "/static/experiences/hillhacks-16/hillhacks-16-4.jpg"
+      ]
+    },
+    {
+      "name": "Kumbhathon",
+      "link": "android-nanodegree",
+      "location": "Dharamshala, Himachal Pradesh",
+      "start": "Aug 2015",
+      "end": "Aug 2015",
+      "short": "A 10 day volunteer to bring technology to the Kumbhmela. We visualized changes in population movement on heatmaps, using telecom data.",
+      "photos": [
+        "/static/experiences/kumbhathon/kumbhathon.jpg"
+      ]
+    }
+  ]
+}

@@ -27,11 +27,10 @@ def projects():
 
 @app.route('/projects/<title>')
 def project(title):
-    # selected = {}
-    # for p in get_static_json("static/projects/projects.json")['projects']:
-    #     if p['name'] == title:
-    #         selected = p
-    selected = get_static_json("static/projects/projects.json")['projects'][0]
+    selected = next((p for p in get_static_json("static/projects/projects.json")['projects'] if p['link'] == title),
+                    None)
+    if selected is None:
+        return render_template('404.html'), 404
     return render_template('project.html', project=selected)
 
 

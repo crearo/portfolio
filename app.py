@@ -26,6 +26,12 @@ def projects():
     return render_template('projects.html', projects=get_static_json("static/projects/projects.json")['projects'])
 
 
+@app.route('/experiences')
+def experiences():
+    return render_template('projects.html',
+                           projects=get_static_json("static/experiences/experiences.json")['experiences'])
+
+
 @app.route('/projects/<title>')
 def project(title):
     projects = get_static_json("static/projects/projects.json")['projects']

@@ -282,6 +282,108 @@
         "SugarORM",
         "Android Studio"
       ]
+    },
+    {
+      "name": "Lego Truck",
+      "date": "2009",
+      "short": "A Lego Truck made with monster wheels we bought at a store in Singapore.",
+      "description": "This was a time when I wanted to make really big cars - and so when we were in Singapore I went gaga at how many Lego stores there were all over the city. We bought these monster truck tires that I later used in several creations.",
+      "link": "lego-truck",
+      "status": "complete",
+      "tags": [
+        "lego"
+      ],
+      "photos": [
+        "/static/projects/lego-truck/img-1.JPG",
+        "/static/projects/lego-truck/img-2.JPG",
+        "/static/projects/lego-truck/img-3.JPG",
+        "/static/projects/lego-truck/img-4.JPG"
+      ],
+      "videos": [
+        "<iframe width=\"1351\" height=\"480\" src=\"https://www.youtube.com/embed/ZAc9ILSw7Kg\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ]
+    },
+    {
+      "name": "Lego Rail Climber",
+      "date": "2008",
+      "short": "A Lego rail climber; it could go up and down our bunk bed's slide.",
+      "description": "I don't remember if I actually did anything useful with this, but the idea was to be able to send things to my brother using our bunk bed's slide.",
+      "link": "lego-climber",
+      "status": "complete",
+      "tags": [
+        "lego"
+      ],
+      "photos": [
+        "/static/projects/lego-climber/img-1.JPG",
+        "/static/projects/lego-climber/img-2.JPG"
+      ]
+    },
+    {
+      "name": "Lego Monster Car",
+      "date": "2009",
+      "short": "A Lego monster car using chains.",
+      "description": "I used the super huge wheels from the truck I made before this, and used chains between the motor and the tires.",
+      "link": "lego-monster-car",
+      "status": "complete",
+      "tags": [
+        "lego"
+      ],
+      "photos": [
+        "/static/projects/lego-monster-car/img-1.JPG",
+        "/static/projects/lego-monster-car/img-2.JPG"
+      ]
+    },
+    {
+      "name": "Lego Crane",
+      "date": "2010",
+      "short": "A Lego Crane that could hold upto 250 grams.",
+      "description": "This was one of the first creations I had to struggle with quite a bit to get right. It took a couple revisions of taking apart and rebuilding before I could make an actually useable crane.",
+      "link": "lego-crane",
+      "status": "complete",
+      "tags": [
+        "lego"
+      ],
+      "photos": [
+        "/static/projects/lego-crane/img-1.JPG",
+        "/static/projects/lego-crane/img-2.JPG",
+        "/static/projects/lego-crane/img-3.JPG",
+        "/static/projects/lego-crane/img-4.JPG",
+        "/static/projects/lego-crane/img-5.JPG",
+        "/static/projects/lego-crane/img-6.JPG"
+      ]
+    },
+    {
+      "name": "Lego Color Sorter",
+      "date": "2007",
+      "short": "A Lego Color Sorter. My idea was to later be able to sort my other oldschool bricks according to their colors.",
+      "description": "My idea was to later be able to sort my other oldschool bricks according to their colors, but I don't quite remember if I ever tried that out.",
+      "link": "lego-color-sorter",
+      "status": "complete",
+      "tags": [
+        "lego"
+      ],
+      "photos": [
+        "/static/projects/lego-color-sorter/img-1.JPG"
+      ],
+      "videos": [
+        "<iframe width=\"1351\" height=\"480\" src=\"https://www.youtube.com/embed/ff8dx--PNCI\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ]
+    },
+    {
+      "name": "Lego Car",
+      "date": "2006",
+      "short": "My very first Lego Car.",
+      "description": "This was my first Lego car.",
+      "link": "lego-car",
+      "status": "complete",
+      "tags": [
+        "lego"
+      ],
+      "photos": [
+        "/static/projects/lego-car/img-1.JPG",
+        "/static/projects/lego-car/img-2.JPG",
+        "/static/projects/lego-car/img-3.JPG"
+      ]
     }
   ]
 }

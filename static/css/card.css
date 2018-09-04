@@ -1,0 +1,67 @@
+#title {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.icon {
+  font-size: .9rem;
+  display: inline-flex;
+  background: #D8D8D8;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  span {
+    border-radius: 5px;
+    padding: 3px 5px;
+  };
+}
+
+.react {
+  background: #BAD5F5;
+  span::after {
+    content: "React.js";
+  }
+}
+
+.express {
+  background: #F2C986;
+  span::after {
+    content: "Express";
+  }
+}
+
+.node {
+  background: #E1C1C1;
+  span::after {
+    content: "Node.js";
+  }
+}
+
+.python {
+  background: #EADD86;
+  span::after {
+    content: "Python";
+  }
+}
+
+.django {
+  background: #AFEAE5;
+  span::after {
+    content: "Django";
+  }
+}
+
+.card {
+  max-width:400px;
+  a {
+    padding-right: 15px;
+  }
+}
+
+.github {
+  color: #739150;
+}
+
+.status {
+  color: #7699C2;
+}

@@ -59,9 +59,7 @@
         "maker-space",
         "graviky-labs"
       ],
-      "short": "Spent 3 weeks with Anirudh Sharma tinkering around in his lab working on several different things.",
-      "photos": [
-      ]
+      "short": "Spent 3 weeks with Anirudh Sharma tinkering around in his lab working on several different things."
     },
     {
       "name": "Tesseract Imaging",
@@ -77,6 +75,9 @@
       "short": "Worked at Tesseract, an MIT Media Lab spinoff where I co-developed an Android application to capture and view 360 degree image+video with the hardware built there.",
       "videos": [
         "<iframe width=\"1351\" height=\"533\" src=\"https://www.youtube.com/embed/OmDS-FdotNU\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ],
+      "photos": [
+        "/static/experiences/tesseract/img-1.jpg"
       ]
     },
     {

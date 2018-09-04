@@ -22,6 +22,9 @@
       ],
       "videos": [
         "<iframe width=\"300\" height=\"530\" src=\"https://www.youtube.com/embed/a5wkmRk7j3w\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ],
+      "photos": [
+        "/static/projects/dawebmail/img-1.png"
       ]
     },
     {
@@ -40,6 +43,9 @@
       ],
       "videos": [
         "<iframe width=\"300\" height=\"530\" src=\"https://www.youtube.com/embed/csE6EPvzl58\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ],
+      "photos": [
+        "/static/projects/alarm-for-snoozers/img-1.png"
       ]
     },
     {
@@ -60,6 +66,9 @@
       ],
       "videos": [
         "<iframe width=\"300\" height=\"530\" src=\"https://www.youtube.com/embed/hFiyEGZZGYU\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ],
+      "photos": [
+        "/static/projects/money-keep/img-1.png"
       ]
     },
     {
@@ -82,6 +91,9 @@
       ],
       "videos": [
         "<iframe width=\"300\" height=\"530\" src=\"https://www.youtube.com/embed/mFFMVsNYvCI\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ],
+      "photos": [
+        "/static/projects/atlas-earth/img-1.png"
       ]
     },
     {
@@ -99,6 +111,9 @@
       ],
       "videos": [
         "<iframe width=\"300\" height=\"530\" src=\"https://www.youtube.com/embed/fapMDsWYK0c\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ],
+      "photos": [
+        "/static/projects/drunk-much/img-1.png"
       ]
     },
     {
@@ -116,6 +131,9 @@
       ],
       "videos": [
         "<iframe width=\"300\" height=\"530\" src=\"https://www.youtube.com/embed/anDKO_ChBeo\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ],
+      "photos": [
+        "/static/projects/knights-tour/img-1.png"
       ]
     },
     {
@@ -137,6 +155,9 @@
       ],
       "videos": [
         "<iframe width=\"530\" height=\"530\" src=\"https://www.youtube.com/embed/-Y7GbYjm340\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ],
+      "photos": [
+        "/static/projects/andro-mouse/img-1.png"
       ]
     },
     {
@@ -155,6 +176,9 @@
       ],
       "videos": [
         "<iframe width=\"300\" height=\"530\" src=\"https://www.youtube.com/embed/mrcquzcyDsk\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ],
+      "photos": [
+        "/static/projects/sum-race/img-1.png"
       ]
     },
     {
@@ -175,6 +199,9 @@
         "Python Flask"
       ],
       "videos": [
+      ],
+      "photos": [
+        "/static/projects/lifehacks/img-1.png"
       ]
     },
     {
@@ -194,6 +221,9 @@
         "Android"
       ],
       "videos": [
+      ],
+      "photos": [
+        "/static/projects/perplexy/img-1.png"
       ]
     },
     {
@@ -214,6 +244,9 @@
       ],
       "videos": [
         "<iframe width=\"853\" height=\"480\" src=\"https://www.youtube.com/embed/VqZFmvOE7HU\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ],
+      "photos": [
+        "/static/projects/lens-launcher/img-1.png"
       ]
     },
     {
@@ -235,6 +268,7 @@
         "PythonAnywhere"
       ],
       "photos": [
+        "/static/projects/request-for-change/img-1.png",
         "/static/projects/request-for-change/request-for-change.png"
       ]
     },
@@ -259,6 +293,9 @@
         "SQLAlchemy",
         "SugarORM",
         "Android Studio"
+      ],
+      "photos": [
+        "/static/projects/flask-analytics/img-1.png"
       ]
     },
     {
@@ -281,6 +318,9 @@
         "SQLAlchemy",
         "SugarORM",
         "Android Studio"
+      ],
+      "photos": [
+        "/static/projects/paper-spatio-temporal/img-1.png"
       ]
     },
     {

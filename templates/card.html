@@ -1,7 +1,11 @@
 <div class="s12 m6 l3">
     <div class="card hoverable">
         <div class="card-image waves-effect waves-block waves-light">
-            <img class="card-image activator" src=/static/images/projectx.png/>
+            {% if 'photos' in project %}
+            <img class="card-image activator" src={{project['photos'][0]}}/>
+            {% else %}
+            <img class="card-image activator" src="/static/images/projectx.png/">
+            {% endif %}
         </div>
         <div class="card-content">
             <div>

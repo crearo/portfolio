@@ -1,4 +1,4 @@
-<div class="s12 m6 l3">
+<div class="col s12 m4 l4">
     <div class="card hoverable">
         <div class="card-image waves-effect waves-block waves-light">
             {% if 'photos' in project %}
@@ -7,17 +7,19 @@
             <img class="card-image activator" src="/static/images/projectx.png/">
             {% endif %}
         </div>
-        <div class="card-content">
+        <div class="card-content activator">
             <div>
                 <!--loop here-->
                 <div class="icon">
                     <span class="python"></span>
                 </div>
             </div>
+            <div>
             <span class="card-title activator grey-text text-darken-4">
               {{project['name']}}
-              <i class="material-icons right">more_vert</i>
             </span>
+                <i class="material-icons right activator">more_vert</i>
+            </div>
             <div>
                 <span><a href="/projects/{{project['link']}}">Read More</a></span>
                 {% if 'github' in project %}
@@ -27,7 +29,7 @@
                 <span><a class="github" href={{project['arxiv']}}> | Arxiv</a></span>
                 {% endif %}
                 {% if 'playstore' in project %}
-                <span><a class="github" href={{project['playstore']}}> | Play Store</a></span>
+                <!--<span><a class="github" href={{project['playstore']}}> | Play Store</a></span>-->
                 {% endif %}
             </div>
         </div>

@@ -29,7 +29,7 @@
                 <div class="carousel-inner">
                     {% for video in project['videos'] %}
                     <div class="item {{'active' if loop.index0 == 0}}">
-                        {{ project['videos'][0] | safe }}
+                        {{ project['videos'][loop.index0] | safe }}
                     </div>
                     {% endfor %}
                     {% for photo in project['photos'] %}

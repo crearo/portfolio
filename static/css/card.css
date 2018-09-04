@@ -60,6 +60,14 @@
 
 .card-image {
   max-width:400px;
+      display: flex;
+    justify-content: center;
+}
+
+.card .card-image img.card-image {
+    max-height: 180px;
+    min-height: 180px;
+    width: auto;
 }
 
 .github {
@@ -68,4 +76,10 @@
 
 .status {
   color: #7699C2;
+}
+
+.card-title {
+overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }

@@ -5,10 +5,11 @@
 }
 
 .title{
+  color: #404040;
   display:block;
   font-size: 16px;
   margin:4px;
-  font-weight:700;
+  font-weight:500;
 }
 
 .title:hover {
@@ -19,5 +20,5 @@
   display:block;
   color: #303030;
   margin:4px;
-  font-weight:500;
+  font-weight:300;
 }

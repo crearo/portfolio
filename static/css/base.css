@@ -29,3 +29,13 @@ ul li a {
     width: 100%;
   }
 }
+
+a::selection,
+span::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+
+a::selection,
+span::-moz-selection {
+  background: #ffb7b7; /* Gecko Browsers */
+}

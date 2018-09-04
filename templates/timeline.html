@@ -1,143 +1,41 @@
 {% extends "base.html" %}
 
 {% block head %}
-<link href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}" rel="stylesheet">
-<link href="{{ url_for('static', filename = 'css/timeline.css') }}" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/timeline.css') }}">
 {% endblock %}
 
 {% block body %}
-<div class="container-fluid">
-    <div class="col-md-6 col-md-offset-3">
-        <div class="row">
-            <div class="col-md-4"><h1>About Me</h1></div>
-            <div class="col-md-8"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-3"><img src="/static/images/me_small.jpg" alt="Rishabh Bhardwaj"></div>
-            <div class="col-md-9">
-                <p>I am a computer science engineer and a maker at heart. Currently employed at Tonbo Imaging, working
-                    on
-                    real time image processing of thermal video and delving deep into the Android camera stack. I have
-                    worked on real time stabilization on Android, and have created an Android app with over 750,000
-                    installs. I play with Lego, play the drums and blog during my free time.</p>
-                </p>
-            </div>
-        </div>
-
-        <div class="row" style="margin-top:20px">
-            <div class="col-md-4"><a class="button primary-blue" href="http://in.linkedin.com/in/bhardwajrish">
-                LinkedIn</a></div>
-            <div class="col-md-4"><a class="button primary-blue"
-                                     href="https://drive.google.com/open?id=0B2BrrDjIiyvmcWp5T194cy00UmM"> Resume</a>
-            </div>
-            <div class="col-md-4"><a class="button primary-blue" href="https://github.com/crearo"> &lt;Github&gt;</a>
-            </div>
-        </div>
-
-        <div class="row" style="margin-top:20px">
-            <div class="col-md-12"><p>Since Aug 2018, I have:</p></div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <ul>
-                    <li><b>[Todo]</b> Write about image stab, graphics library, camera architecture.</li>
-                    <li><b>[Internship, Tonbo Imaging]</b> I am working on various components of the Android camera
-                        stack and delving into computer vision. I worked on streaming thermal videos over RTP protocol
-                        between server and client Qualcomm Snapdragon boards running Android OS. <br>I also created a
-                        computer vision algorithm to detect+track bodies and faces in thermal videos. I used HOG
-                        (Histogram of Oriented Gradients) features fed into an SVM classifier. The tracking was done
-                        using an optical flow (KLT algorithm).
-                        <br>The entire codebase is a mixture of C++, C and Java, all functioning together. This is being
-                        done using Java Native Interface, that allows running C/C++ code within Java. This was done to
-                        maintain a high fps of the streamed video.
-                    </li>
-                    <li><b>[Research, Spatio-Temporal Dataset]</b> Co-published a paper on studying the role of temporal
-                        diversity in inferring social ties based on spatio-temporal data. We created a rich
-                        spatio-temporal dataset of 0.7 million datapoints of continuous location data logged at an
-                        interval of every 2 minutes by mobile phones of 46 subjects. Our research is focused at
-                        inferring relationship strength between students based on the spatiotemporal data and comparing
-                        the results with the self-reported data. <a href="https://arxiv.org/abs/1611.03298">Read the
-                            paper here</a>.
-                    </li>
-                    <li><b>[Android, LifeHacks]</b> Developed an Android application that now has over <b>250K+</b>
-                        downloads on the playstore <b>(4.7 stars with >3K ratings, over 60% active users, as of December
-                            '16).</b> It is the top app in its category on the Play Store, and is growing at ~1-5K
-                        downloads per day. The application uses content from the website 1000lifehacks.com, but am now
-                        shifting to a crowdsourced mode - allowing users to submit, rate and report lifehacks. Note : I
-                        have temporarily removed the app from the playstore due to the extreme growth of the app, but it
-                        will be up again around March '17.
-                    </li>
-                    <!--I am also working on translating the lifehacks to different languages by crowdsourcing the same.-->
-                    <li><b>[Android, Lens Launcher]</b> Contributed heavily to an open source Android launcher with over
-                        400K (as of Sept '16) downloads. The application can be found <a
-                                href="https://play.google.com/store/apps/details?id=nickrout.lenslauncher">here</a>. The
-                        application is based on a graphical fish eye lens algorithm, allowing you to browse through all
-                        your apps on a single page. The source code and graphical fisheye lens academic resources are on
-                        <a href="https://github.com/nicholasrout/lens-launcher/">Github</a>.
-                    </li>
-                    <li><b>[Hill Hacks, Dharamshala]</b> Spent two weeks (May '16) at a hacker space in Dharamshala,
-                        Himachal Pradesh - <a href="https://hillhacks.in/">HillHacks</a>. I learnt a lot about hacker
-                        spaces, the concept, and scene in India and in Germany. I also met and interacted with a lot of
-                        people from diverse fields - architecture, space tech, design, animals enthusiasts, hacker space
-                        owner, and several others.
-                    </li>
-                    <li><b>[Internship, Health-Kiosk, IoT]</b> Working with <a href="http://anirudh.me/">Anirudh
-                        Sharma</a> and <a href="http://www.niteshkadyan.in/">Nitesh Kadyan</a> at developing a portable
-                        health kiosk that measures the 5 vitals signs of a human being. Also worked on an interface to
-                        democratize sensors to all platforms - reading data from sensors on an Android device using the
-                        audio jack.
-                    </li>
-                    <li><b>[Internship, 360° camera, IoT]</b> Working at <a
-                            href="http://360vr.tesseract.in/">Tesseract</a>, an MIT Media Lab spinoff working closely
-                        with <a href="http://www.kshitijmarwah.com/ ">Kshitij Marwah</a>, where I co-developed an
-                        Android application to capture and view 360 degree image+video with the hardware built there.
-                    </li>
-                    <li><b>[Smart Kumbhmela, Nasik]</b> At <a href="http://www.kumbha.org/">Kumbathon</a> for 10 days as
-                        a participant, where I worked with <a href="https://www.media.mit.edu/people/raskar">Ramesh
-                            Raskar</a> towards bringing technology to the Kumbhmela. We visualized changes in population
-                        movement on heatmaps, using telecom data.
-                    </li>
-                    <!-- <li><b>[Machine Learning, NLP, OCR]</b> Worked with the famous <a href="http://facebook.com/terriblytinytales">Terribly Tiny Tales</a> page - several 100 character stories, where I aimed at understanding which tales receive most likes/type of comments, applying sentiment analysis to each tale. This was by far my most interesting project in terms of ML. You can read more about it <a href="">here</a></li> -->
-                    <li><b>[Android, Udacity Nanodegree]</b> Amongst the top thousand in the nation to obtain a one year
-                        scholarship from Google and Tata Trusts for Udacity's Nanodegree course in Android Development.
-                    </li>
-                    <li><b>[Android, Infinite Scrolling Images]</b> An extremely generic and modular written Android app
-                        that can be modified with small changes to display images of different famous facebook pages.
-                        Have a look at <a href="https://play.google.com/store/apps/details?id=rish.crearo.lifehacks">LifeHacks</a>
-                        and <a href="https://play.google.com/store/apps/details?id=com.memions.quotes">The Minions
-                            App</a>. The applications have 60K+ and 10K+ downloads (as of Sept '16) each.
-                    </li>
-                    <li><b>[Android, Zimbra Webmail]</b> A GMail like Android application for <a
-                            href="http://webmail.daiict.ac.in/">Zimbra Webmail</a>, our university email service. <a
-                            href=" https://play.google.com/store/apps/details?id=com.sigmobile.dawebmail">The
-                        application</a> is used by >1k students regularly. The application has been completely open
-                        sourced. The application can be used by any organization using Zimbra Webmail. View the source
-                        code <a href="https://github.com/crearo/webmail">here</a>. Do go through the README.md
-                    </li>
-                    <li><b>[Android, Alarm for the Lazy]</b> An Android application that allows you to set multiple
-                        alarms in gaps of 5/10/15 minutes, to make sure you wake up tomorrow morning. The application
-                        was developed in my sophomore year to make it easier for me to set multiple alarms in intervals
-                        of 10 minutes in one go (I was missing a lot of classes because of not waking up on time then)
-                        <a href="https://play.google.com/store/apps/details?id=rish.crearo.alarmmanager">Alarm for the
-                            Lazy - Playstore</a>.
-                    </li>
-                    <li><b>[Android, Drunk Call Blocker]</b> An Android application that allows you to blocks calls and
-                        smses before getting drunk. Inspired from the movie the Internship. <a
-                                href="https://play.google.com/store/apps/developer?id=Crearo">Drunk Much?</a>.
-                    </li>
-                    <!-- <li><b>[Hardware, Skateboard]</b> A motorized skateboard controlled via arduino+android.<a href="">Youtube Video</a>.</li> -->
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 " style="margin-top:20px">
-                <p>I love exploring and traveling, working on interesting ideas, and merging software with hardware.
-                    Ping me, and let's make a super awesome gadget together!</p>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col s12 m4 l8">
+            <span class="date">2018</span>
+            <ul>
+                <li><a href="/projects/lib-graf" class="title">[Graphics, Android]</a>
+                    <span class="content">Created  a graphics library for Android for custom rendering, applying OpenGLES filters, fast transfer of frames between the CPU and GPU, and streaming.</span>
+                </li>
+                <li><a href="/projects/camera-client-arch" class="title">[Camera-Client Architecture]</a>
+                    <span class="content">Refactored our entire Snapdragon platform application layer codebase at Tonbo to standardize communication between different camera variants and various clients/softwares. This also included creating an SDK for vendors to create custom clients to communicate with the cameras.</span>
+                </li>
+                <li><a href="/projects/travel-18" class="title">[Month-long Travel]</a>
+                    <span class="content">Took a month off of work to travel North India and Bhutan. I also spent 10 days skiing in Auli during this period.</span>
+                </li>
+            </ul>
+            <span class="date">2017</span>
+            <ul>
+                <li><a href="/projects/" class="title">[]</a>
+                    <span class="content">
+                <li><a href="/projects/" class="title">[]</a>
+                    <span class="content">
+            </ul>
+            <span class="date">2015</span>
+            <span class="date">2014</span>
+            <span class="date">2013</span>
+            <span class="date">2011-13</span>
+            <span class="date"><2011</span>
         </div>
     </div>
 </div>
-<br><br>
+
+<!--<li><a href="/projects/" class="title">[]</a>
+                    <span class="content">-->
 {% endblock %}

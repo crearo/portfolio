@@ -52,10 +52,14 @@
 }
 
 .card {
-  max-width:400px;
+  margin:10px;
   a {
     padding-right: 15px;
   }
+}
+
+.card-image {
+  max-width:400px;
 }
 
 .github {

@@ -3,6 +3,8 @@
     {
       "name": "DAWebmail",
       "link": "dawebmail",
+      "github": "https://github.com/crearo/dawebmail",
+      "playstore": "https://play.google.com/store/apps/details?id=com.sigmobile.dawebmail",
       "date": "Dec 2014 - May 2015",
       "short": "An open source Android app to view Zimbra webmails. I spent a good year or so on this project.",
       "status": "complete",
@@ -25,6 +27,7 @@
     {
       "name": "Alarm For Snoozers",
       "link": "alarm-for-snoozers",
+      "playstore": "https://play.google.com/store/apps/details?id=rish.crearo.alarmmanager",
       "date": "Oct 2015",
       "short": "I caught myself setting multiple alarms every night to ensure I wake up in the morning every night. This is for lazy snoozers; uses default alarm clock to set consecutive alarms in an interval.",
       "status": "complete",
@@ -157,6 +160,7 @@
     {
       "name": "Lifehacks",
       "link": "lifehacks",
+      "playstore": "https://play.google.com/store/apps/details?id=rish.crearo.lifehacks",
       "date": "Dec 2015 - Forever",
       "short": "An endless list of  >750K installs, my most successful app on the playstore.",
       "status": "complete",
@@ -176,6 +180,8 @@
     {
       "name": "Perplexy",
       "link": "perplexy",
+      "github": "https://github.com/rohanx96/Perplexy",
+      "playstore": "https://play.google.com/store/apps/details?id=com.contextgenesis.perplexy",
       "date": "May - Jun 2016",
       "short": "A general quiz platform I made for the Google Admob challenge in a team of 4. Our core focus was on the interface and design. It has >50K installs.",
       "status": "complete",
@@ -193,6 +199,8 @@
     {
       "name": "Lens Launcher",
       "link": "lens-launcher",
+      "github": "https://github.com/nicholasrout/lens-launcher",
+      "playstore": "https://play.google.com/store/apps/details?id=nickrout.lenslauncher",
       "date": "Apr 2016",
       "short": "A unique and efficient way to browse your apps. It is based on a graphical fish eye lens algorithm, allowing you to browse through all your apps on a single page.",
       "status": "complete",
@@ -211,6 +219,7 @@
     {
       "name": "Request For Change",
       "link": "request-for-change",
+      "github": "https://github.com/crearo/RequestForChange",
       "date": "May '15",
       "short": "change.org but with my university's requirements in mind hosted internally.",
       "status": "complete",
@@ -257,6 +266,7 @@
       "date": "Jun 2015",
       "short": "An analytics tool for my personal Android projects. I re-invented the wheel with this one.",
       "link": "paper-spatio-temporal",
+      "arxiv": "https://arxiv.org/abs/1611.03298",
       "status": "complete",
       "tags": [
         "Android",

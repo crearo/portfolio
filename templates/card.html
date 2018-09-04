@@ -1,31 +1,38 @@
-<div class="row">
-    <div class="col m4">
-        <div class="card hoverable">
-            <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src=/static/images/projectx.png/>
-            </div>
-            <div class="card-content">
-                <div>
-                    <!--loop here-->
-                    <div class="icon">
-                        <span class=python></span>
-                    </div>
+<div class="s12 m6 l3">
+    <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="card-image activator" src=/static/images/projectx.png/>
+        </div>
+        <div class="card-content">
+            <div>
+                <!--loop here-->
+                <div class="icon">
+                    <span class="python"></span>
                 </div>
-                <span class="card-title activator grey-text text-darken-4">
+            </div>
+            <span class="card-title activator grey-text text-darken-4">
               {{project['name']}}
               <i class="material-icons right">more_vert</i>
             </span>
-                <div>
-                    <span><a href={this.props.data.website}>Website</a></span>
-                    <span><a class="github" href={this.props.data.github}>Github</a></span>
-                </div>
+            <div>
+                <span><a href="/projects/{{project['link']}}">Read More</a></span>
+                {% if 'github' in project %}
+                <span><a class="github" href={{project['github']}}> | Github</a></span>
+                {% endif %}
+                {% if 'arxiv' in project %}
+                <span><a class="github" href={{project['arxiv']}}> | Arxiv</a></span>
+                {% endif %}
+                {% if 'playstore' in project %}
+                <span><a class="github" href={{project['playstore']}}> | Play Store</a></span>
+                {% endif %}
             </div>
-            <div class="card-reveal">
+        </div>
+        <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">{{project['name']}}<i
                     class="material-icons right">close</i></span>
-                <div><span class="status">{{project['date']}}</span></div>
-                <p>{{project['short']}}</p>
-            </div>
+            <div><span class="status">{{project['date']}}</span></div>
+            <p>{{project['short']}}</p>
+            <span><a href="/projects/{{project['link']}}">Read More</a></span>
         </div>
     </div>
 </div>

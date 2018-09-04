@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e84dfa81-b387-4169-933d-19bfc4810409" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/static/experiences/android-nanodegree/android-nanodegree.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/experiences/android-nanodegree/android-nanodegree.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/experiences/experiences.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/experiences/experiences.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/projects/projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/projects/projects.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/card.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/card.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/timeline.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/timeline.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/timeline.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +27,8 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Procfile" value="1" />
-          <entry key="css" value="27" />
-          <entry key="html" value="76" />
+          <entry key="css" value="28" />
+          <entry key="html" value="77" />
           <entry key="js" value="4" />
           <entry key="json" value="26" />
           <entry key="md" value="1" />
@@ -40,8 +38,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="27" />
-          <entry key="HTML" value="76" />
+          <entry key="CSS" value="28" />
+          <entry key="HTML" value="77" />
           <entry key="JSON" value="26" />
           <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="1" />
@@ -51,8 +49,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="882" />
-          <entry key="html" value="18931" />
+          <entry key="css" value="928" />
+          <entry key="html" value="19080" />
           <entry key="js" value="157" />
           <entry key="json" value="7020" />
           <entry key="py" value="1521" />
@@ -60,8 +58,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="882" />
-          <entry key="HTML" value="18931" />
+          <entry key="CSS" value="928" />
+          <entry key="HTML" value="19080" />
           <entry key="JSON" value="7020" />
           <entry key="JavaScript" value="157" />
           <entry key="Python" value="1521" />
@@ -89,11 +87,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/projects/projects.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="246">
               <caret line="270" column="50" selection-start-line="270" selection-start-column="50" selection-end-line="270" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/timeline.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="226" selection-start-line="226" selection-end-line="226" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/timeline.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -145,7 +161,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>android</find>
       <find>material-icons</find>
       <find>material-icons small</find>
       <find>material-icons tiny</find>
@@ -175,6 +190,7 @@
       <find>static/</find>
       <find>lifehacks</find>
       <find>reques</find>
+      <find>container</find>
     </findStrings>
     <replaceStrings>
       <replace>300</replace>
@@ -236,10 +252,8 @@
         <option value="$PROJECT_DIR$/static/css/card.css" />
         <option value="$PROJECT_DIR$/templates/projects.html" />
         <option value="$PROJECT_DIR$/static/css/base.css" />
-        <option value="$PROJECT_DIR$/static/css/timeline.css" />
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/static/js/home.js" />
-        <option value="$PROJECT_DIR$/templates/timeline.html" />
         <option value="$PROJECT_DIR$/static/experiences/tonbo-imaging/tonbo-imaging.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/app.py" />
@@ -247,10 +261,12 @@
         <option value="$PROJECT_DIR$/templates/card.html" />
         <option value="$PROJECT_DIR$/static/experiences/experiences.json" />
         <option value="$PROJECT_DIR$/static/projects/projects.json" />
+        <option value="$PROJECT_DIR$/static/css/timeline.css" />
+        <option value="$PROJECT_DIR$/templates/timeline.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="24" />
     <option name="width" value="1366" />
     <option name="height" value="744" />
@@ -817,20 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/timeline.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/timeline.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="40" column="327" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="327" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/experiences/tonbo-imaging/tonbo-imaging.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -908,6 +910,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
           <caret line="270" column="50" selection-start-line="270" selection-start-column="50" selection-end-line="270" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/timeline.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/timeline.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="226" selection-start-line="226" selection-end-line="226" />
         </state>
       </provider>
     </entry>

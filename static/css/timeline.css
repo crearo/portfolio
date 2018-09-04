@@ -21,3 +21,12 @@
   margin:4px;
   font-weight:300;
 }
+
+.container{
+  max-width:750px;
+}
+
+.icon-title{
+    display: flex;
+    align-items: center;
+}

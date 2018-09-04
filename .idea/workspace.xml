@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e84dfa81-b387-4169-933d-19bfc4810409" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/static/css/timeline.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/timeline.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/projects/projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/projects/projects.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/timeline.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,8 +28,8 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Procfile" value="1" />
-          <entry key="css" value="21" />
-          <entry key="html" value="57" />
+          <entry key="css" value="22" />
+          <entry key="html" value="66" />
           <entry key="js" value="3" />
           <entry key="json" value="23" />
           <entry key="md" value="1" />
@@ -37,8 +39,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="21" />
-          <entry key="HTML" value="57" />
+          <entry key="CSS" value="22" />
+          <entry key="HTML" value="66" />
           <entry key="JSON" value="23" />
           <entry key="JavaScript" value="3" />
           <entry key="Markdown" value="1" />
@@ -48,18 +50,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="836" />
-          <entry key="html" value="17215" />
+          <entry key="css" value="882" />
+          <entry key="html" value="18765" />
           <entry key="js" value="138" />
-          <entry key="json" value="4067" />
+          <entry key="json" value="4105" />
           <entry key="py" value="1259" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="836" />
-          <entry key="HTML" value="17215" />
-          <entry key="JSON" value="4067" />
+          <entry key="CSS" value="882" />
+          <entry key="HTML" value="18765" />
+          <entry key="JSON" value="4105" />
           <entry key="JavaScript" value="138" />
           <entry key="Python" value="1259" />
         </counts>
@@ -68,56 +70,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/timeline.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/base.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/timeline.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="79" column="405" selection-start-line="79" selection-start-column="405" selection-end-line="79" selection-end-column="405" />
+            <state relative-caret-position="306">
+              <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/experiences/experiences.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/projects/projects.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="161" column="22" selection-start-line="161" selection-start-column="22" selection-end-line="161" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/project.html">
+        <entry file="file://$PROJECT_DIR$/static/projects/paper-spatio-temporal/spatio-temporal.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="4" />
+              <caret line="1" column="299" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="299" />
             </state>
           </provider>
         </entry>
@@ -133,25 +99,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&quot;</find>
-      <find>className</find>
-      <find>Layout</find>
-      <find>material-icons right</find>
-      <find>material-icons</find>
-      <find>right</find>
-      <find>cards.css</find>
-      <find>im</find>
-      <find>.card</find>
-      <find>.</find>
-      <find>sty</find>
-      <find>style</find>
-      <find>github</find>
-      <find>python</find>
-      <find>perple</find>
-      <find>m</find>
-      <find>dawe</find>
-      <find>DAWe</find>
-      <find>alarm</find>
       <find>max</find>
       <find>lb</find>
       <find>display:inline-block;</find>
@@ -160,9 +107,28 @@
       <find>kumbh</find>
       <find>Kumbh</find>
       <find>nanp</find>
-      <find>lifehac</find>
       <find>quite</find>
       <find>these</find>
+      <find>skiin</find>
+      <find>bhardwaj</find>
+      <find>hiri</find>
+      <find>grav</find>
+      <find>refac</find>
+      <find>using this</find>
+      <find>projects/</find>
+      <find>daweb</find>
+      <find>perple</find>
+      <find>dai</find>
+      <find>schoo</find>
+      <find>lifehac</find>
+      <find>school</find>
+      <find>android</find>
+      <find>material-icons</find>
+      <find>material-icons small</find>
+      <find>material-icons tiny</find>
+      <find>daweba</find>
+      <find>for and</find>
+      <find>hill</find>
     </findStrings>
     <replaceStrings>
       <replace>300</replace>
@@ -170,6 +136,9 @@
       <replace>/&quot;</replace>
       <replace>\&quot;</replace>
       <replace>class</replace>
+      <replace>material-icons small</replace>
+      <replace>material-icons tiny</replace>
+      <replace>tiny material-icons</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -221,14 +190,14 @@
         <option value="$PROJECT_DIR$/static/experiences/tesseract/tesseract.html" />
         <option value="$PROJECT_DIR$/static/js/cards.js" />
         <option value="$PROJECT_DIR$/static/css/cards.css" />
-        <option value="$PROJECT_DIR$/static/projects/projects.json" />
         <option value="$PROJECT_DIR$/static/css/card.css" />
         <option value="$PROJECT_DIR$/templates/projects.html" />
         <option value="$PROJECT_DIR$/templates/card.html" />
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/static/css/timeline.css" />
         <option value="$PROJECT_DIR$/static/css/base.css" />
+        <option value="$PROJECT_DIR$/static/projects/projects.json" />
+        <option value="$PROJECT_DIR$/static/css/timeline.css" />
         <option value="$PROJECT_DIR$/templates/timeline.html" />
       </list>
     </option>
@@ -672,13 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/projects/dawebmail/dawebmail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/project.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
@@ -742,20 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/projects/perplexy/perplexy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="196" selection-start-line="3" selection-start-column="196" selection-end-line="3" selection-end-column="196" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/projects/lifehacks/lifehacks.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="100" selection-start-line="17" selection-start-column="100" selection-end-line="17" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/projects/request-for-change/request-for-change.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -769,41 +717,6 @@
     <entry file="file://$PROJECT_DIR$/venv/lib/python2.7/site-packages/sqlalchemy/processors.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/experiences/android-nanodegree/android-nanodegree.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/experiences/hillhacks-16/hillhacks-16.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/experiences/kumbhathon/kumbathon.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/experiences/graviky-labs/graviky-labs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/experiences/tesseract/tesseract.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/projects.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -814,13 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/projects/paper-spatio-temporal/spatio-temporal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="50" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -873,20 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/experiences/experiences.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/projects/projects.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="161" column="22" selection-start-line="161" selection-start-column="22" selection-end-line="161" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -894,17 +786,94 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/projects/projects.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="164" column="16" lean-forward="true" selection-start-line="164" selection-start-column="16" selection-end-line="164" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/projects/lifehacks/lifehacks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/experiences/hillhacks-16/hillhacks-16.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="279" selection-start-line="2" selection-start-column="279" selection-end-line="2" selection-end-column="279" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/experiences/android-nanodegree/android-nanodegree.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="108" lean-forward="true" selection-start-line="1" selection-start-column="108" selection-end-line="1" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/experiences/graviky-labs/graviky-labs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="285" lean-forward="true" selection-start-line="3" selection-start-column="285" selection-end-line="3" selection-end-column="285" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/experiences/experiences.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="44" column="114" lean-forward="true" selection-start-line="44" selection-start-column="114" selection-end-line="44" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/experiences/kumbhathon/kumbathon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="45" lean-forward="true" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/experiences/tesseract/tesseract.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="187" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="3" selection-end-column="187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/projects/perplexy/perplexy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="1" column="352" selection-start-line="1" selection-start-column="352" selection-end-line="1" selection-end-column="352" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/projects/dawebmail/dawebmail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="7" column="231" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="231" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/timeline.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+        <state relative-caret-position="330">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/projects/paper-spatio-temporal/spatio-temporal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="1" column="299" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="299" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/timeline.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="79" column="405" selection-start-line="79" selection-start-column="405" selection-end-line="79" selection-end-column="405" />
+        <state relative-caret-position="306">
+          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
         </state>
       </provider>
     </entry>

@@ -4,8 +4,11 @@
       "name": "Android Nanodegree",
       "link": "android-nanodegree",
       "location": "Remote",
-      "start": "Jan 2016",
-      "end": "Nov 2016",
+      "tags": [
+        "udacity",
+        "android"
+      ],
+      "date": "Jan - Nov 2016",
       "short": "Udacity's Nanodegree in Android.",
       "photos": [
         "/static/experiences/android-nanodegree/android-nanodegree.jpg"
@@ -15,9 +18,13 @@
       "name": "Hill Hacks '16",
       "link": "hillhacks-16",
       "location": "Dharamshala, India",
-      "start": "Jan 2016",
-      "end": "Nov 2016",
-      "short": "Udacity's Nanodegree in Android.",
+      "tags": [
+        "travel",
+        "maker-space",
+        "hill-hacks"
+      ],
+      "date": "May 2016",
+      "short": "Lodged at a maker space in Dharamshala for 2 weeks.",
       "photos": [
         "/static/experiences/hillhacks-16/hillhacks-16-1.jpg",
         "/static/experiences/hillhacks-16/hillhacks-16-2.jpg",
@@ -29,8 +36,14 @@
       "name": "Kumbhathon",
       "link": "kumbhathon",
       "location": "Kumbhmela, Maharashtra, India",
-      "start": "Aug 2015",
-      "end": "Aug 2015",
+      "tags": [
+        "volunteer",
+        "android",
+        "data",
+        "kumbhathon",
+        "mit-media-lab"
+      ],
+      "date": "Aug 2015",
       "short": "A 10 day volunteer to bring technology to the Kumbhmela. We visualized changes in population movement on heatmaps, using telecom data.",
       "photos": [
         "/static/experiences/kumbhathon/kumbhathon.jpg"
@@ -40,8 +53,12 @@
       "name": "Graviky Labs",
       "link": "graviky-labs",
       "location": "Bangalore, India",
-      "start": "Dec 2015",
-      "end": "Dec 2015",
+      "date": "Dec 2015",
+      "tags": [
+        "mit-media-lab",
+        "maker-space",
+        "graviky-labs"
+      ],
       "short": "Spent 3 weeks with Anirudh Sharma tinkering around in his lab working on several different things.",
       "photos": [
       ]
@@ -50,11 +67,40 @@
       "name": "Tesseract Imaging",
       "link": "tesseract-imaging",
       "location": "Mumbai, India",
-      "start": "May 2015",
-      "end": "July 2015",
+      "tags": [
+        "android",
+        "camera",
+        "mit-media-lab",
+        "tesseract-imaging"
+      ],
+      "date": "May 2015",
       "short": "Worked at Tesseract, an MIT Media Lab spinoff where I co-developed an Android application to capture and view 360 degree image+video with the hardware built there.",
       "videos": [
         "<iframe width=\"1351\" height=\"533\" src=\"https://www.youtube.com/embed/OmDS-FdotNU\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ]
+    },
+    {
+      "name": "Tonbo Imaging",
+      "link": "tonbo-imaging",
+      "location": "Bangalore, India",
+      "tags": [
+        "android",
+        "camera",
+        "tonbo-imaging"
+      ],
+      "date": "Dec 2016 - Present",
+      "short": "Working at Tonbo Imaging, a camera company. My work here is to bring up the Qualcomm Snapdragon platform at the application layer, creating a base for vision problems, streaming, and fast image operations such as false coloring and video stabilization.",
+      "videos": [
+        "<iframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/1RqiamkcpUc\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>",
+        "<iframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/kjc0uVtK7ss\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ],
+      "photos": [
+        "/static/experiences/tonbo-imaging/img-1.jpg",
+        "/static/experiences/tonbo-imaging/img-2.jpg",
+        "/static/experiences/tonbo-imaging/img-3.jpg",
+        "/static/experiences/tonbo-imaging/img-4.jpg",
+        "/static/experiences/tonbo-imaging/img-5.jpg",
+        "/static/experiences/tonbo-imaging/img-6.jpg"
       ]
     }
   ]

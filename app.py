@@ -1,6 +1,6 @@
+import io
 import json
 import os
-import io
 
 import datetime
 from flask import Flask, render_template
@@ -17,7 +17,7 @@ def index():
 
 
 @app.route('/timeline')
-def aboutme():
+def timeline():
     return render_template('timeline.html', resume_pdf_link=resume_pdf_link)
 
 
@@ -28,14 +28,22 @@ def projects():
 
 @app.route('/projects/<title>')
 def project(title):
-    selected = next((p for p in get_static_json("static/projects/projects.json")['projects'] if p['link'] == title),
-                    None)
+    projects = get_static_json("static/projects/projects.json")['projects']
+    experiences = get_static_json("static/experiences/experiences.json")['experiences']
+
+    selected = next((p for p in projects if p['link'] == title), None)
+    is_project = True
+    if selected is None:
+        selected = next((p for p in experiences if p['link'] == title), None)
+        is_project = False
     if selected is None:
         return render_template('404.html'), 404
+
     # load html if the json file doesn't contain a description
     if 'description' not in selected:
+        path = "projects" if is_project else "experiences"
         selected['description'] = io.open(get_static_file(
-            'static/projects/%s/%s.html' % (selected['link'], selected['link'])), "r", encoding="utf-8").read()
+            'static/%s/%s/%s.html' % (path, selected['link'], selected['link'])), "r", encoding="utf-8").read()
     return render_template('project.html', project=selected)
 
 

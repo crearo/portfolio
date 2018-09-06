@@ -3,7 +3,7 @@ import json
 import os
 
 import datetime
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -23,7 +23,12 @@ def timeline():
 
 @app.route('/projects')
 def projects():
-    return render_template('projects.html', projects=get_static_json("static/projects/projects.json")['projects'])
+    data = get_static_json("static/projects/projects.json")['projects']
+    tag = request.args.get('tags')
+    if tag is not None:
+        data = [project for project in data if tag.lower() in [project_tag.lower() for project_tag in project['tags']]]
+
+    return render_template('projects.html', projects=data)
 
 
 @app.route('/experiences')

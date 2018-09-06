@@ -23,34 +23,6 @@
   }
 }
 
-.express {
-  background: #F2C986;
-  span::after {
-    content: "Express";
-  }
-}
-
-.node {
-  background: #E1C1C1;
-  span::after {
-    content: "Node.js";
-  }
-}
-
-.python {
-  background: #EADD86;
-  span::after {
-    content: "Python";
-  }
-}
-
-.django {
-  background: #AFEAE5;
-  span::after {
-    content: "Django";
-  }
-}
-
 .card {
   margin:10px;
   a {
@@ -70,10 +42,6 @@
     width: auto;
 }
 
-.github {
-  color: #739150;
-}
-
 .status {
   color: #7699C2;
 }
@@ -82,4 +50,17 @@
 overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+.container-outer {
+  overflow: hidden;
+}
+
+.container-inner {
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  /*kinda hacky solution to remove that ugly scrollbar*/
+  margin-bottom: -25px; /* maximum width of scrollbar */
+  padding-bottom: 25px; /* maximum width of scrollbar */
 }

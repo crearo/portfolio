@@ -8,10 +8,13 @@
             {% endif %}
         </div>
         <div class="card-content activator">
-            <div>
-                <!--loop here-->
-                <div class="icon">
-                    <span class="python"></span>
+            <div class="container-outer">
+                <div class="md-chips container-inner">
+                    {% for tag in project['tags'] %}
+                    <div class="md-chip md-chip-clickable"><a class="md-chip-link"
+                                                              href="/projects?tags={{tag}}">{{tag}}</a>
+                    </div>
+                    {% endfor %}
                 </div>
             </div>
             <div>

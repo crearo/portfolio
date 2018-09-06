@@ -10,9 +10,8 @@
       "status": "complete",
       "tags": [
         "Android",
-        "Scraping",
         "Email",
-        "Open-Source"
+        "FOSS"
       ],
       "tech_used": [
         "Android Studio",
@@ -79,7 +78,6 @@
       "status": "complete",
       "tags": [
         "Android",
-        "Scraping",
         "Quiz"
       ],
       "tech_used": [
@@ -144,9 +142,7 @@
       "status": "complete",
       "tags": [
         "Android",
-        "Networks",
-        "virtual-trackpad",
-        "Sockets"
+        "Networks"
       ],
       "tech_used": [
         "Sockets",
@@ -214,7 +210,8 @@
       "status": "complete",
       "tags": [
         "Android",
-        "Interface"
+        "Interface",
+        "FOSS"
       ],
       "tech_used": [
         "Java",
@@ -236,7 +233,8 @@
       "status": "complete",
       "tags": [
         "Android",
-        "Interface"
+        "Interface",
+        "FOSS"
       ],
       "tech_used": [
         "Java",
@@ -259,7 +257,8 @@
       "tags": [
         "Python",
         "Web",
-        "Flask"
+        "Flask",
+        "FOSS"
       ],
       "tech_used": [
         "Python",
@@ -283,9 +282,7 @@
       "tags": [
         "Android",
         "Python",
-        "Flask",
-        "RestAPI",
-        "JSON"
+        "Flask"
       ],
       "tech_used": [
         "Python",
@@ -309,7 +306,6 @@
         "Android",
         "Python",
         "Flask",
-        "RestAPI",
         "GPS"
       ],
       "tech_used": [

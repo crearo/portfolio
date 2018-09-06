@@ -63,36 +63,6 @@ span {
   color: #555;
 }
 
-.md-chips {
-  padding: 12px 0;
-  .md-chip {
-    margin: 0 5px 3px 0;
-  }
-}
-
-.md-chip {
-  display: inline-block;
-  background: #e0e0e0;
-  padding: 0 12px;
-  border-radius: 32px;
-  font-size: 13px;
-  &.md-chip-hover:hover {
-    background: #ccc;
-  }
-}
-
-.md-chip-clickable {
- cursor: pointer;
-}
-
-.md-chip-link{
-  color: #555;
-}
-
-.md-chip-link:hover {
-  text-decoration: none;
-}
-
 @media only screen and (max-width: 1094px) {
   .fixed-wrapper {
     position: static;

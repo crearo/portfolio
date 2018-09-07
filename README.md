@@ -4,8 +4,10 @@ This is [my personal corner on the web](http://rish.space). I quite like the dom
 
 
 # Screenshots
-![alt text](https://raw.githubusercontent.com/crearo/portfolio/master/screenshots/home.png "home")
-![alt text](https://raw.githubusercontent.com/crearo/portfolio/master/screenshots/timeline.png "timeline")
+<p float="left">
+  <img src="https://raw.githubusercontent.com/crearo/portfolio/master/screenshots/home.png" width="400">
+  <img src="https://raw.githubusercontent.com/crearo/portfolio/master/screenshots/timeline.png" width="400">
+</p>
 
 # Technology
 

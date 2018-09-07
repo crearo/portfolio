@@ -20,8 +20,7 @@
       "location": "Dharamshala, India",
       "tags": [
         "travel",
-        "maker-space",
-        "hill-hacks"
+        "maker-space"
       ],
       "date": "May 2016",
       "short": "Lodged at a maker space in Dharamshala for 2 weeks.",
@@ -37,11 +36,9 @@
       "link": "kumbhathon",
       "location": "Kumbhmela, Maharashtra, India",
       "tags": [
+        "mit-media-lab",
         "volunteer",
-        "android",
-        "data",
-        "kumbhathon",
-        "mit-media-lab"
+        "data"
       ],
       "date": "Aug 2015",
       "short": "A 10 day volunteer to bring technology to the Kumbhmela. We visualized changes in population movement on heatmaps, using telecom data.",
@@ -56,8 +53,7 @@
       "date": "Dec 2015",
       "tags": [
         "mit-media-lab",
-        "maker-space",
-        "graviky-labs"
+        "maker-space"
       ],
       "short": "Spent 3 weeks with Anirudh Sharma tinkering around in his lab working on several different things."
     },
@@ -66,10 +62,8 @@
       "link": "tesseract-imaging",
       "location": "Mumbai, India",
       "tags": [
-        "android",
-        "camera",
         "mit-media-lab",
-        "tesseract-imaging"
+        "camera"
       ],
       "date": "May 2015",
       "short": "Worked at Tesseract, an MIT Media Lab spinoff where I co-developed an Android application to capture and view 360 degree image+video with the hardware built there.",
@@ -85,9 +79,7 @@
       "link": "tonbo-imaging",
       "location": "Bangalore, India",
       "tags": [
-        "android",
-        "camera",
-        "tonbo-imaging"
+        "camera"
       ],
       "date": "Dec 2016 - Present",
       "short": "Working at Tonbo Imaging, a camera company. My work here is to bring up the Qualcomm Snapdragon platform at the application layer, creating a base for vision problems, streaming, and fast image operations such as false coloring and video stabilization.",

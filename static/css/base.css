@@ -3,7 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-ul li a {
+.navbar-ref {
   color: #808080;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;

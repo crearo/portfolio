@@ -6,25 +6,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Latest compiled and minified CSS -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">-->
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
-    <link type="text/css" rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
     <!--fonts-->
     <link rel='stylesheet'
           href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Code+Pro:400,500,600,700'
           type='text/css' media='screen'/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:900" rel="stylesheet">
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
 
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/base.css') }}">
     {% block head %}
@@ -33,12 +19,12 @@
 <body>
 <div class="navbar-ul">
     <ul id="navbar-list" class="list-inline">
-        <li><a class="aref" href="/">Home</a></li>
-        <li><a class="aref" href="/timeline">Timeline</a></li>
-        <li><a class="aref" href="/projects">Projects</a></li>
-        <li><a class="aref" href="/experiences">Experiences</a></li>
-        <li><a class="aref" href="http://bhardwajrish.blogspot.com/">Writing</a></li>
-        <li><a class="aref" href="/cv">CV</a></li>
+        <li><a class="navbar-ref" href="/">Home</a></li>
+        <li><a class="navbar-ref" href="/timeline">Timeline</a></li>
+        <li><a class="navbar-ref" href="/projects">Projects</a></li>
+        <li><a class="navbar-ref" href="/experiences">Experiences</a></li>
+        <li><a class="navbar-ref" href="http://bhardwajrish.blogspot.com/">Writing</a></li>
+        <li><a class="navbar-ref" href="/cv">CV</a></li>
     </ul>
 </div>
 {% block body %}

@@ -4,6 +4,7 @@
       "name": "Android Nanodegree",
       "link": "android-nanodegree",
       "location": "Remote",
+      "weight": 2,
       "tags": [
         "udacity",
         "android"
@@ -18,6 +19,7 @@
       "name": "Hill Hacks '16",
       "link": "hillhacks-16",
       "location": "Dharamshala, India",
+      "weight": 3,
       "tags": [
         "travel",
         "maker-space"
@@ -35,6 +37,7 @@
       "name": "Kumbhathon",
       "link": "kumbhathon",
       "location": "Kumbhmela, Maharashtra, India",
+      "weight": 1,
       "tags": [
         "mit-media-lab",
         "volunteer",
@@ -49,6 +52,7 @@
     {
       "name": "Graviky Labs",
       "link": "graviky-labs",
+      "weight": 3,
       "location": "Bangalore, India",
       "date": "Dec 2015",
       "tags": [
@@ -61,6 +65,7 @@
       "name": "Tesseract Imaging",
       "link": "tesseract-imaging",
       "location": "Mumbai, India",
+      "weight": 4,
       "tags": [
         "mit-media-lab",
         "camera"
@@ -77,6 +82,7 @@
     {
       "name": "Tonbo Imaging",
       "link": "tonbo-imaging",
+      "weight": 5,
       "location": "Bangalore, India",
       "tags": [
         "camera"

@@ -8,6 +8,7 @@
       "date": "Dec 2014 - May 2015",
       "short": "An open source Android app to view Zimbra webmails. I spent a good year or so on this project.",
       "status": "complete",
+      "weight": 7,
       "tags": [
         "Android",
         "Email",
@@ -33,6 +34,7 @@
       "date": "Oct 2015",
       "short": "I caught myself setting multiple alarms every night to ensure I wake up in the morning every night. This is for lazy snoozers; uses default alarm clock to set consecutive alarms in an interval.",
       "status": "complete",
+      "weight": 5,
       "tags": [
         "Android",
         "Alarm"
@@ -51,6 +53,7 @@
       "name": "Money Keep",
       "link": "money-keep",
       "date": "Oct 2015",
+      "weight": 4,
       "short": "An NLP based transaction keeper.",
       "status": "complete",
       "tags": [
@@ -74,6 +77,7 @@
       "name": "Atlas Earth",
       "link": "atlas-earth",
       "date": "Apr 2014",
+      "weight": 3,
       "short": "This was the first project I learnt the value of source control in. Developed when I was first learning Android - a geography quizzer.",
       "status": "complete",
       "tags": [
@@ -98,6 +102,7 @@
       "name": "Drunk Much",
       "link": "drunk-much",
       "date": "Dec 2014",
+      "weight": 3,
       "short": "Do you drunk call your ex? This is for you!",
       "status": "complete",
       "tags": [
@@ -118,6 +123,7 @@
       "name": "Knight's Tour",
       "link": "knights-tour",
       "date": "May 2015",
+      "weight": 4,
       "short": "Traverse the entire chess board using a Knight. Was great fun doing the algorithm in CS class, and thought it'd be equally fun to game-ify it.",
       "status": "complete",
       "tags": [
@@ -140,6 +146,7 @@
       "date": "Nov 2015",
       "short": "A gesture controlled mouse and keyboard; use your mobile phone to move your laptop's mouse. I made this during our computer networks course, and our prof later used this throughout the semester as a pointing tool!",
       "status": "complete",
+      "weight": 5,
       "tags": [
         "Android",
         "Networks"
@@ -162,6 +169,7 @@
       "date": "Nov 2014",
       "short": "A fun math quiz; similar to what I used to solve in the newspapers as a kid.",
       "status": "complete",
+      "weight": 4,
       "tags": [
         "Android",
         "Algorithms"
@@ -184,6 +192,7 @@
       "date": "Dec 2015 - Forever",
       "short": "An endless list of hacks for everyday life. >750K installs, my most successful app on the playstore.",
       "status": "complete",
+      "weight": 8,
       "tags": [
         "Android",
         "Interface",
@@ -208,6 +217,7 @@
       "date": "May - Jun 2016",
       "short": "A general quiz platform I made for the Google Admob challenge in a team of 4. Our core focus was on the interface and design. It has >50K installs.",
       "status": "complete",
+      "weight": 6,
       "tags": [
         "Android",
         "Interface",
@@ -229,6 +239,7 @@
       "github": "https://github.com/nicholasrout/lens-launcher",
       "playstore": "https://play.google.com/store/apps/details?id=nickrout.lenslauncher",
       "date": "Apr 2016",
+      "weight": 7,
       "short": "A unique and efficient way to browse your apps. It is based on a graphical fish eye lens algorithm, allowing you to browse through all your apps on a single page.",
       "status": "complete",
       "tags": [
@@ -252,6 +263,7 @@
       "link": "request-for-change",
       "github": "https://github.com/crearo/RequestForChange",
       "date": "May '15",
+      "weight": 5,
       "short": "change.org but with my university's requirements in mind hosted internally.",
       "status": "complete",
       "tags": [
@@ -277,7 +289,7 @@
       "short": "An analytics tool for my personal Android projects. I re-invented the wheel with this one.",
       "description": "I re-invented the wheel with this one. But I'm glad I did as I learnt a whole lot. Basically made Google Analytics for apps using Python Flask and a local database which pushes new information every time it receives a net connection. What my roomate and I created is a tool to save data on the app locally as JSON until it can be pushed to the online database. We used this to track users using DAWebmail, keeping a tab of how often the app is used, viewing user actions- how many webmails are read on the app, how often webmails are deleted from the app, and so on. I later used this at MIT Kumbathon to track how often people call the ambulance/hospital during the Kumbhmela.",
       "link": "flask-analytics",
-      "weight": "1",
+      "weight": "3",
       "status": "complete",
       "tags": [
         "Android",
@@ -302,6 +314,7 @@
       "link": "paper-spatio-temporal",
       "arxiv": "https://arxiv.org/abs/1611.03298",
       "status": "complete",
+      "weight": 5,
       "tags": [
         "Android",
         "Python",
@@ -326,6 +339,7 @@
       "description": "This was a time when I wanted to make really big cars - and so when we were in Singapore I went gaga at how many Lego stores there were all over the city. We bought these monster truck tires that I later used in several creations.",
       "link": "lego-truck",
       "status": "complete",
+      "weight": 2,
       "tags": [
         "lego"
       ],
@@ -346,6 +360,7 @@
       "description": "I don't remember if I actually did anything useful with this, but the idea was to be able to send things to my brother using our bunk bed's slide.",
       "link": "lego-climber",
       "status": "complete",
+      "weight": 1,
       "tags": [
         "lego"
       ],
@@ -361,6 +376,7 @@
       "description": "I used the super huge wheels from the truck I made before this, and used chains between the motor and the tires.",
       "link": "lego-monster-car",
       "status": "complete",
+      "weight": 1,
       "tags": [
         "lego"
       ],
@@ -376,6 +392,7 @@
       "description": "This was one of the first creations I had to struggle with quite a bit to get right. It took a couple revisions of taking apart and rebuilding before I could make an actually useable crane.",
       "link": "lego-crane",
       "status": "complete",
+      "weight": 2,
       "tags": [
         "lego"
       ],
@@ -394,6 +411,7 @@
       "short": "A Lego Color Sorter. My idea was to later be able to sort my other oldschool bricks according to their colors.",
       "description": "My idea was to later be able to sort my other oldschool bricks according to their colors, but I don't quite remember if I ever tried that out.",
       "link": "lego-color-sorter",
+      "weight": 2,
       "status": "complete",
       "tags": [
         "lego"
@@ -412,6 +430,7 @@
       "description": "This was my first Lego car.",
       "link": "lego-car",
       "status": "complete",
+      "weight": 1,
       "tags": [
         "lego"
       ],

@@ -24,6 +24,8 @@ def timeline():
 @app.route('/projects')
 def projects():
     data = get_static_json("static/projects/projects.json")['projects']
+    data.sort(key=order_projects_by_weight, reverse=True)
+
     tag = request.args.get('tags')
     if tag is not None:
         data = [project for project in data if tag.lower() in [project_tag.lower() for project_tag in project['tags']]]
@@ -33,8 +35,16 @@ def projects():
 
 @app.route('/experiences')
 def experiences():
-    return render_template('projects.html',
-                           projects=get_static_json("static/experiences/experiences.json")['experiences'], tag=None)
+    experiences = get_static_json("static/experiences/experiences.json")['experiences']
+    experiences.sort(key=order_projects_by_weight, reverse=True)
+    return render_template('projects.html', projects=experiences, tag=None)
+
+
+def order_projects_by_weight(projects):
+    try:
+        return int(projects['weight'])
+    except KeyError:
+        return 0
 
 
 @app.route('/projects/<title>')

@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e84dfa81-b387-4169-933d-19bfc4810409" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/static/projects/doorlock/doorlock.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/projects/andro-mouse/img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/projects/andro-mouse/img-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/projects/atlas-earth/img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/projects/atlas-earth/img-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/projects/drunk-much/img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/projects/drunk-much/img-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/projects/flask-analytics/img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/projects/flask-analytics/img-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/projects/knights-tour/img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/projects/knights-tour/img-1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/projects/projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/projects/projects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/projects/request-for-change/img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/projects/request-for-change/img-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/projects/sum-race/img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/projects/sum-race/img-1.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,7 +60,7 @@
           <entry key="css" value="1547" />
           <entry key="html" value="22482" />
           <entry key="js" value="157" />
-          <entry key="json" value="7550" />
+          <entry key="json" value="7562" />
           <entry key="md" value="806" />
           <entry key="py" value="2005" />
           <entry key="txt" value="1" />
@@ -65,7 +70,7 @@
         <counts>
           <entry key="CSS" value="1547" />
           <entry key="HTML" value="22482" />
-          <entry key="JSON" value="7550" />
+          <entry key="JSON" value="7562" />
           <entry key="JavaScript" value="157" />
           <entry key="Markdown" value="806" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -79,26 +84,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/projects/projects.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/projects/doorlock/doorlock.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="115" selection-start-line="1" selection-start-column="115" selection-end-line="1" selection-end-column="115" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/projects/alarm-for-snoozers/alarm-for-snoozers.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+            <state relative-caret-position="330">
+              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -909,8 +896,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/projects/projects.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+        <state relative-caret-position="330">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
         </state>
       </provider>
     </entry>

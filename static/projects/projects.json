@@ -17,8 +17,10 @@
         "<iframe width=\"864\" height=\"486\" src=\"https://www.youtube.com/embed/uf7J0jUSvh4\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
       ],
       "photos": [
+        "/static/projects/doorlock/img-4.jpg",
         "/static/projects/doorlock/img-1.png",
-        "/static/projects/doorlock/img-2.png"
+        "/static/projects/doorlock/img-2.png",
+        "/static/projects/doorlock/img-3.jpg"
       ]
     },
     {

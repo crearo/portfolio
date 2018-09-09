@@ -1,0 +1,34 @@
+<div>
+    <span>A fun weekend hack I'd been planning on doing ever since I got my Google Home. Used Lego for the housing and
+        a raspberry pi.</span>
+    <span>Struggles:</span>
+    <ul>
+        <li>The actual doorlock was really rigid - moving the knob with any motor would require a huge torque increase.
+            I opened up the doorlock and thought I could loosen it up a little, but the inner mechanism was far too
+            intricate to be able to replace the springs. I even got a local key-maker to have a look and he spent a
+            couple days but nothing came off it.
+        </li>
+        <li>
+            Rpi.GPIO is a terrible, terrible library. I really don't know why most suggest it. The servo motor stutters
+            when the rpi is doing some processing, because the library uses software timed PWM. It's ironic all
+            tutorials use Rpi.GPIO.
+        </li>
+        <li>
+            Google Home's implicit actions invocation isn't smooth; it has an additional step. When I ask Google Home to
+            open the door, it asks me if I'd like to use the actions dialog-flow I created to process the action. I have
+            to say yes before it processes the action. This kind of makes the entire purpose of using Home useless.
+        </li>
+    </ul>
+    <span>Future work:</span>
+    <ul>
+        <li>
+            I will have to add another motor to engage/disengage the driving motor or gear shaft, unless I figure out a
+            genius way using the single rotating motor. This would useful in the event that there's no current, or I
+            physically want to use the door-key from the outside.
+        </li>
+        <li>
+            Figure out state from the servo motor. If say I can lock the door from outside with the servo disengaged,
+            I'd need the motor to spin only if it can spin. I'm not sure yet if the servo gives this as feedback.
+        </li>
+    </ul>
+</div>

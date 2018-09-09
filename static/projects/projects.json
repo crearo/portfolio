@@ -1,6 +1,27 @@
 {
   "projects": [
     {
+      "name": "G.Home + Lego + RPi Doorlock",
+      "link": "doorlock",
+      "date": "Aug 2018",
+      "short": "We've been struggling with keys for a long time at home. I thought it'd be fun to use my Google Home for actual IoT stuff, and this turned out just about fine!",
+      "status": "complete",
+      "weight": 8,
+      "tags": [
+        "Android",
+        "RPi",
+        "Lego"
+      ],
+      "videos": [
+        "<iframe width=\"854\" height=\"480\" src=\"https://www.youtube.com/embed/NIQz_NP-mOs\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>",
+        "<iframe width=\"864\" height=\"486\" src=\"https://www.youtube.com/embed/uf7J0jUSvh4\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ],
+      "photos": [
+        "/static/projects/doorlock/img-1.png",
+        "/static/projects/doorlock/img-2.png"
+      ]
+    },
+    {
       "name": "DAWebmail",
       "link": "dawebmail",
       "github": "https://github.com/crearo/dawebmail",

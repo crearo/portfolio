@@ -16,6 +16,29 @@
       ]
     },
     {
+      "name": "Month-long Travel '18",
+      "link": "travel-18",
+      "location": "Bhutan, Auli, Rishikesh",
+      "weight": 3,
+      "tags": [
+        "travel",
+        "skiing"
+      ],
+      "date": "Feb 2018",
+      "short": "A took a month off of work to ski and travel North India and Bhutan.",
+      "photos": [
+        "/static/experiences/travel-18/img-3.jpg",
+        "/static/experiences/travel-18/img-4.jpg",
+        "/static/experiences/travel-18/img-5.jpg",
+        "/static/experiences/travel-18/img-1.jpg",
+        "/static/experiences/travel-18/img-2.jpg",
+        "/static/experiences/travel-18/img-6.jpg"
+      ],
+      "videos": [
+        "<iframe width=\"864\" height=\"486\" src=\"https://www.youtube.com/embed/srKZjUyTiKg\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ]
+    },
+    {
       "name": "Hill Hacks '16",
       "link": "hillhacks-16",
       "location": "Dharamshala, India",

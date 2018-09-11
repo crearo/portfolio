@@ -73,6 +73,22 @@
       ]
     },
     {
+      "name": "Teaching Volunteer",
+      "link": "rural-intern",
+      "location": "Himachal, India",
+      "weight": 1,
+      "tags": [
+        "volunteer",
+        "teaching"
+      ],
+      "date": "Dec 2014",
+      "short": "Spent a month at Sandhol, a small village in Himachal as a part of my college's rural internship program where we taught students of grades 2-6 Math and English.",
+      "photos": [
+        "/static/experiences/rural-intern/img-2.jpg",
+        "/static/experiences/rural-intern/img-1.jpg"
+      ]
+    },
+    {
       "name": "Graviky Labs",
       "link": "graviky-labs",
       "weight": 3,
@@ -82,11 +98,15 @@
         "mit-media-lab",
         "maker-space"
       ],
-      "short": "Spent 3 weeks with Anirudh Sharma tinkering around in his lab working on several different things."
+      "short": "Spent 3 weeks with Anirudh Sharma tinkering around in his lab working on several different things.",
+      "photos": [
+        "/static/experiences/graviky-labs/img-1.jpg",
+        "/static/experiences/graviky-labs/img-2.jpg"
+      ]
     },
     {
       "name": "Tesseract Imaging",
-      "link": "tesseract-imaging",
+      "link": "tesseract",
       "location": "Mumbai, India",
       "weight": 4,
       "tags": [

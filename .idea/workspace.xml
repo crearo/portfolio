@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e84dfa81-b387-4169-933d-19bfc4810409" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/static/experiences/rural-intern/rural-intern.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/experiences/experiences.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/experiences/experiences.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/experiences/tonbo-imaging/tonbo-imaging.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/experiences/tonbo-imaging/tonbo-imaging.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/experiences/travel-18/travel-18.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/experiences/travel-18/travel-18.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/timeline.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,9 +29,9 @@
         <counts>
           <entry key="Procfile" value="1" />
           <entry key="css" value="37" />
-          <entry key="html" value="105" />
+          <entry key="html" value="106" />
           <entry key="js" value="4" />
-          <entry key="json" value="36" />
+          <entry key="json" value="37" />
           <entry key="md" value="2" />
           <entry key="py" value="15" />
           <entry key="txt" value="5" />
@@ -44,8 +40,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="37" />
-          <entry key="HTML" value="105" />
-          <entry key="JSON" value="36" />
+          <entry key="HTML" value="106" />
+          <entry key="JSON" value="37" />
           <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="6" />
@@ -55,7 +51,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1552" />
-          <entry key="html" value="30055" />
+          <entry key="html" value="30093" />
           <entry key="js" value="157" />
           <entry key="json" value="8660" />
           <entry key="md" value="806" />
@@ -66,7 +62,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1552" />
-          <entry key="HTML" value="30055" />
+          <entry key="HTML" value="30093" />
           <entry key="JSON" value="8660" />
           <entry key="JavaScript" value="157" />
           <entry key="Markdown" value="806" />
@@ -79,19 +75,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/experiences/experiences.json">
+        <entry file="file://$PROJECT_DIR$/static/projects/projects.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="139" column="8" selection-start-line="139" selection-start-column="8" selection-end-line="139" selection-end-column="54" />
+            <state relative-caret-position="45">
+              <caret line="369" column="36" selection-start-line="369" selection-start-column="15" selection-end-line="369" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/experiences/tonbo-imaging/tonbo-imaging.html">
+        <entry file="file://$PROJECT_DIR$/templates/timeline.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+            <state relative-caret-position="246">
+              <caret line="151" column="52" selection-start-line="151" selection-start-column="52" selection-end-line="151" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -107,12 +103,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>aref</find>
-      <find>250</find>
-      <find>android</find>
-      <find>md-chip-clickable</find>
-      <find>32</find>
-      <find>mater</find>
       <find>md-chip-hover</find>
       <find>margin</find>
       <find>&quot;weight&quot;: 5</find>
@@ -137,6 +127,12 @@
       <find>kumb</find>
       <find>tesserac</find>
       <find>&lt;/a&gt;</find>
+      <find>month</find>
+      <find>tonbo</find>
+      <find>real</find>
+      <find>spatio</find>
+      <find>paper-</find>
+      <find>tesser0ac</find>
     </findStrings>
     <replaceStrings>
       <replace>300</replace>
@@ -193,7 +189,6 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/static/css/project.css" />
         <option value="$PROJECT_DIR$/templates/project.html" />
-        <option value="$PROJECT_DIR$/templates/timeline.html" />
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/static/css/base.css" />
@@ -212,10 +207,11 @@
         <option value="$PROJECT_DIR$/static/experiences/rural-intern/rural-intern.html" />
         <option value="$PROJECT_DIR$/static/experiences/experiences.json" />
         <option value="$PROJECT_DIR$/static/experiences/tonbo-imaging/tonbo-imaging.html" />
+        <option value="$PROJECT_DIR$/templates/timeline.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="7" fullScreen="true">
     <option name="y" value="24" />
     <option name="width" value="1366" />
     <option name="height" value="744" />
@@ -791,13 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/timeline.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -907,13 +896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/projects/projects.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/experiences/travel-18/travel-18.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -937,8 +919,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/experiences/tonbo-imaging/tonbo-imaging.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+        <state relative-caret-position="195">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/projects/projects.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="369" column="36" selection-start-line="369" selection-start-column="15" selection-end-line="369" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/timeline.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="151" column="52" selection-start-line="151" selection-start-column="52" selection-end-line="151" selection-end-column="52" />
         </state>
       </provider>
     </entry>

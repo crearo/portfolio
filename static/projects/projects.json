@@ -1,6 +1,28 @@
 {
   "projects": [
     {
+      "name": "Video Stabilization",
+      "link": "video-stab",
+      "date": "Jan 2018",
+      "short": "Real time video stabilization + minimal computation + auto time-offset correction on Android using a gyroscope only",
+      "status": "complete",
+      "weight": 9,
+      "tags": [
+        "Android",
+        "media"
+      ],
+      "videos": [
+        "<iframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/kjc0uVtK7ss\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>",
+        "<iframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/FG7QelT8CSw\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>",
+        "<iframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/1RqiamkcpUc\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ],
+      "photos": [
+        "/static/projects/video-stab/img-1.png",
+        "/static/projects/video-stab/img-2.png",
+        "/static/projects/video-stab/img-3.png"
+      ]
+    },
+    {
       "name": "G.Home + Lego + RPi Doorlock",
       "link": "doorlock",
       "date": "Aug 2018",

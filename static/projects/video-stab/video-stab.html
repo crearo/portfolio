@@ -1,0 +1,55 @@
+<div>
+    <span>This is one of the most difficult problems I've worked on and I'm pretty happy with the results so far. This performs real time video stabilization using a gyroscope and calculates time offset automatically with minimal computation (under 4ms on a weak Qualcomm Snapdragon 210 SOC).</span>
+    <span><b>My work</b></span>
+    <ul>
+        <li><b>Rendering:</b>
+            <br>
+            Using OpenGL for rendering. Rendering was initially based on <a
+                    href="https://github.com/google/grafika">Grafika</a>, but I later created a <a
+                    href="/projects/lib-graf">video rendering + filters</a> library which is now heavily used at <a
+                    href="/experiences/tonbo-imaging">Tonbo in all Android based products</a>.
+        </li>
+        <li><b>3D + 2D Rotations:</b>
+            <br>
+            Did not use quaternion rotations as suggested in most video stabilization papers - simple Euler angles
+            worked just fine because the change in angles was quite small + there was no question of gimbal lock. I
+            also created a mini library for chainable-3D sprite rotations. I also allow for both 3D or 2D only movements
+            for comparison. Essentially, stabilization boils down to only one 4x4 matrix multiplication.
+        </li>
+        <li><b>Gyroscope Data:</b>
+            <br>
+            Most Android devices provide sensor data at about 200Hz (every 5ms). For a 30 FPS video, that was sufficient
+            to get enough gyro data between frames and interpolate it's rotation by integrating the angular velocity.
+            Android applies several filters below the HAL on it's sensors to minimize drift, I used the raw gyro sensor
+            data.
+        </li>
+        <li><b>Gyroscope Drift:</b>
+            <br>
+            Gyrscope drift really wasn't much of a problem - all I cared for was the delta of angular rotation from
+            frame to frame (approx. 33ms for a 30FPS video). I did not need to know exact orientation. I also used a
+            simple bring back to center mechanism to ensure the crop window came back to the center.
+        </li>
+        <li><b>Time Offset Calibration:</b>
+            <br>
+            Instead of tricky manual time offset calculations - for which there are so many papers, I ran a
+            simple KLT tracker between 10-20 frames on randomly chosen parts of the image and plotted graphs of movement
+            as measured by the gyro vs. the KLT tracker. View <a href="/static/projects/video-stab/img-2.png">here</a>.
+            This worked really well and can be configured to be called every minute or so in case there's unexpected
+            drift.
+        </li>
+        <li><b>Bring back to center:</b>
+            <br>
+            I used a very simple configurable linear vs exponential interpolation to bring the crop window back to
+            center. This is necessary to ensure the crop window has enough area to move at all times.
+        </li>
+        <li><b>Rolling Shutter:</b>
+            <br>
+            Since this was primarily intended to run on thermal cameras, I had to take into account rolling shutter
+            which happens because of line-by-line read-out. Luckily enough, in most of our cameras, I did not observe
+            zig-zaggy artifacts and so linear slant correction did the trick.
+            <br>
+            Even on bayer sensors, except on the Nexus 5, there were very few phones in which I observed noticeable
+            rolling shutter for hand-held shake.
+        </li>
+    </ul>
+</div>

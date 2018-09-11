@@ -315,6 +315,24 @@
       ]
     },
     {
+      "name": "Portfolio",
+      "link": "portfolio",
+      "github": "https://github.com/crearo/portfolio",
+      "date": "Oct '15 - Forever",
+      "weight": 5,
+      "short": "Recursive; My personal space in the great world wide web. I've revised the design time and again, and feel I'm at a stage where I'm quite happy with it now!",
+      "status": "ongoing",
+      "tags": [
+        "Python",
+        "Web",
+        "Flask",
+        "FOSS"
+      ],
+      "photos": [
+        "/static/projects/portfolio/img-1.png"
+      ]
+    },
+    {
       "name": "Request For Change",
       "link": "request-for-change",
       "github": "https://github.com/crearo/RequestForChange",

@@ -15,7 +15,7 @@
   background: #e0e0e0;
   padding: 0 12px;
   border-radius: 32px;
-  font-size: 13px;
+  font-size: 12px;
   &.md-chip-hover:hover {
     background: #ccc;
   }

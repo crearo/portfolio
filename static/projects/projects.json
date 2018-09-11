@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "name": "Video Stabilization",
+      "name": "Real-Time Video Stabilization",
       "link": "video-stab",
       "date": "Jan 2018",
       "short": "Real time video stabilization + minimal computation + auto time-offset correction on Android using a gyroscope only",

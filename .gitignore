@@ -14,6 +14,7 @@ develop-eggs
 
 # idea
 .idea/
+.idea/workspace.xml
 
 # Installer logs
 pip-log.txt

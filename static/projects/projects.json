@@ -23,6 +23,21 @@
       ]
     },
     {
+      "name": "Lib Graf",
+      "link": "lib-graf",
+      "date": "May 2018",
+      "short": "A library to take a continuous media source [camera, video, gstreamer byte arrays], apply OpenGL filters [vertex+fragment shaders], and configure rendering in shape, size and rotation in 3D space the input and direct to any/multiple Surfaces on Android.",
+      "status": "complete",
+      "weight": 9,
+      "tags": [
+        "Android",
+        "media"
+      ],
+      "photos": [
+        "/static/projects/lib-graf/img-1.png"
+      ]
+    },
+    {
       "name": "G.Home + Lego + RPi Doorlock",
       "link": "doorlock",
       "date": "Aug 2018",
@@ -248,8 +263,6 @@
         "Android",
         "Python Flask"
       ],
-      "videos": [
-      ],
       "photos": [
         "/static/projects/lifehacks/img-1.png"
       ]
@@ -271,8 +284,6 @@
       "tech_used": [
         "Java",
         "Android"
-      ],
-      "videos": [
       ],
       "photos": [
         "/static/projects/perplexy/img-1.png"

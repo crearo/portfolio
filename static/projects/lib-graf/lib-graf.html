@@ -1,0 +1,120 @@
+<p>A library to take a continuous media source <code>[camera, video, gstreamer byte arrays]</code>, apply OpenGL
+    filters
+    <code>[vertex+fragment shaders]</code>, and configure rendering in shape, size and rotation in 3D space the input
+    and direct to any/multiple <code>Surfaces</code> on Android. The output can then be streamed using Gstreamer or any
+    streaming library from an offscreen Surface's callback.
+</p>
+
+<p>The best explanation to understand how + why this was made is in the library's
+    <code>readme</code> of the library hosted internally on Tonbo's GitHub.
+</p>
+
+<h1 id="flowchart">Flow Chart</h1>
+
+<pre><code>
+           MediaSource
+                |
+   Attach [Multiple] Output Surfaces
+                |
+        Provide a Filter
+                |
+        Provide a Renderer
+               ...
+          Send to Display
+               ...
+    Callback from Surface (if any)
+               ...
+  Send data from callback to Gstreamer
+
+</code></pre>
+
+<p>Each surface is an output destination to where the <code>mediasource</code>'s frames are rendered to. You can provide
+    custom filters and renderers.</p>
+
+<h1 id="mediasourcetypes">Media Source Types</h1>
+
+<p>A Media Source is any data source that writes to a <code>SurfaceTexture</code>. </p>
+
+<ul>
+    <li><code>CameraV1Source</code></li>
+
+    <li><code>CameraV2Source</code></li>
+
+    <li><code>MediaPlayer</code></li>
+
+    <li>Any DataSource writing to <code>SurfaceTexture</code>. This could be a custom data source created by you which
+        writes to a <code>SurfaceTexture</code>. To do so you must use <code>glTexImage2D</code>.
+    </li>
+</ul>
+
+<h1 id="outputsurfaces">Output Surfaces</h1>
+
+<p>The library provides support for the following output surfaces by default:</p>
+
+<ul>
+    <li><code>SurfaceView</code>
+        You can attach/deattach surfaceviews at runtime to increase or decrease the number of surfaces being written to.
+    </li>
+
+    <li><code>MediaCodec</code>
+
+
+        <ul>
+            <li><code>MediaCodec</code> <code>Surface</code> with <code>MediaMuxer</code>
+                Use this when you would like to record a video
+            </li>
+
+            <li><code>MediaCodec</code> <code>Surface</code> with a data callback
+                Use this when you would like data callback from a <code>MediaCodec</code> <code>Surface</code> which
+                encodes the <code>Media Source</code>'s frames.
+            </li>
+        </ul>
+    </li>
+
+    <li><code>Offscreen Surface</code>
+        This is useful for when you want to render to an <code>offscreen surface</code>, ie, any surface which isn't
+        backed by a view, or MediaCodec. The library allows you to asynchronously read the frames from this surface
+        internally using a <code>PBO</code>.
+    </li>
+</ul>
+
+<h1 id="filters">Filters</h1>
+
+<p>These are OpenGLES shader programs. Each filter has a <code>Vertex</code> and <code>Fragment</code> shader. There is
+    a list of filters provided in the library. We've re-used several filters from <a
+            href="https://github.com/BradLarson/GPUImage">Bard Larson's GPUImage library</a>.</p>
+
+<h5 id="creatingyourownfilters">Creating your own Filters</h5>
+
+<ul>
+    <li>if you'd only like to change the fragment shader, create a class which extends <code>BaseFragmentShader</code>
+        which provides a <code>mediaTextureId</code> which is the texture id of the data source's current frame.
+    </li>
+
+    <li>if you'd like to change both the fragment and vertex shader, extend the <code>BaseVertexShader</code></li>
+
+    <li>Your fragment shader must also name the mediaTextureId <code>sTexture</code> in the program if you'd like to use
+        the <code>default renderer</code>.
+    </li>
+</ul>
+
+<h1 id="renderers">Renderers</h1>
+
+<p>This is how the frame is rendered to the <code>surface</code>. You are provided a <code>Sprite3d</code> helper class
+    that allows you to move the video sprite in 3D with simple builder functions.</p>
+
+<h5 id="creatingyourownrenderer">Creating your own Renderer</h5>
+
+<ul>
+    <li>extend the <code>BaseRenderer</code>.</li>
+
+    <li>ensure you provide your <code>Filter</code> the <code>mediaTextureId</code> in the <code>onSurfaceCreated</code>
+        callback.
+    </li>
+
+    <li>Define your rendering defaults in the <code>onSurfaceChanged</code> callback</li>
+
+    <li>set your viewport and draw your Sprite in <code>onDraw</code>. This is called every time the
+        <code>mediasource</code> provides data.
+    </li>
+</ul>

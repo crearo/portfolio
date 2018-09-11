@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e84dfa81-b387-4169-933d-19bfc4810409" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/static/projects/video-stab/video-stab.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/projects/lib-graf/lib-graf.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/projects/projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/projects/projects.json" afterDir="false" />
     </list>
@@ -31,7 +31,7 @@
         <counts>
           <entry key="Procfile" value="1" />
           <entry key="css" value="35" />
-          <entry key="html" value="99" />
+          <entry key="html" value="101" />
           <entry key="js" value="4" />
           <entry key="json" value="33" />
           <entry key="md" value="2" />
@@ -42,7 +42,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="35" />
-          <entry key="HTML" value="99" />
+          <entry key="HTML" value="101" />
           <entry key="JSON" value="33" />
           <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="2" />
@@ -53,9 +53,9 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1547" />
-          <entry key="html" value="26833" />
+          <entry key="html" value="27579" />
           <entry key="js" value="157" />
-          <entry key="json" value="7803" />
+          <entry key="json" value="8051" />
           <entry key="md" value="806" />
           <entry key="py" value="2005" />
           <entry key="txt" value="1" />
@@ -64,8 +64,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1547" />
-          <entry key="HTML" value="26833" />
-          <entry key="JSON" value="7803" />
+          <entry key="HTML" value="27579" />
+          <entry key="JSON" value="8051" />
           <entry key="JavaScript" value="157" />
           <entry key="Markdown" value="806" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -76,29 +76,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/projects/projects.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/projects/video-stab/video-stab.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="173">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/experiences/experiences.json">
+        <entry file="file://$PROJECT_DIR$/static/projects/lib-graf/lib-graf.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="93" column="176" lean-forward="true" selection-start-line="93" selection-start-column="176" selection-end-line="93" selection-end-column="176" />
+            <state relative-caret-position="300">
+              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -114,13 +105,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>title</find>
-      <find>request</find>
-      <find>tag</find>
-      <find>tags</find>
-      <find>md-chip</find>
-      <find>chip</find>
-      <find>scrapi</find>
       <find>open-s</find>
       <find>res</find>
       <find>rest</find>
@@ -144,6 +128,13 @@
       <find>media</find>
       <find>\</find>
       <find>&quot;</find>
+      <find>renderer</find>
+      <find>renderer to</find>
+      <find>writes</find>
+      <find>support the</find>
+      <find>..</find>
+      <find>filters</find>
+      <find>&quot;videos&quot;: [</find>
     </findStrings>
     <replaceStrings>
       <replace>300</replace>
@@ -168,7 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/static/css/basic_home.css" />
         <option value="$PROJECT_DIR$/static/css/aboutme.css" />
         <option value="$PROJECT_DIR$/templates/404.html" />
         <option value="$PROJECT_DIR$/static/projects/dawebmail/dawebmail.html" />
@@ -217,8 +207,9 @@
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/static/experiences/experiences.json" />
         <option value="$PROJECT_DIR$/static/projects/doorlock/doorlock.html" />
-        <option value="$PROJECT_DIR$/static/projects/projects.json" />
         <option value="$PROJECT_DIR$/static/projects/video-stab/video-stab.html" />
+        <option value="$PROJECT_DIR$/static/projects/lib-graf/lib-graf.html" />
+        <option value="$PROJECT_DIR$/static/projects/projects.json" />
       </list>
     </option>
   </component>
@@ -256,13 +247,6 @@
               <item name="portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="projects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="video-stab" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
@@ -574,7 +558,7 @@
     <frame x="0" y="-37" width="1366" height="805" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24925373" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24925373" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -584,7 +568,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31871346" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31871346" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -617,7 +601,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/css/font-awesome.css" />
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -919,17 +902,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/projects/projects.json">
+    <entry file="file://$PROJECT_DIR$/static/projects/video-stab/video-stab.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="48" />
+        <state relative-caret-position="105">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/projects/video-stab/video-stab.html">
+    <entry file="file://$PROJECT_DIR$/static/projects/lib-graf/lib-graf.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        <state relative-caret-position="300">
+          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/projects/projects.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>

@@ -28,6 +28,13 @@ body {
   .list-inline {
     width: 100%;
   }
+
+  .navbar-ref {
+    color: #808080;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+  }
+
 }
 
 a::selection,

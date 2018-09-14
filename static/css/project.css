@@ -89,3 +89,9 @@ span {
     align-items: center;
   }
 }
+
+@media only screen and (max-width: 1094px) {
+.item iframe {
+    width: auto !important;
+  }
+}

@@ -25,10 +25,20 @@
 
 .card {
   margin:10px;
-  a {
-    padding-right: 15px;
-  }
+  max-height: 325px;
+  min-height: 325px;
 }
+
+.card-reveal .card-title {
+    overflow: auto;
+    white-space: normal;
+    text-overflow: unset;
+}
+
+.card a {
+    padding-left:8px;
+    padding-right:8px;
+  }
 
 .card-image {
   max-width:400px;

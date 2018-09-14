@@ -27,6 +27,7 @@
   margin:10px;
   max-height: 325px;
   min-height: 325px;
+  max-width: 320px;
 }
 
 .card-reveal .card-title {
@@ -35,14 +36,14 @@
     text-overflow: unset;
 }
 
-.card a {
+.md-chip-link {
     padding-left:8px;
     padding-right:8px;
   }
 
 .card-image {
-  max-width:400px;
-      display: flex;
+    max-width:400px;
+    display: flex;
     justify-content: center;
 }
 

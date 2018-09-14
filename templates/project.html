@@ -57,17 +57,18 @@
     </div>
 
     <div class="wrapper scroll-wrapper">
-        <div class="title">{{ project['name'] }}</div>
+        <div class="heading">
+            <div class="title">{{ project['name'] }}</div>
 
-        <div class="date">{{ project['date'] }}</div>
+            <div class="date">{{ project['date'] }}</div>
 
-        <div class="md-chips">
-            {% for tag in project['tags'] %}
-            <div class="md-chip md-chip-clickable"><a class="md-chip-link" href="/projects?tags={{tag}}">{{tag}}</a>
+            <div class="md-chips">
+                {% for tag in project['tags'] %}
+                <div class="md-chip md-chip-clickable"><a class="md-chip-link" href="/projects?tags={{tag}}">{{tag}}</a>
+                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
-
         <div class="content">{{ project['description'] | safe }}</div>
     </div>
 

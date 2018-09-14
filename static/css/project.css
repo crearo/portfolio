@@ -44,10 +44,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.content {
-  margin:20px 100px 20px 0px;
-}
-
 span {
   display:inline-block;
   margin: 10px 0 10px 0px;
@@ -83,9 +79,6 @@ span {
     min-height: calc(100vh - 190px);
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
-  .scroll-wrapper {
     align-items: center;
   }
 }

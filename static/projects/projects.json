@@ -1,6 +1,24 @@
 {
   "projects": [
     {
+      "name": "Auto Quad",
+      "link": "auto-cheap-quad",
+      "date": "Sept 2018 - Ongoing",
+      "short": "The idea is to buy a cheap chinese quad and eliminate drift + stabilize + direct it using a camera placed on top.",
+      "status": "ongoing",
+      "weight": 8,
+      "tags": [
+        "media"
+      ],
+      "photos": [
+        "/static/projects/auto-cheap-quad/img-1.jpg"
+      ],
+      "videos": [
+        "<iframe width=\"645\" height=\"481\" src=\"https://www.youtube.com/embed/kNVMfhi58ac\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ],
+      "github": "https://github.com/botmayank/nrf24_multipro_h8_pc"
+    },
+    {
       "name": "Real-Time Video Stabilization",
       "link": "video-stab",
       "date": "Jan 2018",

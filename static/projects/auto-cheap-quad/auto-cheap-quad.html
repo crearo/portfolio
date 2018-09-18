@@ -1,0 +1,14 @@
+<div>
+    <span><b>This is a WIP</b></span>
+
+    <span>The idea is to buy a cheap chinese quad and eliminate drift + stabilize + direct it using a camera placed on top.
+        I'm using a Syma x20, a nanoquad with significant drift, yet relatively stable in altitude as it has a barometer, and a camera placed on my ceiling to keep the quad in field of view.
+    </span>
+    <span class="lb">So far,</span>
+    <ul>
+        <li>Using an nRF24 + Arduino to send control messages to the quad.</li>
+        <li>An Aruco marker placed on top of the quad for pose estimation.</li>
+        <li>Meanshift/KLT for tracking whern aruco detection fails.</li>
+        <li>An oversimplified PID control loop to stabilize depth + position.</li>
+    </ul>
+</div>

@@ -44,6 +44,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.links{
+  margin:20px 0px 10px 0px;
+}
+
 span {
   display:inline-block;
   margin: 10px 0 10px 0px;

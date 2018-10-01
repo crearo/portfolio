@@ -37,9 +37,15 @@ def projects():
 def lifehacks_privacy_policy():
     return render_template('lifehacks-privacy-policy.html')
 
+
 @app.route('/lifehacks/terms-and-conditions')
+def lifehacks_disclaimer():
+    return render_template('lifehacks-terms-and-conditions.html')
+
+
+@app.route('/lifehacks/disclaimer')
 def lifehacks_terms_and_conditions():
-    return render_template('terms-and-conditions.html')
+    return render_template('lifehacks-disclaimer.html')
 
 
 @app.route('/experiences')

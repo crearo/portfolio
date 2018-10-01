@@ -33,6 +33,15 @@ def projects():
     return render_template('projects.html', projects=data, tag=tag)
 
 
+@app.route('/lifehacks/privacy-policy')
+def lifehacks_privacy_policy():
+    return render_template('lifehacks-privacy-policy.html')
+
+@app.route('/lifehacks/terms-and-conditions')
+def lifehacks_terms_and_conditions():
+    return render_template('terms-and-conditions.html')
+
+
 @app.route('/experiences')
 def experiences():
     experiences = get_static_json("static/experiences/experiences.json")['experiences']

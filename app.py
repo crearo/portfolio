@@ -38,6 +38,11 @@ def lifehacks_privacy_policy():
     return render_template('lifehacks-privacy-policy.html')
 
 
+@app.route('/dawebmail/privacy-policy')
+def dawebmail_privacy_policy():
+    return render_template('dawebmail-privacy-policy.html')
+
+
 @app.route('/lifehacks/terms-and-conditions')
 def lifehacks_disclaimer():
     return render_template('lifehacks-terms-and-conditions.html')

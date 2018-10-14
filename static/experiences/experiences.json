@@ -131,7 +131,7 @@
         "camera"
       ],
       "date": "Dec 2016 - Present",
-      "short": "Working at Tonbo Imaging, a camera company. My work here is to bring up the Qualcomm Snapdragon platform at the application layer, creating a base for vision problems, streaming, and fast image operations such as false coloring and video stabilization.",
+      "short": "Working at Tonbo Imaging, a camera company. My work here is to bring up the Qualcomm Snapdragon platform at the application layer, creating a base for camera-client communication, the client SDK and camera FDK, a base for vision problems, streaming, and fast image operations such as false coloring and video stabilization.",
       "videos": [
         "<iframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/kjc0uVtK7ss\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>",
         "<iframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/1RqiamkcpUc\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"

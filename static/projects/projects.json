@@ -1,6 +1,38 @@
 {
   "projects": [
     {
+      "name": "360° Camera",
+      "link": "tesseract",
+      "date": "May 2015",
+      "short": "Worked at Tesseract, an MIT Media Lab spinoff where I co-developed an Android application to capture and view 360 degree image+video with the hardware built there.",
+      "status": "complete",
+      "weight": 7,
+      "tags": [
+        "Android",
+        "media"
+      ],
+      "videos": [
+        "<iframe width=\"1351\" height=\"533\" src=\"https://www.youtube.com/embed/OmDS-FdotNU\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ],
+      "photos": [
+        "/static/experiences/tesseract/img-1.jpg"
+      ]
+    },
+    {
+      "name": "Modular Thermal Camera",
+      "link": "tonbo-imaging",
+      "date": "Dec 2016 - Present",
+      "short": "Working at Tonbo Imaging, a camera company. My work here is to bring up the Qualcomm Snapdragon platform at the application layer, creating a base for camera-client communication, the client SDK and camera FDK, a base for vision problems, streaming, and fast image operations such as false coloring and video stabilization.",
+      "weight": 9,
+      "tags": [
+        "Android",
+        "media"
+      ],
+      "photos": [
+        "/static/experiences/tonbo-imaging/img-1.jpg"
+      ]
+    },
+    {
       "name": "Auto Quad",
       "link": "auto-quad",
       "date": "Sept 2018 - Ongoing",

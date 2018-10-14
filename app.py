@@ -72,17 +72,22 @@ def project(title):
     projects = get_static_json("static/projects/projects.json")['projects']
     experiences = get_static_json("static/experiences/experiences.json")['experiences']
 
-    selected = next((p for p in projects if p['link'] == title), None)
-    is_project = True
-    if selected is None:
-        selected = next((p for p in experiences if p['link'] == title), None)
-        is_project = False
-    if selected is None:
+    in_project = next((p for p in projects if p['link'] == title), None)
+    in_exp = next((p for p in experiences if p['link'] == title), None)
+
+    if in_project is None and in_exp is None:
         return render_template('404.html'), 404
+    # fixme: choose the experience one for now, cuz I've done some shite hardcoding here.
+    elif in_project is not None and in_exp is not None:
+        selected = in_exp
+    elif in_project is not None:
+        selected = in_project
+    else:
+        selected = in_exp
 
     # load html if the json file doesn't contain a description
     if 'description' not in selected:
-        path = "projects" if is_project else "experiences"
+        path = "experiences" if in_exp is not None else "projects"
         selected['description'] = io.open(get_static_file(
             'static/%s/%s/%s.html' % (path, selected['link'], selected['link'])), "r", encoding="utf-8").read()
     return render_template('project.html', project=selected)

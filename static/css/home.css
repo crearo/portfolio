@@ -57,6 +57,12 @@ ul li a {
   margin:0px;
 }
 
+.title-logo{
+    height:24px;
+    width:24px;
+    margin: 0px 12px 0px 2px;
+}
+
 .mobile-view {
   display: none;
 }

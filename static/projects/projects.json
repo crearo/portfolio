@@ -51,6 +51,21 @@
       "github": "https://github.com/botmayank/nrf24_multipro_h8_pc"
     },
     {
+      "name": "Mass Whatsapp Forwarder",
+      "link": "whatsapp-hack",
+      "date": "January 2014",
+      "short": "A weekend hack to exceed the then 50 member restriction on WhatsApp groups.",
+      "status": "complete",
+      "weight": 8,
+      "tags": [
+        "python"
+      ],
+      "photos": [
+        "/static/projects/whatsapp-hack/image1.png"
+      ],
+      "github": "https://github.com/ParthGanatra/yowsup"
+    },
+    {
       "name": "Real-Time Video Stabilization",
       "link": "video-stab",
       "date": "Jan 2018",
@@ -438,7 +453,7 @@
       "link": "paper-spatio-temporal",
       "arxiv": "https://arxiv.org/abs/1611.03298",
       "status": "complete",
-      "weight": 5,
+      "weight": 8,
       "tags": [
         "Android",
         "Python",

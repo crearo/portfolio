@@ -6,7 +6,10 @@ import datetime
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
-app.config['GA_TRACKING_ID'] = os.environ['GA_TRACKING_ID']
+try:
+    app.config['GA_TRACKING_ID'] = os.environ['GA_TRACKING_ID']
+except:
+    print('Tracking ID not set')
 
 resume_pdf_link = 'https://drive.google.com/open?id=0B2BrrDjIiyvmcWp5T194cy00UmM'
 

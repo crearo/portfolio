@@ -50,6 +50,10 @@ Specifically working on making the invisible visible using thermal cameras.
 
 -----------
 
+// No one is really going to come and write this for me, as much as I wish it did. I know I've done a whole lot, but putting it down into words and making it look as if it all always made sense is difficult. 
+
+-----------
+
 
 I've written stories upon stories and linked one retrofitted each event in my life that has led me up to here; how one project led to another, when very frankly at those moments in time, all I ever did was truly enjoy the process of building. However, none of those fabricated stories really resonate with the person I am, or my approach to the way I work. I am a maker at heart; I really do enjoy the process of sitting for hours on end and building something - anything, many a times without a purpose or end goal in mind. 
 With the work that I have done so far, I am most interested in working with the Camera Culture group, the Fluid Interfaces group, and Responsive Environments group.
@@ -58,18 +62,20 @@ I am a firm believer of the fact that ideas do not pop out of thin air - even th
 
 My interest from early on has always been in creating tangible things - not things that exist solely in the virtual world - the great world wide web. I started off by using Android as a platform because it gave me all the sensors the Lego Mindstorms NXT kit did, but in a very compact form. Ever since, I've worked on dozens of applications leveraging the IMU, the camera and built on top of the standard Android interface to create things. Some of these that started off as weekend hacks just to see of something of the sort could be possible ended up being full time side projects, some of which I continue to work on till date. 
 
-With Lens Launcher, an open source Android launcher I contributed to heavily, we aimed at changing the way the traditional menu screen - the rectangular grid of apps - is used. We laid out all apps in a rectangular grid, but used a graphical fish eye lens to interact and feel the list of apps by providing haptic feedback when hovered over. The launcher was much appreciated in the Android community and has crossed well over 1 million downloads. It also won the most creative app award at Google's Android Experiments in 2017.
+With Lens Launcher, an open source Android launcher I contributed to heavily, we aimed at changing the way the traditional menu screen - the rectangular grid of apps - is used. We laid out all apps in a rectangular grid, but used a graphical fish eye lens to interact and feel the list of apps by providing haptic feedback when hovered over. The launcher was much appreciated in the Android community and has crossed well over a million downloads. It also won the most creative app award at Google's Android Experiments in 2017.
 
 At Tesseract Imaging, an MIT Media Lab spinoff started by Kshitij Marwah, I worked on creating a 360 degree viewer, and an interactive virtual reality walkthrough of multiple adjacent 360 degree images captured by the 360 degree camera we built. This period was especially fun because I experienced the way Media Lab, with Kshitij having led the Meda Lab India initiative. 
 
-I later spent a month with Anirudh Sharma, a graduate from the Media Lab's Fluid Interfaces group where we spent almost every other day working on a new project. I was hooked to the and started seeing a pattern.
+I later spent a month with Anirudh Sharma, a graduate from the Media Lab's Fluid Interfaces group where we spent almost every other day working on a new project.
 
-Ever since, I've spent a weekend every month on trying something completely new, just for the fun of it. I created a WhatsApp mass forwarder to allow communication between multiple groups to beat the then 50 member group limit, attempted at externally controlling a cheap and drift-y quad copter to hover over a point using a PID loop, a Google Home powered door lock using Lego, a utility app with a beautiful interface to set multiple alarms because I caught myself setting a series of 5 alarms every morning just to make sure I wake up amongst dozens of other creative ideas just because I truly enjoy sitting in my room and making something - anything. One of these side projects have also grown into a part-time source of income with an Android app named Lifehacks, a content providing app with a very fluent user interface that has 
+I was hooked to the way the people at the Media Lab worked and thought, and I started seeing a pattern. The trick was to keep the fire burning to note down those ideas and put your soul into doing them. I found an oportunity to work Prof. Ramesh Raskar on visualization of the population during India's largest festival based on mobile networks.
 
-For over 2 years now, I've been a part of Tonbo Imaging, a thermal camera company for military reconnaisense where I've been a part of the pipeline of creating cameras from scratch. 
+Ever since, I've spent a weekend every month on trying something completely new, just for the fun of it. I created a WhatsApp mass forwarder to allow communication between multiple groups to beat the then 50 member group limit, attempted at externally controlling a cheap and drift-y quad copter to hover over a point using a PID loop, a Google Home powered door lock using Lego, a utility app with a beautiful interface to set multiple alarms because I caught myself setting a series of 5 alarms every morning just to make sure I wake up amongst dozens of other creative ideas just because I truly enjoy sitting in my room and making something - anything. One of these side projects have also grown into a part-time source of income with an Android app named Lifehacks, a creative content providing app on hacking your way in every-day life, creating a very smooth and fluent user interface.
 
+For over 2 years now, I've been a part of Tonbo Imaging, a thermal camera company for military reconnaisense where I've been a part of the pipeline of creating thermal cameras from scratch, building a team, and working on difficult problems to solve on a computationally limited processor. The product is consists of modular harware + modular software to build different variants for specific use cases. 
+A specific such problem of a worthy mention is real time stabilization using the onboard gyroscope for elimating low frequency shake, and eliminating high frequency shake by running an optical flow tracker on a part of the image. During this period I also created an Android library to take a continuous media source, apply OpenGL filters - specifically false coloring thermal video output, and configure rendering in shape, size and rotation in 3D space. It also allows for quick exchange of frames between the CPU and GPU.
 
-
+Whether it is using thermal cameras to make the _visible invisible_, or making designing a completely new interface to using displays, or I don't quite know what it will be. Having said this, I have demonstrated the fire to make, and am an idea powerhouse, which makes me a perfect fit for the Media Lab.
 
 
 
@@ -83,6 +89,7 @@ For over 2 years now, I've been a part of Tonbo Imaging, a thermal camera compan
 ----------
 
 - remove the many I's from everywhere
+- include Prof Bagler and his work
 - relate with the work that the 3 groups are doing
 - bring in some of their past projects into this
 - 

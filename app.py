@@ -57,6 +57,11 @@ def lifehacks_terms_and_conditions():
     return render_template('lifehacks-disclaimer.html')
 
 
+@app.route('/mit-media-lab-application')
+def media_lab_application():
+    return render_template('mit-media-lab-application.html')
+
+
 @app.route('/experiences')
 def experiences():
     experiences = get_static_json("static/experiences/experiences.json")['experiences']

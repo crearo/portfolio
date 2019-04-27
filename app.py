@@ -66,6 +66,11 @@ def media_lab_application():
     return render_template('mit-media-lab-application.html')
 
 
+@app.route('/blog')
+def blog():
+    return redirect("http://bhardwajrish.blogspot.com/", code=302)
+
+
 @app.route('/experiences')
 def experiences():
     experiences = get_static_json("static/experiences/experiences.json")['experiences']

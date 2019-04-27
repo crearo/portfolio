@@ -4,7 +4,6 @@ import os
 
 import datetime
 import time
-from fastai.vision import *
 from flask import Flask, render_template, request, url_for, redirect
 
 app = Flask(__name__)
@@ -147,6 +146,7 @@ def upload_file():
 
 @app.route('/predict-fifa')
 def predict_fifa():
+    import fastai.vision as fastai
     global fifa_learn
 
     name = request.args.get('name')
@@ -156,9 +156,9 @@ def predict_fifa():
     if not os.path.exists(path):
         return "File doesn't exist, soz, go to the home page! %s" % path
 
-    img = open_image(path)
+    img = fastai.open_image(path)
     if fifa_learn is None:
-        fifa_learn = load_learner('.', 'fifa.learn')
+        fifa_learn = fastai.load_learner('.', 'fifa.learn')
     pred_class, pred_idx, outputs = fifa_learn.predict(img)
     return render_template('fifa-or-real-predict.html', img=path, predict_class=pred_class, predict_confidence=outputs,
                            name=name)

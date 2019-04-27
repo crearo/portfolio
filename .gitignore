@@ -30,3 +30,6 @@ pip-log.txt
 venv
 *.pyc
 build
+
+# some stuff people can upload
+static/uploads/

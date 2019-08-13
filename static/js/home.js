@@ -2,7 +2,7 @@ $(function() {
   $(".typed").typed({
     strings: [
       "stat rish.human<br/>" + 
-      "><span class='caret'>$</span> work: hardware-software interaction, camera, computer vision<br/> ^100" +
+      "><span class='caret'>$</span> work: hardware-software interaction, camera, computer vision, android<br/> ^100" +
       "><span class='caret'>$</span> hobbies: football, solo travel, blogging<br/> ^300" +
       "><span class='caret'>$</span> alias: crearo <br/>" +
       "><span class='caret'>$</span> highlight:  <a href='/projects/video-stab'>real time image stabilization on Android</a>, <a href='/projects/lifehacks'>app with >750K installs</a><br/>" +

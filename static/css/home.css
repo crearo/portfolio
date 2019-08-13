@@ -61,6 +61,15 @@ ul li a {
     height:24px;
     width:24px;
     margin: 0px 12px 0px 2px;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    text-decoration:none;
+}
+
+.title-logo:hover{
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    text-decoration:none;
 }
 
 .mobile-view {

@@ -80,6 +80,12 @@ ul li a {
     display: block;
 }
 
+@media screen and (max-width: 1024px) {
+    .desktop-only {
+        visibility: hidden;
+    }
+}
+
 .text-content {
   margin:20px 0px 20px 0px;
 }

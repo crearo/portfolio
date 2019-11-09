@@ -128,10 +128,11 @@
       "weight": 5,
       "location": "Bangalore, India",
       "tags": [
-        "camera"
+        "camera",
+	"android"
       ],
-      "date": "Dec 2016 - Present",
-      "short": "Working at Tonbo Imaging, a camera company. My work here is to bring up the Qualcomm Snapdragon platform at the application layer, creating a base for camera-client communication, the client SDK and camera FDK, a base for vision problems, streaming, and fast image operations such as false coloring and video stabilization.",
+      "date": "Dec 2016 - Nov 2019",
+      "short": "Worked at Tonbo Imaging, a camera company. My work here is to bring up the Qualcomm Snapdragon platform at the application layer, creating a base for camera-client communication, the client SDK and camera FDK, a base for vision problems, streaming, and fast image operations such as false coloring and video stabilization.",
       "videos": [
         "<iframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/kjc0uVtK7ss\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>",
         "<iframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/1RqiamkcpUc\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
@@ -143,6 +144,21 @@
         "/static/experiences/tonbo-imaging/img-4.jpg",
         "/static/experiences/tonbo-imaging/img-5.jpg",
         "/static/experiences/tonbo-imaging/img-6.jpg"
+      ]
+    },
+    {
+      "name": "Google Munich",
+      "link": "google-munich",
+      "weight": 6,
+      "location": "Munich, Germany",
+      "tags": [
+        "android",
+	"google"
+      ],
+      "date": "Nov 2019 - Present",
+      "short": "Working at Google in the Android Platforms and Ecosystems team. Exciting times!",
+      "photos": [
+        "/static/experiences/google-munich/img-1.png"
       ]
     }
   ]

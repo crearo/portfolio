@@ -7,7 +7,6 @@ import time
 from flask import Flask, render_template, request, url_for, redirect
 
 app = Flask(__name__)
-fifa_learn = None
 
 try:
     app.config['GA_TRACKING_ID'] = os.environ['GA_TRACKING_ID']
@@ -122,46 +121,6 @@ def get_static_file(path):
 
 def get_static_json(path):
     return json.load(open(get_static_file(path)))
-
-
-"""
-Specific URLs
-"""
-
-
-@app.route('/fifa-or-real')
-def fifa_or_real():
-    return render_template('upload.html')
-
-
-@app.route('/upload', methods=['POST'])
-def upload_file():
-    if request.method == 'POST':
-        f = request.files['file']
-        os.makedirs('./static/uploads/', exist_ok=True)
-        file_name = 'upload-%s' % time.strftime("%Y-%m-%d-%H-%M-%S")
-        f.save('./static/uploads/%s' % file_name)
-        return redirect(url_for('predict_fifa', name=file_name))
-
-
-@app.route('/predict-fifa')
-def predict_fifa():
-    import fastai.vision as fastai
-    global fifa_learn
-
-    name = request.args.get('name')
-    path = './static/uploads/%s' % name
-    print('------------------')
-    print(path)
-    if not os.path.exists(path):
-        return "File doesn't exist, soz, go to the home page! %s" % path
-
-    img = fastai.open_image(path)
-    if fifa_learn is None:
-        fifa_learn = fastai.load_learner('.', 'fifa.learn')
-    pred_class, pred_idx, outputs = fifa_learn.predict(img)
-    return render_template('fifa-or-real-predict.html', img=path, predict_class=pred_class, predict_confidence=outputs,
-                           name=name)
 
 
 if __name__ == "__main__":

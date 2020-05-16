@@ -107,6 +107,11 @@ ul li a {
   .scroll-wrapper {
     align-items: center;
   }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   #terminal {
     width: 100%;
   }

@@ -1,0 +1,64 @@
+[
+  {
+    "year": "To Read",
+    "books": [
+      {
+        "name": "The Sun Is Also A Star"
+      },
+      {
+        "name": "Aristotle and Dante Discover the Secrets of the Universe"
+      },
+      {
+        "name": "The Tell Tale Brain"
+      }
+    ]
+  },
+  {
+    "year": "2020",
+    "books": [
+      {
+        "name": "Ready Player One, Ernest Cline",
+        "review": "Favorite book of all time. It's the first 500+ page book I've ever read non stop for 12 hours straight. I couldn't put it down! What makes it interesting is, Ready Player One is also a movie (Steven Spielberg!) and this is also the first time I consumed the same content in different formats.",
+        "star": true
+      },
+      {
+        "name": "Miss peregrine's home for peculiar children, Ransom Riggs",
+        "review": "I _read_ this is an audiobook. It took me all weekend to get throguh the 9 hours, but this was the first time I sat through an audiobook. "
+      },
+      {
+        "name": "How to Win Friends and Influence People, Dale Carnegie",
+        "review": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type"
+      },
+      {
+        "name": "Nineteen Eighty-Four, George Orwell",
+        "review": ""
+      },
+      {
+        "name": "Models, Mark Manson",
+        "review": "Really, I have no shame in saying I read this. "
+      },
+      {
+        "name": "Hitchhiker's Guide To The Galaxy, Douglas Adams",
+        "review": "What amazing wit."
+      },
+      {
+        "name": "Einstein's Dreams, Alan Lightman",
+        "review": "",
+        "star": true
+      }
+    ]
+  },
+  {
+    "year": "2019",
+    "books": [
+      {
+        "name": "Siddhartha, Herman Hesse",
+        "review": ""
+      },
+      {
+        "name": "Atomic Habits, James Clear",
+        "review": ""
+      }
+    ]
+  }
+]

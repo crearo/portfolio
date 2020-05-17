@@ -28,11 +28,8 @@ def timeline():
 
 @app.route('/reading')
 def reading():
-    return render_template('reading.html', data=[
-        {"year": "2020",
-         "books": [{"star": True, "name": "Ready Player One, Ernest Cline", "review": "Favorite book of all time."},
-                   {"name": "How to Win Friends and Influence People, Dale Carnegie",
-                    "review": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type"}]}])
+    data = get_static_json("static/files/reading.json")
+    return render_template('reading.html', data=data)
 
 
 @app.route('/projects')

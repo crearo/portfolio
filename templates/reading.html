@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/reading.css') }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col s12 m4 l8">
+            {% for year in data %}
+            <span class="date">{{ year.year }}</span>
+            <ul class="list">
+                {% for book in year.books %}
+                <li class="item" >
+                    <div class="icon-title">
+                        {% if book.star %}
+                        <i class="tiny material-icons">star</i>
+                        {% else %}
+                        <i class="tiny material-icons">book</i>
+                        {% endif %}
+                        <span class="title">{{ book.name }}</span>
+                    </div>
+                    <span class="content">{{ book.review }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endfor %}
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+{% endblock %}

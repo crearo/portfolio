@@ -1,4 +1,5 @@
 $(function() {
+  /* NOTE: hard-refresh the browser once you've updated this */
   $(".typed").typed({
     strings: [
       "stat rish.human<br/>" + 

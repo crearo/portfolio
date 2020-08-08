@@ -3,13 +3,16 @@
     "year": "To Read",
     "books": [
       {
-        "name": "The Sun Is Also A Star"
+        "name": "Naked Money, Charles Wheelan"
       },
       {
-        "name": "Aristotle and Dante Discover the Secrets of the Universe"
+        "name": "What Does It All Mean? A Very Short Introduction to Philosophy, Thomas Nagel"
       },
       {
-        "name": "The Tell Tale Brain"
+        "name": "Aristotle and Dante Discover the Secrets of the Universe, Benjamin Alire Sáenz"
+      },
+      {
+        "name": "The Tell Tale Brain, V. S. Ramachandran"
       }
     ]
   },
@@ -17,47 +20,68 @@
     "year": "2020",
     "books": [
       {
+        "name": "The Making of Prince of Persia, Jordan Mechner",
+        "review": "25 year old developer who goes through the everyday struggles of life while maintaining a diary. I haven't ever connected to an author as much as I connected with Jordan. He has exactly the same mid 20s questions, the same career-life-relationships worries, the what ifs, and the where am I going, whilst also knowing that he's really doing a fairly good job at life.",
+        "star": true
+      },
+      {
+        "name": "When Google Met Wikileaks, Julian Assange",
+        "review": "I wanted to read this book to know what hides behind Google's bright colorful logo, and this was good insight into it. I don't think it is a good idea commenting on this further though."
+      },
+      {
+        "name": "The Sun Is Also A Star",
+        "review": "This was the first love story I've ever read, and I loved it. It's a book about perspectives, and what I loved was how the same scene plays differently in two people's heads. This book has a counterpart movie, and it was the first time I've read the book before watching the movie, and I have to say, the movie was awful. It lost everything that made the book special.",
+        "star": true
+      },
+      {
         "name": "Ready Player One, Ernest Cline",
         "review": "Favorite book of all time. It's the first 500+ page book I've ever read non stop for 12 hours straight. I couldn't put it down! What makes it interesting is, Ready Player One is also a movie (Steven Spielberg!) and this is also the first time I consumed the same content in different formats.",
         "star": true
       },
       {
         "name": "Miss peregrine's home for peculiar children, Ransom Riggs",
-        "review": "I _read_ this is an audiobook. It took me all weekend to get throguh the 9 hours, but this was the first time I sat through an audiobook. "
+        "review": "I read this is an audiobook. It took me all weekend to get throguh the 9 hours, but this was the first time I sat through an audiobook. "
       },
       {
         "name": "How to Win Friends and Influence People, Dale Carnegie",
-        "review": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type"
+        "review": "This was an okay read. I was brought up with all the insights the books provides as everyday discussions by my mother and father, and reading this just further strengthened them. It is a book that needs a re-read every now and then to remind you that the world is a fairly selfish place, and everyone is optimizing for themselves."
       },
       {
         "name": "Nineteen Eighty-Four, George Orwell",
-        "review": ""
+        "review": "Great book. A really, really great book! I completely understand Reddit's hype around this book."
       },
       {
         "name": "Models, Mark Manson",
-        "review": "Really, I have no shame in saying I read this. "
+        "review": "Really, I have no shame in saying I read this - it's a book about picking up girls. The advice in the book is not bad per se - it advocates working on yourself, your body, your wardrobe, your knowledge. But the idea of *getting* girls was still a major part of the book that really made me realize how cheap that sounds. I've never had such relationships before. They've always been built on months of getting to know each other and that's what I value."
       },
       {
         "name": "Hitchhiker's Guide To The Galaxy, Douglas Adams",
-        "review": "What amazing wit."
+        "review": "The entire book, all I kept thinking was 'What amazing wit!'. I wish to be able to write and speak in the voice of Douglas Adams some day. His writing is witty and hilarious, but also a very, very simple read."
       },
       {
         "name": "Einstein's Dreams, Alan Lightman",
-        "review": "",
+        "review": "A brilliant dramatic, almost romantic take on the various forms of time. It makes you think of how different the world would be if we perceived time differently. This book isn't for everyone. Everyone I've recommended this book to has disliked it, or found it hard to read.",
         "star": true
       }
     ]
   },
   {
-    "year": "2019",
+    "year": "Past Favorites",
     "books": [
       {
         "name": "Siddhartha, Herman Hesse",
-        "review": ""
+        "review": "",
+        "star": true
       },
       {
         "name": "Atomic Habits, James Clear",
-        "review": ""
+        "review": "",
+        "star": true
+      },
+      {
+        "name": "Deep Work, Cal Newport",
+        "review": "",
+        "star": true
       }
     ]
   }

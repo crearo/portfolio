@@ -5,13 +5,13 @@
 This is [my personal corner on the web](http://rish.space). I quite like the domain name; conveys exactly what it is. 
 
 
-# <font style="font-family: Algerian; font-size: 70px"><center>Website Overviews</center></font><hr>
+# <font style="font-family: Algerian; font-size: 70px"><h2>Website Overviews/<h2></font>
 <p float="left">
   <img src="https://raw.githubusercontent.com/crearo/portfolio/master/screenshots/home.png" width="400">
   <img src="https://raw.githubusercontent.com/crearo/portfolio/master/screenshots/timeline.png" width="400">
 </p>
 
-# <font style="font-family: Algerian; font-size: 70px"><center>Technology & Languages</center></font><hr>
+# <font style="font-family: Algerian; font-size: 70px"><h2>Technology & Languages</h2></font>
 
 Developed using Python Flask, and a lot of CSS and Jinja2.
 Currently hosted on Heroku. 

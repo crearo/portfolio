@@ -11,17 +11,19 @@ This is [my personal corner on the web](http://rish.space). I quite like the dom
   <img src="https://raw.githubusercontent.com/crearo/portfolio/master/screenshots/timeline.png" width="400">
 </p>
 
-# Technology
+# Technology I Used
 
 Developed using Python Flask, and a lot of CSS and Jinja2.
 Currently hosted on Heroku. 
 
-Sidenote: I struggle to understand why web UI isn't as easy to make as Android's.
+Sidenote: I struggle to understand why web UI isn't as easy to make as Android's.But after so many hardships I 
+created my personal corner on internet!
 
-# I want to use this!
+# Do I need to pay for this?
 
-You're free to use this for your own personal portfolio; but please do write to me telling me you have!
+You're free to use this for your own personal portfolio; but please do write to me telling me you have not included this
+feature!
  
- - change the static content wherever it is to suit your work.
+ - Change the static content according to your needs!
  - **NOTE**: Hard-refresh your browser (ctrl-shift-r) when you update the js files #19
  - change the `experiences.json` and `projects.json` files with your work and projects. 

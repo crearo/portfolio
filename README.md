@@ -11,7 +11,7 @@ This is [my personal corner on the web](http://rish.space). I quite like the dom
   <img src="https://raw.githubusercontent.com/crearo/portfolio/master/screenshots/timeline.png" width="400">
 </p>
 
-# Technology
+# Technology leads us to change in the world 
 
 Developed using Python Flask, and a lot of CSS and Jinja2.
 Currently hosted on Heroku. 

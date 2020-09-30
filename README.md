@@ -1,11 +1,11 @@
-# www.rish.space
+# WWW.RISH.SPACE
 
 ----
 
-This is [my personal corner on the web](http://rish.space). I quite like the domain name; conveys exactly what it is. 
+This is [my personal corner on the web](http://rish.space). I often like the domain name as it conveys exact meaning of what it is. 
 
 
-# Screenshots
+# Snapshots
 <p float="left">
   <img src="https://raw.githubusercontent.com/crearo/portfolio/master/screenshots/home.png" width="400">
   <img src="https://raw.githubusercontent.com/crearo/portfolio/master/screenshots/timeline.png" width="400">

@@ -18,9 +18,9 @@ Currently hosted on Heroku.
 
 Sidenote: I struggle to understand why web UI isn't as easy to make as Android's.
 
-# I want to use this!
+# Use this portfolio in attractive manner
 
-You're free to use this for your own personal portfolio; but please do write to me telling me you have!
+You can use  this portfolio template in your profile but apply all the relevant skills involve in it do't try to mae same copy use some css effects to make it enhacing looking to attract companies.
  
  - change the static content wherever it is to suit your work.
  - **NOTE**: Hard-refresh your browser (ctrl-shift-r) when you update the js files #19

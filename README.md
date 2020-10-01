@@ -27,3 +27,4 @@ You're free to use this for your own personal portfolio; but please do write to 
  - change the `experiences.json` and `projects.json` files with your work and projects. 
 
 Hope this helps you. Stay tuned for future endevours.
+Thank you!

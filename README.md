@@ -1,6 +1,7 @@
 # www.rish.space
 
 ----
+my amazing project
 
 This is [my personal corner on the web](http://rish.space). I quite like the domain name; conveys exactly what it is. 
 

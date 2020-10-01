@@ -13,7 +13,7 @@ This is [my personal corner on the web](http://rish.space). I quite like the dom
 
 # Technology
 
-Developed using Python Flask, and a lot of CSS and Jinja2.
+Developed using Python Flask, and a lot of CSS and Jinja2.(Jinja is a modern and designer-friendly templating language for Python)
 Currently hosted on Heroku. 
 
 Sidenote: I struggle to understand why web UI isn't as easy to make as Android's.

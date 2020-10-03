@@ -127,6 +127,12 @@ def podcast_rss():
     return Response(podcast_feed_generator().rss_str(), mimetype='application/rss+xml')
 
 
+@app.route('/podcasts')
+def podcasts():
+    podcasts = get_static_json("static/podcasts/podcasts.json")
+    return render_template('podcasts.html', podcasts=podcasts)
+
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404

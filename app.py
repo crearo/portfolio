@@ -3,7 +3,8 @@ import io
 import json
 import os
 
-from flask import Flask, render_template, request, redirect
+from feedgen.feed import FeedGenerator
+from flask import Flask, render_template, request, redirect, Response, send_file, abort
 
 app = Flask(__name__)
 
@@ -114,6 +115,18 @@ def project(title):
     return render_template('project.html', project=selected)
 
 
+@app.route('/podcasts/<filename>')
+def podcast(filename):
+    if filename.endswith('.mp3'):
+        return send_file(get_static_file(f'static/podcasts/{filename}'))
+    return abort(404)
+
+
+@app.route('/podcasts/index.xml')
+def podcast_rss():
+    return Response(podcast_feed_generator().rss_str(), mimetype='application/rss+xml')
+
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
@@ -126,6 +139,28 @@ def get_static_file(path):
 
 def get_static_json(path):
     return json.load(open(get_static_file(path)))
+
+
+def podcast_feed_generator():
+    """This should be optimized and constructed only once."""
+    fg = FeedGenerator()
+    fg.id('rish.space')
+    fg.title("Rish's Space")
+    fg.link(href='http://www.rish.space')
+    fg.author({'name': 'Rish Bhardwaj', 'email': 'rishextra@gmail.com'})
+    fg.subtitle('Things that make my mind go bing!')
+    fg.language('en')
+    fg.description("""My corner of the Great WWW where I talk about things I relate to.""")
+
+    podcasts = get_static_json('static/podcasts/podcasts.json')
+    for podcast in podcasts:
+        fe = fg.add_entry()
+        fe.id(podcast['url'])
+        fe.title(podcast['title'])
+        fe.description(podcast['description'])
+        fe.enclosure(podcast['url'], 0, 'audio/mpeg')
+
+    return fg
 
 
 if __name__ == "__main__":

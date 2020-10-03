@@ -6,6 +6,12 @@
         "name": "Naked Money, Charles Wheelan"
       },
       {
+        "name": "Simulacron-3 by Daniel F. Galouye"
+      },
+      {
+        "name": "The Old Man and the Sea by Ernest Hemingway"
+      },
+      {
         "name": "What Does It All Mean? A Very Short Introduction to Philosophy, Thomas Nagel"
       },
       {
@@ -19,6 +25,11 @@
   {
     "year": "2020",
     "books": [
+      {
+        "name": "What Does It All Mean by Thomas Nagel",
+        "review": "This is the first book I've read in philosophy, and there will be many, many more for sure. This is a quick 100 page simple introduction of the questions philosophy asks - things I've been thinking about all my life. I liked the content and the ideas, many of which I have thought about before, but the way it was written didn't make it a fun read. Long, non-concise, overly-questiony sentences",
+        "star": false
+      },
       {
         "name": "The Making of Prince of Persia, Jordan Mechner",
         "review": "25 year old developer who goes through the everyday struggles of life while maintaining a diary. I haven't ever connected to an author as much as I connected with Jordan. He has exactly the same mid 20s questions, the same career-life-relationships worries, the what ifs, and the where am I going, whilst also knowing that he's really doing a fairly good job at life.",

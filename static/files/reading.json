@@ -6,7 +6,7 @@
         "name": "Naked Money, Charles Wheelan"
       },
       {
-        "name": "Simulacron-3 by Daniel F. Galouye"
+        "name": "Simulacron-3, Daniel F. Galouye"
       },
       {
         "name": "Aristotle and Dante Discover the Secrets of the Universe, Benjamin Alire Sáenz"
@@ -15,7 +15,7 @@
         "name": "The Tell Tale Brain, V. S. Ramachandran"
       },
       {
-        "name": "New Thinking by Dagogo Altraide (Cold Fusion)"
+        "name": "New Thinking, Dagogo Altraide (Cold Fusion)"
       }
     ]
   },
@@ -23,12 +23,12 @@
     "year": "2021",
     "books": [
       {
-        "name": "The Clockwork Man by E.V. Odle [audiobook]",
+        "name": "The Clockwork Man, E.V. Odle [audiobook]",
         "review": "Written in the 1920s when humans did not have the slightest clue of the upcoming digital age, this was the first appearance of a cyborg in literature. What I loved is how one of the most advanced pieces of technology we had in that day was the mechanical clock; and that's as far as the mind's imagination could go - the clockwork man is a cyborg who functions on advanced mechanical machinery, and the key to his functioning is a complicated clock at the back of its head (!!). The book feels like a lifetime compilation of the author's take on the various aspects of life, science and speculation of the future; the book has references to the greatness of Einstein, the understanding of time, the dimensions, love, emotions, relationships, scepticism, and belief. I loved it, and will definitely read this again as a book.",
         "star": true
       },
       {
-        "name": "The Old Man and the Sea by Ernest Hemingway",
+        "name": "The Old Man and the Sea, Ernest Hemingway",
         "review": "Remove all pleasures from life, and whatever happens will feel significant; deprive yourself of your favorite food, and the next time you eat it will feel like the best meal you've ever had. I enjoyed this book for the very reason that not a lot happens; it really is just about an old man and a large fish; the everyday thoughts one has captured just as one would think them, the loneliness of life, the comradery of ones own company, the relationships we build inside our heads with things both conscious and inanimate.",
         "star": true
       }
@@ -38,7 +38,7 @@
     "year": "2020",
     "books": [
       {
-        "name": "What Does It All Mean by Thomas Nagel",
+        "name": "What Does It All Mean, Thomas Nagel",
         "review": "This is the first book I've read in philosophy, and there will be many, many more for sure. This is a quick 100 page simple introduction of the questions philosophy asks - things I've been thinking about all my life. I liked the content and the ideas, many of which I have thought about before, but the way it was written didn't make it a fun read. Long, non-concise, overly-questiony sentences.",
         "star": false
       },
@@ -52,7 +52,7 @@
         "review": "I wanted to read this book to know what hides behind Google's bright colorful logo, and this was good insight into it. I don't think it is a good idea commenting on this further though."
       },
       {
-        "name": "The Sun Is Also A Star",
+        "name": "The Sun Is Also A Star, Nicola Yoon",
         "review": "This was the first love story I've ever read, and I loved it. It's a book about perspectives, and what I loved was how the same scene plays differently in two people's heads. This book has a counterpart movie, and it was the first time I've read the book before watching the movie, and I have to say, the movie was awful. It lost everything that made the book special.",
         "star": true
       },
@@ -103,6 +103,11 @@
       },
       {
         "name": "Deep Work, Cal Newport",
+        "review": "",
+        "star": true
+      },
+      {
+        "name": "Sapiens, Yuval Noah Harari",
         "review": "",
         "star": true
       }

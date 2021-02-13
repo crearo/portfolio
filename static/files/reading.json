@@ -9,16 +9,28 @@
         "name": "Simulacron-3 by Daniel F. Galouye"
       },
       {
-        "name": "The Old Man and the Sea by Ernest Hemingway"
-      },
-      {
-        "name": "What Does It All Mean? A Very Short Introduction to Philosophy, Thomas Nagel"
-      },
-      {
         "name": "Aristotle and Dante Discover the Secrets of the Universe, Benjamin Alire Sáenz"
       },
       {
         "name": "The Tell Tale Brain, V. S. Ramachandran"
+      },
+      {
+        "name": "New Thinking by Dagogo Altraide (Cold Fusion)"
+      }
+    ]
+  },
+  {
+    "year": "2021",
+    "books": [
+      {
+        "name": "The Clockwork Man by E.V. Odle [audiobook]",
+        "review": "Written in the 1920s when humans did not have the slightest clue of the upcoming digital age, this was the first appearance of a cyborg in literature. What I loved is how one of the most advanced pieces of technology we had in that day was the mechanical clock; and that's as far as the mind's imagination could go - the clockwork man is a cyborg who functions on advanced mechanical machinery, and the key to his functioning is a complicated clock at the back of its head (!!). The book feels like a lifetime compilation of the author's take on the various aspects of life, science and speculation of the future; the book has references to the greatness of Einstein, the understanding of time, the dimensions, love, emotions, relationships, scepticism, and belief. I loved it, and will definitely read this again as a book.",
+        "star": true
+      },
+      {
+        "name": "The Old Man and the Sea by Ernest Hemingway",
+        "review": "Remove all pleasures from life, and whatever happens will feel significant; deprive yourself of your favorite food, and the next time you eat it will feel like the best meal you've ever had. I enjoyed this book for the very reason that not a lot happens; it really is just about an old man and a large fish; the everyday thoughts one has captured just as one would think them, the loneliness of life, the comradery of ones own company, the relationships we build inside our heads with things both conscious and inanimate.",
+        "star": true
       }
     ]
   },
@@ -27,7 +39,7 @@
     "books": [
       {
         "name": "What Does It All Mean by Thomas Nagel",
-        "review": "This is the first book I've read in philosophy, and there will be many, many more for sure. This is a quick 100 page simple introduction of the questions philosophy asks - things I've been thinking about all my life. I liked the content and the ideas, many of which I have thought about before, but the way it was written didn't make it a fun read. Long, non-concise, overly-questiony sentences",
+        "review": "This is the first book I've read in philosophy, and there will be many, many more for sure. This is a quick 100 page simple introduction of the questions philosophy asks - things I've been thinking about all my life. I liked the content and the ideas, many of which I have thought about before, but the way it was written didn't make it a fun read. Long, non-concise, overly-questiony sentences.",
         "star": false
       },
       {
@@ -50,8 +62,8 @@
         "star": true
       },
       {
-        "name": "Miss peregrine's home for peculiar children, Ransom Riggs",
-        "review": "I read this is an audiobook. It took me all weekend to get throguh the 9 hours, but this was the first time I sat through an audiobook. "
+        "name": "Miss peregrine's home for peculiar children, Ransom Riggs [audiobook]",
+        "review": "Harry Potter-esq book in an alternate universe. It took me all weekend to get through the 9 hours, but this was the first time I sat through an audiobook, and I quite enjoyed the imagination it puts one through."
       },
       {
         "name": "How to Win Friends and Influence People, Dale Carnegie",

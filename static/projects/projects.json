@@ -1,0 +1,274 @@
+{
+  "projects": [
+    {
+      "name": "Project 1",
+      "link": "project-1",
+      "date": "01/02/2003",
+      "short": "A short description of the project ...",
+      "status": "complete",
+      "weight": 1,
+      "tags": [
+        "tech"
+      ],
+      "photos": [
+        "/static/projects/project-1/img.jpg"
+      ]
+    },
+    {
+      "name": "Project 2",
+      "link": "project-2",
+      "date": "04/05/2006",
+      "short": "A short description of the project ...",
+      "weight": 1,
+      "tags": [
+        "media"
+      ],
+      "photos": [
+        "/static/projects/project-2/img.jpg"
+      ]
+    },
+    {
+      "name": "Project 1",
+      "link": "project-1",
+      "date": "01/02/2003",
+      "short": "A short description of the project ...",
+      "status": "complete",
+      "weight": 2,
+      "tags": [
+        "tech"
+      ],
+      "photos": [
+        "/static/projects/project-1/img.jpg"
+      ]
+    },
+    {
+      "name": "Project 2",
+      "link": "project-2",
+      "date": "04/05/2006",
+      "short": "A short description of the project ...",
+      "weight": 1,
+      "tags": [
+        "media"
+      ],
+      "photos": [
+        "/static/projects/project-2/img.jpg"
+      ]
+    },
+    {
+      "name": "Project 1",
+      "link": "project-1",
+      "date": "01/02/2003",
+      "short": "A short description of the project ...",
+      "status": "complete",
+      "weight": 1,
+      "tags": [
+        "tech"
+      ],
+      "photos": [
+        "/static/projects/project-1/img.jpg"
+      ]
+    },
+    {
+      "name": "Project 2",
+      "link": "project-2",
+      "date": "04/05/2006",
+      "short": "A short description of the project ...",
+      "weight": 2,
+      "tags": [
+        "media"
+      ],
+      "photos": [
+        "/static/projects/project-2/img.jpg"
+      ]
+    },
+    {
+      "name": "Project 1",
+      "link": "project-1",
+      "date": "01/02/2003",
+      "short": "A short description of the project ...",
+      "status": "complete",
+      "weight": 2,
+      "tags": [
+        "tech"
+      ],
+      "photos": [
+        "/static/projects/project-1/img.jpg"
+      ]
+    },
+    {
+      "name": "Project 2",
+      "link": "project-2",
+      "date": "04/05/2006",
+      "short": "A short description of the project ...",
+      "weight": 1,
+      "tags": [
+        "media"
+      ],
+      "photos": [
+        "/static/projects/project-2/img.jpg"
+      ]
+    },
+    {
+      "name": "Project 1",
+      "link": "project-1",
+      "date": "01/02/2003",
+      "short": "A short description of the project ...",
+      "status": "complete",
+      "weight": 2,
+      "tags": [
+        "tech"
+      ],
+      "photos": [
+        "/static/projects/project-1/img.jpg"
+      ]
+    },
+    {
+      "name": "Project 2",
+      "link": "project-2",
+      "date": "04/05/2006",
+      "short": "A short description of the project ...",
+      "weight": 1,
+      "tags": [
+        "media"
+      ],
+      "photos": [
+        "/static/projects/project-2/img.jpg"
+      ]
+    },
+    {
+      "name": "Project 1",
+      "link": "project-1",
+      "date": "01/02/2003",
+      "short": "A short description of the project ...",
+      "status": "complete",
+      "weight": 1,
+      "tags": [
+        "tech"
+      ],
+      "photos": [
+        "/static/projects/project-1/img.jpg"
+      ]
+    },
+    {
+      "name": "Project 2",
+      "link": "project-2",
+      "date": "04/05/2006",
+      "short": "A short description of the project ...",
+      "weight": 2,
+      "tags": [
+        "media"
+      ],
+      "photos": [
+        "/static/projects/project-2/img.jpg"
+      ]
+    },
+    {
+      "name": "Project 1",
+      "link": "project-1",
+      "date": "01/02/2003",
+      "short": "A short description of the project ...",
+      "status": "complete",
+      "weight": 1,
+      "tags": [
+        "tech"
+      ],
+      "photos": [
+        "/static/projects/project-1/img.jpg"
+      ]
+    },
+    {
+      "name": "Project 2",
+      "link": "project-2",
+      "date": "04/05/2006",
+      "short": "A short description of the project ...",
+      "weight": 2,
+      "tags": [
+        "media"
+      ],
+      "photos": [
+        "/static/projects/project-2/img.jpg"
+      ]
+    },
+    {
+      "name": "Project 1",
+      "link": "project-1",
+      "date": "01/02/2003",
+      "short": "A short description of the project ...",
+      "status": "complete",
+      "weight": 2,
+      "tags": [
+        "tech"
+      ],
+      "photos": [
+        "/static/projects/project-1/img.jpg"
+      ]
+    },
+    {
+      "name": "Project 2",
+      "link": "project-2",
+      "date": "04/05/2006",
+      "short": "A short description of the project ...",
+      "weight": 1,
+      "tags": [
+        "media"
+      ],
+      "photos": [
+        "/static/projects/project-2/img.jpg"
+      ]
+    },
+    {
+      "name": "Project 1",
+      "link": "project-1",
+      "date": "01/02/2003",
+      "short": "A short description of the project ...",
+      "status": "complete",
+      "weight": 1,
+      "tags": [
+        "tech"
+      ],
+      "photos": [
+        "/static/projects/project-1/img.jpg"
+      ]
+    },
+    {
+      "name": "Project 2",
+      "link": "project-2",
+      "date": "04/05/2006",
+      "short": "A short description of the project ...",
+      "weight": 2,
+      "tags": [
+        "media"
+      ],
+      "photos": [
+        "/static/projects/project-2/img.jpg"
+      ]
+    },
+    {
+      "name": "Project 1",
+      "link": "project-1",
+      "date": "01/02/2003",
+      "short": "A short description of the project ...",
+      "status": "complete",
+      "weight": 2,
+      "tags": [
+        "tech"
+      ],
+      "photos": [
+        "/static/projects/project-1/img.jpg"
+      ]
+    },
+    {
+      "name": "Project 2",
+      "link": "project-2",
+      "date": "04/05/2006",
+      "short": "A short description of the project ...",
+      "weight": 1,
+      "tags": [
+        "media"
+      ],
+      "photos": [
+        "/static/projects/project-2/img.jpg"
+      ]
+    }
+  ]
+}

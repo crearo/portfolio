@@ -1,0 +1,260 @@
+body {
+  height:100vh;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.top-text{
+    min-height: calc(100vh - 128px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.middle-text{
+  margin-top: 44px;
+}
+
+.container {
+  height: 100%;
+  max-width: none;
+  margin:0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.wrapper{
+  width: 50%;
+}
+
+.scroll-wrapper::-webkit-scrollbar { 
+    display: none; 
+    margin-right: 5%;
+}
+
+.scroll-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-text p {
+  font-size: 80px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.fixed-wrapper {
+    position: fixed;
+    right: 50%;
+    top: calc(50% - 135px);
+}
+
+ul li a {
+  color: #808080;
+}
+
+.text-title {
+  margin:0px;
+}
+
+.title-logo{
+    height:24px;
+    width:24px;
+    margin: 0px 12px 0px 2px;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    text-decoration:none;
+}
+
+.title-logo:hover{
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    text-decoration:none;
+}
+
+.mobile-view {
+  display: none;
+}
+
+.desktop-view {
+    display: block;
+}
+
+.text-content {
+  margin:20px 0px 20px 0px;
+}
+
+@media only screen and (max-width: 1094px) {
+  .container {
+    flex-direction: column;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .mobile-view {
+    display: block;
+  }
+  .desktop-view {
+    display: none;
+  }
+  .wrapper.fixed-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0%;
+    display:none;
+  }
+  .scroll-wrapper {
+    align-items: center;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #terminal {
+    width: 100%;
+  }
+  .top-text p {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #terminal .terminal .window-title .win-buttons{
+    width: 60px;
+  }
+  #terminal .terminal {
+    height: 400px;
+  }
+  .top-text p {
+    font-size: 40px;
+  }
+}
+
+#terminal #terminal-container .overlay {
+  position: absolute;
+  background-color: #FFF;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.3;
+}
+#terminal .terminal {
+  position: relative;
+  background: rgba(38, 38, 38, 0.8);
+  width: 80%;
+  height: 260px;
+  border-radius: 8px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
+  margin: auto;
+}
+#terminal .terminal .window-title {
+  background: linear-gradient(top, #dedede, #c0c0c0);
+  width: calc(100% - 16px);
+  height: 8%;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 1px 8px;
+}
+#terminal .terminal .window-title .win-buttons {
+  position: relative;
+  width: 15%;
+  left: -11px;
+  float: left;
+  margin: 0;
+}
+#terminal .terminal .window-title .button {
+  display: inline-block;
+  text-align: center;
+  width: 10px;
+  height: 10px;
+  border: 0.5px solid;
+  border-radius: 100px;
+  vertical-align: middle;
+  margin: 3px 2px 3px 0;
+}
+#terminal .terminal .window-title #close {
+  background: #e25544;
+  border-color: #d84b3a;
+}
+#terminal .terminal .window-title #min {
+  background: #f5b640;
+  border-color: #e0a12b;
+}
+#terminal .terminal .window-title #max {
+  background: #7cb058;
+  border-color: #6fa44b;
+}
+#terminal .terminal .title {
+  position: relative;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-align: center;
+  vertical-align: middle;
+  top: 0.5px;
+  left: -43px;
+}
+#terminal .terminal .prompt {
+  font-size: 98%;
+}
+#terminal .terminal .user {
+  color: #ea7e7d;
+  letter-spacing: 0.002em;
+  padding-right: 3px;
+}
+#terminal .terminal .at {
+  color: #e8d880;
+  padding-right: 2px;
+}
+#terminal .terminal .path {
+  color: #7ecdcb;
+  letter-spacing: 0.002em;
+  padding-right: 2px;
+}
+#terminal .terminal .caret {
+  color: #50cd70;
+}
+#terminal .message {
+  position: relative;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Source Code Pro", monospace;
+  width: 95%;
+  margin: auto;
+  padding: 1.5vh 0 0;
+  z-index: 999;
+}
+#terminal .message span {
+  font-size: 90%;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.045em;
+  margin-bottom: 1em;
+}
+#terminal .message span a {
+  font-family: "Source Code Pro", monospace;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.75);
+}
+#terminal .message form input {
+  background: transparent;
+  border: none;
+  outline: none;
+  caret-color: #50cd70;
+}
+#terminal .message form input:focus {
+  color: rgba(255, 255, 255, 0.75);
+}
+#terminal .message .typed-cursor {
+  color: rgba(255, 255, 255, 0.9);
+}
+#terminal a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+#terminal a:hover {
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.9);
+}

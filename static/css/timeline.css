@@ -1,0 +1,36 @@
+.date {
+  display:block;
+  color: #303030;
+  font-size: 20px;
+}
+
+.title{
+  color: #1377BD;
+  font-size: 16px;
+  margin: 4px;
+  font-weight:500;
+}
+
+.title:hover {
+  text-decoration: none !important;
+}
+
+.content{
+  display:block;
+  color: #303030;
+  margin:4px;
+  font-weight:300;
+}
+
+.container{
+  max-width:750px;
+}
+
+.icon-title{
+    display: flex;
+    align-items: center;
+}
+
+.list {
+  list-style-type:none;
+}

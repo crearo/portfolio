@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/project.css') }}">
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/chip.css') }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="wrapper fixed-wrapper">
+        {% if 'photos' in project or 'videos' in project %}
+        <div>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" ;>
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    {% for video in project['videos'] %}
+                    <li data-target="#myCarousel" data-slide-to="loop.index0"
+                        class="{{'active' if loop.index0 == 0}}"></li>
+                    {% endfor %}
+                    {% for photo in project['photos'] %}
+                    <li data-target="#myCarousel" data-slide-to="loop.index0"
+                        class="{{'active' if ((loop.index0 == 0) and (not 'videos' in project)) }}"></li>
+                    {% endfor %}
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    {% for video in project['videos'] %}
+                    <div class="item {{'active' if loop.index0 == 0}}">
+                        {{ project['videos'][loop.index0] | safe }}
+                    </div>
+                    {% endfor %}
+                    {% for photo in project['photos'] %}
+                    <div class="item {{'active' if ((loop.index0 == 0) and (not 'videos' in project)) }}">
+                        <img src="{{photo}}" alt="project-photo" style="width:100%;">
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <!-- Left and right controls -->
+                {% if ((project['videos'] | length) + (project['photos'] | length)) > 1 %}
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="wrapper scroll-wrapper">
+        <div class="heading">
+            <div class="title">{{ project['name'] }}</div>
+
+            <div class="date">{{ project['date'] }}</div>
+
+            <div class="md-chips">
+                {% for tag in project['tags'] %}
+                <div class="md-chip md-chip-clickable"><a class="md-chip-link" href="/projects?tags={{tag}}">{{tag}}</a>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="links">
+                {% if 'github' in project %}
+                <div><a class="github" href={{project['github']}}>Find on Github</a></div>
+                {% elif 'arxiv' in project %}
+                <div><a class="github" href={{project['arxiv']}}>View on Arxiv</a></div>
+                {% elif 'playstore' in project %}
+                <div><a class="github" href={{project['playstore']}}>View on Google Play</a></div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="content">{{ project['description'] | safe }}</div>
+    </div>
+
+</div>
+{% endblock %}

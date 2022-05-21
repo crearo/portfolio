@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/timeline.css') }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        {% for year in timeline %}
+        <div class="col s12 m4 l8">
+            <span class="date">{{ year.year }}</span>
+            <ul class="list">
+                {% for event in year.events %}
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">{{ event.icon }}</i>
+                        <a href="/timeline" class="title">{{ event.title }}</a>
+                    </div>
+                    <span class="content">{{ event.content }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+    <br>
+    <br>
+</div>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+[
+  {
+    "year": "2018",
+    "events": [
+      {
+        "icon": "work",
+        "title": "Spider-Verse",
+        "content": "New York City teenager Miles Morales struggles to live up to the expectations of his father, police officer Jefferson Davis, who sees Spider-Man as a menace. Miles adjusts to prep school, and visits his uncle Aaron, who takes him to an abandoned subway station to paint graffiti. Miles is bitten by a radioactive spider and gains spider-like abilities similar to Spider-Man."
+      }
+    ]
+  },
+  {
+    "year": "2012-2014",
+    "events": [
+      {
+        "icon": "movie",
+        "title": "The Amazing Spider-Man",
+        "content": "The film focuses on Peter Parker (Andrew Garfield) developing his abilities in high school and his relationship with Gwen Stacy (Emma Stone). He fights the Lizard, the monstrous form of Dr. Curt Connors (Rhys Ifans), his father's former partner and a scientist at Oscorp."
+      },
+      {
+        "icon": "movie",
+        "title": "The Amazing Spider-Man 2",
+        "content": "Confident in his powers as Spider-Man, Peter Parker (Andrew Garfield) embraces his new role as a hero and spends time with Gwen Stacy (Emma Stone) in between protecting New York from criminals. However, his greatest battle yet is about to begin. With the emergence of Electro (Jamie Foxx), Peter must confront an enemy far more powerful than he is. And when his old friend Harry Osborn (Dane DeHaan) returns, Peter comes to realize that all his enemies have one thing in common: Oscorp"
+      }
+    ]
+  },
+  {
+    "year": "1977",
+    "events": [
+      {
+        "icon": "movie",
+        "title": "Spider-Man",
+        "content": "The first ever Spider-Man movie!"
+      }
+    ]
+  }
+]

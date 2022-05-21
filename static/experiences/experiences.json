@@ -1,0 +1,123 @@
+{
+  "experiences": [
+    {
+      "name": "University",
+      "link": "university",
+      "location": "location",
+      "weight": 1,
+      "tags": [
+        "student"
+      ],
+      "date": "01/01/1970",
+      "short": "A short description..",
+      "photos": [
+        "/static/experiences/university/university.jpg"
+      ]
+    },
+    {
+      "name": "Book Club",
+      "link": "book-club",
+      "location": "location",
+      "weight": 2,
+      "tags": [
+        "clubber"
+      ],
+      "date": "01/01/1970",
+      "short": "A short description..",
+      "photos": [
+        "/static/experiences/book-club/book.png",
+        "/static/experiences/book-club/club.png"
+      ]
+    },
+    {
+      "name": "Book Club",
+      "link": "book-club",
+      "location": "location",
+      "weight": 2,
+      "tags": [
+        "clubber"
+      ],
+      "date": "01/01/1970",
+      "short": "A short description..",
+      "photos": [
+        "/static/experiences/book-club/book.png",
+        "/static/experiences/book-club/club.png"
+      ]
+    },
+    {
+      "name": "Book Club",
+      "link": "book-club",
+      "location": "location",
+      "weight": 2,
+      "tags": [
+        "clubber"
+      ],
+      "date": "01/01/1970",
+      "short": "A short description..",
+      "photos": [
+        "/static/experiences/book-club/book.png",
+        "/static/experiences/book-club/club.png"
+      ]
+    },
+    {
+      "name": "Book Club",
+      "link": "book-club",
+      "location": "location",
+      "weight": 2,
+      "tags": [
+        "clubber"
+      ],
+      "date": "01/01/1970",
+      "short": "A short description..",
+      "photos": [
+        "/static/experiences/book-club/book.png",
+        "/static/experiences/book-club/club.png"
+      ]
+    },
+    {
+      "name": "Book Club",
+      "link": "book-club",
+      "location": "location",
+      "weight": 2,
+      "tags": [
+        "clubber"
+      ],
+      "date": "01/01/1970",
+      "short": "A short description..",
+      "photos": [
+        "/static/experiences/book-club/book.png",
+        "/static/experiences/book-club/club.png"
+      ]
+    },
+    {
+      "name": "Book Club",
+      "link": "book-club",
+      "location": "location",
+      "weight": 2,
+      "tags": [
+        "clubber"
+      ],
+      "date": "01/01/1970",
+      "short": "A short description..",
+      "photos": [
+        "/static/experiences/book-club/book.png",
+        "/static/experiences/book-club/club.png"
+      ]
+    },
+    {
+      "name": "Book Club",
+      "link": "book-club",
+      "location": "location",
+      "weight": 2,
+      "tags": [
+        "clubber"
+      ],
+      "date": "01/01/1970",
+      "short": "A short description..",
+      "photos": [
+        "/static/experiences/book-club/book.png",
+        "/static/experiences/book-club/club.png"
+      ]
+    }
+  ]
+}

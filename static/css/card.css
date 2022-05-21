@@ -1,0 +1,77 @@
+#title {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.icon {
+  font-size: .9rem;
+  display: inline-flex;
+  background: #D8D8D8;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  span {
+    border-radius: 5px;
+    padding: 3px 5px;
+  };
+}
+
+.react {
+  background: #BAD5F5;
+  span::after {
+    content: "React.js";
+  }
+}
+
+.card {
+  margin:10px;
+  max-height: 325px;
+  min-height: 325px;
+  max-width: 320px;
+}
+
+.card-reveal .card-title {
+    overflow: auto;
+    white-space: normal;
+    text-overflow: unset;
+}
+
+.md-chip-link {
+    padding-left:8px;
+    padding-right:8px;
+  }
+
+.card-image {
+    max-width:400px;
+    display: flex;
+    justify-content: center;
+}
+
+.card .card-image img.card-image {
+    max-height: 180px;
+    min-height: 180px;
+    width: auto;
+}
+
+.status {
+  color: #7699C2;
+}
+
+.card-title {
+overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.container-outer {
+  overflow: hidden;
+}
+
+.container-inner {
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  /*kinda hacky solution to remove that ugly scrollbar*/
+  margin-bottom: -25px; /* maximum width of scrollbar */
+  padding-bottom: 25px; /* maximum width of scrollbar */
+}
